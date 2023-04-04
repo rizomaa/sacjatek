@@ -50,6 +50,7 @@ html {
   align-items: center;
   max-width: 300px;
   margin: auto;
+  margin-bottom: 35px;
 }
 
 .title {
@@ -57,7 +58,7 @@ html {
   text-align: center;
   text-transform: uppercase;
   margin: auto;
-  margin-bottom: 15px;
+  margin-bottom: 25px;
 }
 
 .subtitle {
@@ -85,3 +86,21 @@ html {
   border: none;
 }
 
+.block-uniqueness {
+  display: flex;
+  flex-wrap: wrap;
+
+  &-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+}
+
+
+.block-uniqueness-image {
+  width: 40px;
+  height: 40px;
+  margin-right: 20px;
+}
