@@ -112,12 +112,45 @@ html {
 .list-obtaining {
 
   &_item {
-    max-width: 270px;
+    max-width: 290px;
     width: 100%;
     list-style-type: none;
     margin-bottom: 15px;
     border-radius: 15px;
     background-color: #E8EDFB;
     padding: 10px;
+  }
+}
+
+.list-content {
+
+  &_item {
+    list-style-type: none;
+    margin-bottom: 20px;
+
+    &-container {
+      display: flex;
+      margin-bottom: 15px;
+    }
+  }
+
+  &_video {
+    // display: none;
+  }
+
+
+
+  &_button {
+    width: 30px;
+    height: 30px;
+    background: none;
+    border: none;
+    margin-right: 15px;
+    cursor: pointer;
+    
+    &-image {
+      width: 30px;
+      height: 30px;
+    }
   }
 }

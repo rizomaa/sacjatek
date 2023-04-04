@@ -96,11 +96,32 @@ html {
 }
 
 .list-obtaining_item {
-  max-width: 270px;
+  max-width: 290px;
   width: 100%;
   list-style-type: none;
   margin-bottom: 15px;
   border-radius: 15px;
   background-color: #E8EDFB;
   padding: 10px;
+}
+
+.list-content_item {
+  list-style-type: none;
+  margin-bottom: 20px;
+}
+.list-content_item-container {
+  display: flex;
+  margin-bottom: 15px;
+}
+.list-content_button {
+  width: 30px;
+  height: 30px;
+  background: none;
+  border: none;
+  margin-right: 15px;
+  cursor: pointer;
+}
+.list-content_button-image {
+  width: 30px;
+  height: 30px;
 }/*# sourceMappingURL=style.css.map */
