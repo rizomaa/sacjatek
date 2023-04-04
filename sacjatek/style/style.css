@@ -91,4 +91,14 @@ html {
   width: 40px;
   height: 40px;
   margin-right: 20px;
+}
+
+.list-obtaining_item {
+  max-width: 270px;
+  width: 100%;
+  list-style-type: none;
+  margin-bottom: 15px;
+  border-radius: 15px;
+  background-color: #E8EDFB;
+  padding: 10px;
 }/*# sourceMappingURL=style.css.map */
