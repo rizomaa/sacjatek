@@ -186,3 +186,24 @@ html {
   margin-bottom: 15px;
   padding: 10px;
 }
+
+// footer
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+
+  &-link {
+
+  }
+  
+  &-container_image {
+    border-radius: 30px;
+  }
+  
+  &-image {
+    width: 45px;
+    height: 45px;
+  }
+}

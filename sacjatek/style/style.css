@@ -146,4 +146,17 @@ html {
   border-radius: 10px;
   margin-bottom: 15px;
   padding: 10px;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+}
+.footer-container_image {
+  border-radius: 30px;
+}
+.footer-image {
+  width: 45px;
+  height: 45px;
 }/*# sourceMappingURL=style.css.map */
