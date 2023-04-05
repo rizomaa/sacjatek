@@ -75,8 +75,9 @@ html {
   margin-bottom: 25px;
 
   &-item {
-    margin-left: 30px;
     max-width: 300px;
+    margin-left: 30px;
+    margin-bottom: 15px;
   }
 }
 
@@ -87,6 +88,14 @@ html {
   border-radius: 15px;
   background-color: #E8EDFB;
 }
+
+// description
+
+.block-description-text {
+  // text-align: left;
+}
+
+// uniqueness
 
 .block-uniqueness {
   display: flex;
@@ -99,7 +108,6 @@ html {
     margin-bottom: 20px;
   }
 }
-
 
 .block-uniqueness-image {
   width: 40px;
@@ -122,6 +130,8 @@ html {
   }
 }
 
+// content
+
 .list-content {
 
   &_item {
@@ -139,7 +149,6 @@ html {
   }
 
 
-
   &_button {
     width: 30px;
     height: 30px;
@@ -153,4 +162,27 @@ html {
       height: 30px;
     }
   }
+}
+
+// form
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.input {
+  width: 280px;
+  height: 30px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  padding: 0 10px;
+}
+
+.textarea {
+  width: 280px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  padding: 10px;
 }
