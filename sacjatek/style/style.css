@@ -1,0 +1,166 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+html {
+  scroll-behavior: smooth;
+  transition: 1s;
+}
+
+.header {
+  margin: auto;
+}
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 15px 15px 25px;
+}
+.header-button {
+  width: 50px;
+  height: 50px;
+  background: none;
+  border: none;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  font-size: 25px;
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 300px;
+  margin: auto;
+  margin-bottom: 35px;
+}
+
+.title {
+  font-size: 30px;
+  text-align: center;
+  text-transform: uppercase;
+  margin: auto;
+  margin-bottom: 25px;
+}
+
+.subtitle {
+  margin-bottom: 15px;
+}
+
+.text {
+  margin-bottom: 25px;
+  text-align: justify;
+}
+
+.list {
+  max-width: 300px;
+  margin-bottom: 25px;
+}
+.list-item {
+  max-width: 300px;
+  margin-left: 30px;
+  margin-bottom: 15px;
+}
+
+.button {
+  width: 170px;
+  height: 40px;
+  border: none;
+  border-radius: 15px;
+  background-color: #E8EDFB;
+}
+
+.video {
+  margin-bottom: 25px;
+}
+
+.block-uniqueness {
+  display: flex;
+  flex-wrap: wrap;
+}
+.block-uniqueness-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.block-uniqueness-image {
+  width: 40px;
+  height: 40px;
+  margin-right: 20px;
+}
+
+.list-obtaining_item {
+  max-width: 290px;
+  width: 100%;
+  list-style-type: none;
+  margin-bottom: 15px;
+  border-radius: 15px;
+  background-color: #E8EDFB;
+  padding: 10px;
+}
+
+.list-content_item {
+  list-style-type: none;
+  margin-bottom: 20px;
+}
+.list-content_item-container {
+  display: flex;
+  margin-bottom: 15px;
+}
+.list-content_button {
+  width: 30px;
+  height: 30px;
+  background: none;
+  border: none;
+  margin-right: 15px;
+  cursor: pointer;
+}
+.list-content_button-image {
+  width: 30px;
+  height: 30px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.input {
+  width: 280px;
+  height: 30px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  padding: 0 10px;
+}
+
+.textarea {
+  width: 280px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  padding: 10px;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+}
+.footer-container_image {
+  border-radius: 30px;
+}
+.footer-image {
+  width: 45px;
+  height: 45px;
+}/*# sourceMappingURL=style.css.map */
