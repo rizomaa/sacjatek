@@ -79,6 +79,10 @@ html {
   background-color: #E8EDFB;
 }
 
+.video {
+  margin-bottom: 25px;
+}
+
 .block-uniqueness {
   display: flex;
   flex-wrap: wrap;
