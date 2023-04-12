@@ -76,7 +76,7 @@ html {
 }
 .list-item {
   max-width: 300px;
-  margin-left: 30px;
+  margin-left: 10px;
   margin-bottom: 15px;
 }
 .list-item:before {
@@ -140,6 +140,15 @@ html {
   width: 40px;
   height: 40px;
   margin-right: 20px;
+}
+
+.list-uniqueness_item {
+  font-size: 13px;
+}
+.list-uniqueness_item:before {
+  color: #FFDD55;
+  content: "⇒";
+  padding-right: 15px;
 }
 
 .list-obtaining_item {
