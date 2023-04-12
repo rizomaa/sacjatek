@@ -65,13 +65,14 @@ $color-black: #1A1A1A;
   display: flex;
   flex-direction: column;
   // align-items: center;
-  max-width: 300px;
+  // max-width: 300px;
   margin: auto;
   margin-bottom: 35px;
+  padding: 15px;
 }
 
 .title {
-  font-size: 28px;
+  font-size: 25px;
   text-align: center;
   margin: auto;
   margin-bottom: 40px;
@@ -79,7 +80,7 @@ $color-black: #1A1A1A;
 }
 
 .subtitle {
-  font-size: 23px;
+  font-size: 20px;
   font-weight: 400;
   margin-bottom: 15px;
   color: $color-yellow-dark;
@@ -115,6 +116,12 @@ $color-black: #1A1A1A;
   // border-radius: 15px;
   background-color: $color-yellow-dark;
   color: $color-violet;
+
+  &-container {
+    display: flex;
+    justify-content: center;
+  }
+  
 }
 
 .video {
@@ -123,10 +130,6 @@ $color-black: #1A1A1A;
 
 // block main 
 
-.block-main_button {
-  display: flex;
-  justify-content: center;
-}
 
 .block-main_text {
   text-align: center;
@@ -135,8 +138,23 @@ $color-black: #1A1A1A;
 
 // description
 
+.section-description {
+  background-color: $color-yellow-light;
+  padding-bottom: 25px;
+}
+
+.title-description {
+  color: $color-green-dark;
+}
+
 .block-description-text {
   text-align: left;
+  font-size: 15px;
+}
+
+.button-description {
+  background-color: $color-violet;
+  color: $color-yellow-dark;
 }
 
 // uniqueness

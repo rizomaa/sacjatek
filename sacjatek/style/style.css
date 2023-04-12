@@ -44,13 +44,13 @@ html {
 .section {
   display: flex;
   flex-direction: column;
-  max-width: 300px;
   margin: auto;
   margin-bottom: 35px;
+  padding: 15px;
 }
 
 .title {
-  font-size: 28px;
+  font-size: 25px;
   text-align: center;
   margin: auto;
   margin-bottom: 40px;
@@ -58,7 +58,7 @@ html {
 }
 
 .subtitle {
-  font-size: 23px;
+  font-size: 20px;
   font-weight: 400;
   margin-bottom: 15px;
   color: #FFDD55;
@@ -92,14 +92,13 @@ html {
   background-color: #FFDD55;
   color: #7137C8;
 }
+.button-container {
+  display: flex;
+  justify-content: center;
+}
 
 .video {
   margin-bottom: 25px;
-}
-
-.block-main_button {
-  display: flex;
-  justify-content: center;
 }
 
 .block-main_text {
@@ -107,8 +106,23 @@ html {
   color: #7137C8;
 }
 
+.section-description {
+  background-color: #FFE680;
+  padding-bottom: 25px;
+}
+
+.title-description {
+  color: #00AA88;
+}
+
 .block-description-text {
   text-align: left;
+  font-size: 15px;
+}
+
+.button-description {
+  background-color: #7137C8;
+  color: #FFDD55;
 }
 
 .block-uniqueness {
