@@ -5,7 +5,7 @@
   padding: 0;
   box-sizing: border-box;
   text-decoration: none;
-  // list-style-type: none;
+  list-style-type: none;
 }
 
 html {
@@ -26,14 +26,19 @@ $color-black: #1A1A1A;
 // header 
 
 .header {
-
+  display: flex;
+  align-items: center;
+  max-width: 320px;
+  min-height: 100px;
+  background-color: $color-green-light;
   margin: auto;
+  margin-bottom: 30px;
 
   &-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 15px 15px 25px;
+    margin: 0 20px;
   }
 
   &-button {
@@ -42,15 +47,6 @@ $color-black: #1A1A1A;
     background: none;
     border: none;
   }
-}
-
-.logo {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 50px;
-  height: 50px;
-  font-size: 25px;
 }
 
 .logo {
@@ -68,22 +64,26 @@ $color-black: #1A1A1A;
 .section {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  // align-items: center;
   max-width: 300px;
   margin: auto;
   margin-bottom: 35px;
 }
 
 .title {
-  font-size: 30px;
+  font-size: 28px;
   text-align: center;
-  text-transform: uppercase;
   margin: auto;
-  margin-bottom: 25px;
+  margin-bottom: 40px;
+  color: $color-violet;
 }
 
 .subtitle {
+  font-size: 23px;
+  font-weight: 400;
   margin-bottom: 15px;
+  color: $color-yellow-dark;
+  text-align: center;
 }
 
 .text {
@@ -99,6 +99,12 @@ $color-black: #1A1A1A;
     max-width: 300px;
     margin-left: 30px;
     margin-bottom: 15px;
+
+    &:before {
+      color: $color-violet;
+      content: "•";
+      padding-right: 10px;
+    }
   }
 }
 
@@ -106,18 +112,31 @@ $color-black: #1A1A1A;
   width: 170px;
   height: 40px;
   border: none;
-  border-radius: 15px;
-  background-color: #E8EDFB;
+  // border-radius: 15px;
+  background-color: $color-yellow-dark;
+  color: $color-violet;
 }
 
 .video {
   margin-bottom: 25px;
 }
 
+// block main 
+
+.block-main_button {
+  display: flex;
+  justify-content: center;
+}
+
+.block-main_text {
+  text-align: center;
+  color: $color-violet;
+}
+
 // description
 
 .block-description-text {
-  // text-align: left;
+  text-align: left;
 }
 
 // uniqueness
