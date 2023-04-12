@@ -77,6 +77,10 @@ $color-black: #1A1A1A;
   margin: auto;
   margin-bottom: 40px;
   color: $color-violet;
+
+  &-green {
+    color: $color-green-dark;
+  }
 }
 
 .subtitle {
@@ -88,13 +92,14 @@ $color-black: #1A1A1A;
 }
 
 .text {
+  font-size: 15px;
   margin-bottom: 25px;
   text-align: justify;
 }
 
 .list {
   max-width: 300px;
-  margin-bottom: 25px;
+  margin-bottom: 15px;
 
   &-item {
     max-width: 300px;
@@ -106,6 +111,11 @@ $color-black: #1A1A1A;
       content: "•";
       padding-right: 10px;
     }
+
+    &-title {
+      
+    }
+
   }
 }
 
@@ -152,7 +162,7 @@ $color-black: #1A1A1A;
   font-size: 15px;
 }
 
-.button-description {
+.button-violet {
   background-color: $color-violet;
   color: $color-yellow-dark;
 }
@@ -190,6 +200,14 @@ $color-black: #1A1A1A;
 
 // obtaining
 
+.section-obtaining {
+  background-color: $color-yellow-light;
+}
+
+.title-obtaining {
+  color: $color-green-dark;
+}
+
 .list-obtaining {
 
   &_item {
@@ -197,10 +215,30 @@ $color-black: #1A1A1A;
     width: 100%;
     list-style-type: none;
     margin-bottom: 15px;
-    border-radius: 15px;
-    background-color: #E8EDFB;
     padding: 10px;
   }
+}
+
+// project 
+
+.section-project {
+  background-color: $color-yellow-light;
+}
+
+.title-project {
+  color: $color-green-dark;
+}
+
+// who 
+
+.section-who {
+  background-color: $color-yellow-light;
+}
+
+// price 
+
+.section-price {
+  background-color: $color-yellow-light;
 }
 
 // content
@@ -237,7 +275,12 @@ $color-black: #1A1A1A;
   }
 }
 
-// form
+// contact 
+
+.section-contact {
+  background-color: $color-yellow-light;
+  margin-bottom: 0;
+}
 
 .form {
   display: flex;
@@ -248,16 +291,16 @@ $color-black: #1A1A1A;
 .input {
   width: 280px;
   height: 30px;
-  border-radius: 10px;
   margin-bottom: 10px;
   padding: 0 10px;
+  background: none;
 }
 
 .textarea {
   width: 280px;
-  border-radius: 10px;
   margin-bottom: 15px;
   padding: 10px;
+  background: none;
 }
 
 // footer
@@ -265,7 +308,10 @@ $color-black: #1A1A1A;
 .footer {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  min-height: 100px;
   padding: 15px;
+  background-color: $color-green-light;
 
   &-link {
 

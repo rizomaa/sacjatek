@@ -56,6 +56,9 @@ html {
   margin-bottom: 40px;
   color: #7137C8;
 }
+.title-green {
+  color: #00AA88;
+}
 
 .subtitle {
   font-size: 20px;
@@ -66,13 +69,14 @@ html {
 }
 
 .text {
+  font-size: 15px;
   margin-bottom: 25px;
   text-align: justify;
 }
 
 .list {
   max-width: 300px;
-  margin-bottom: 25px;
+  margin-bottom: 15px;
 }
 .list-item {
   max-width: 300px;
@@ -84,7 +88,6 @@ html {
   content: "•";
   padding-right: 10px;
 }
-
 .button {
   width: 170px;
   height: 40px;
@@ -120,7 +123,7 @@ html {
   font-size: 15px;
 }
 
-.button-description {
+.button-violet {
   background-color: #7137C8;
   color: #FFDD55;
 }
@@ -151,14 +154,36 @@ html {
   padding-right: 15px;
 }
 
+.section-obtaining {
+  background-color: #FFE680;
+}
+
+.title-obtaining {
+  color: #00AA88;
+}
+
 .list-obtaining_item {
   max-width: 290px;
   width: 100%;
   list-style-type: none;
   margin-bottom: 15px;
-  border-radius: 15px;
-  background-color: #E8EDFB;
   padding: 10px;
+}
+
+.section-project {
+  background-color: #FFE680;
+}
+
+.title-project {
+  color: #00AA88;
+}
+
+.section-who {
+  background-color: #FFE680;
+}
+
+.section-price {
+  background-color: #FFE680;
 }
 
 .list-content_item {
@@ -182,6 +207,11 @@ html {
   height: 30px;
 }
 
+.section-contact {
+  background-color: #FFE680;
+  margin-bottom: 0;
+}
+
 .form {
   display: flex;
   flex-direction: column;
@@ -191,22 +221,25 @@ html {
 .input {
   width: 280px;
   height: 30px;
-  border-radius: 10px;
   margin-bottom: 10px;
   padding: 0 10px;
+  background: none;
 }
 
 .textarea {
   width: 280px;
-  border-radius: 10px;
   margin-bottom: 15px;
   padding: 10px;
+  background: none;
 }
 
 .footer {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  min-height: 100px;
   padding: 15px;
+  background-color: #00D4AA;
 }
 .footer-container_image {
   border-radius: 30px;
