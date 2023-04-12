@@ -1,20 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style/style.css">
-  <!-- <link rel="icon" href="assets/logo.ico"> -->
+  <link rel="icon" href="assets/logo.ico">
   <title>Sacjatek</title>
-</head>
+  <style>
+    @font-face {
+      font-family: Open Sans Condensed;
+      src: url(assets/fonts/OpenSans_Condensed-Regular.ttf);
+    }
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6
+    {
+      font-family: Open Sans Condensed;
+    }
 
+    @font-face {
+      font-family: Open Sans Condensed;
+      src: url(assets/fonts/OpenSans_Condensed-Bold.ttf);
+    }
+    button
+    {
+      font-family: Open Sans Condensed;
+    }
+
+    @font-face {
+      font-family: Deja Vu Serif;
+      src: url(assets/fonts/DejaVuSerif.ttf);
+    }
+    p,
+    span,
+    a {
+      font-family: Deja Vu Serif;
+    }
+  </style>
+</head>
 <body>
   <header class="header">
     <div class="header-container">
-      <div class="logo">S</div>
-      <div class="header-container_button">
+      <div class="logo-container">
+        <img class="logo-image" src="assets/logo_header.png" alt="Sacjatek">
+      </div>
+      <!-- <div class="header-container_button">
         <button class="header-button">
           <svg width="30" height="27" viewBox="0 0 30 27" fill="none" xmlns="http://www.w3.org/2000/svg">
             <line x1="-7.69195e-10" y1="0.5" x2="50" y2="0.5" stroke="black" />
@@ -22,20 +56,22 @@
             <line x1="-7.69195e-10" y1="13.5" x2="50" y2="13.5" stroke="black" />
           </svg>
         </button>
-      </div>
+      </div> -->
     </div>
   </header>
   <main>
-    <section class="section">
-      <h2 class="title">Практычная сацыятэхніка</h2>
-      <p class="text">Будуем супольнасці з нуля.</p>
-      <p class="subtitle">Графік</p>
+    <section class="section section-main">
+      <h1 class="title">Практычная сацыятэхніка</h1>
+      <h2 class="subtitle">Будуем супольнасці з нуля</h2>
+      <p class="text block-main_text">Графік</p>
       <ul class="list">
         <li class="list-item"></li>
         <li class="list-item"></li>
         <li class="list-item"></li>
       </ul>
-      <button class="button">Далучыцца да курса</button>
+      <div class="block-main_button">
+        <button class="button">Далучыцца да курса</button>
+      </div>
     </section>
     <section class="section section-description">
       <h2 class="title">Апісанне</h2>
