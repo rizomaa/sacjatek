@@ -35,6 +35,13 @@ html {
   font-size: 25px;
 }
 
+.logo-container {
+  width: 200px;
+}
+.logo-image {
+  width: 200px;
+}
+
 .section {
   display: flex;
   flex-direction: column;
