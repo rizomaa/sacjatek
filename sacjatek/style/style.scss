@@ -5,7 +5,7 @@
   padding: 0;
   box-sizing: border-box;
   text-decoration: none;
-  // list-style-type: none;
+  list-style-type: none;
 }
 
 html {
@@ -13,16 +13,32 @@ html {
   transition: 1s;
 }
 
+// colors 
+
+$color-white: #FFFFFF;
+$color-yellow-light: #FFE680;
+$color-yellow-dark: #FFDD55;
+$color-green-light: #00D4AA;
+$color-green-dark: #00AA88;
+$color-violet: #7137C8;
+$color-black: #1A1A1A;
+
 // header 
 
 .header {
+  display: flex;
+  align-items: center;
+  max-width: 320px;
+  min-height: 100px;
+  background-color: $color-green-light;
   margin: auto;
+  margin-bottom: 30px;
 
   &-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 15px 15px 25px;
+    margin: 0 20px;
   }
 
   &-button {
@@ -34,12 +50,13 @@ html {
 }
 
 .logo {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 50px;
-  height: 50px;
-  font-size: 25px;
+  &-container {
+    width: 200px;
+  }
+
+  &-image {
+    width: 200px;
+  }
 }
 
 // section main
@@ -47,22 +64,27 @@ html {
 .section {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  max-width: 300px;
+  // align-items: center;
+  // max-width: 300px;
   margin: auto;
   margin-bottom: 35px;
+  padding: 15px;
 }
 
 .title {
-  font-size: 30px;
+  font-size: 25px;
   text-align: center;
-  text-transform: uppercase;
   margin: auto;
-  margin-bottom: 25px;
+  margin-bottom: 40px;
+  color: $color-violet;
 }
 
 .subtitle {
+  font-size: 20px;
+  font-weight: 400;
   margin-bottom: 15px;
+  color: $color-yellow-dark;
+  text-align: center;
 }
 
 .text {
@@ -76,8 +98,14 @@ html {
 
   &-item {
     max-width: 300px;
-    margin-left: 30px;
+    margin-left: 10px;
     margin-bottom: 15px;
+
+    &:before {
+      color: $color-violet;
+      content: "•";
+      padding-right: 10px;
+    }
   }
 }
 
@@ -85,18 +113,48 @@ html {
   width: 170px;
   height: 40px;
   border: none;
-  border-radius: 15px;
-  background-color: #E8EDFB;
+  // border-radius: 15px;
+  background-color: $color-yellow-dark;
+  color: $color-violet;
+
+  &-container {
+    display: flex;
+    justify-content: center;
+  }
+  
 }
 
 .video {
   margin-bottom: 25px;
 }
 
+// block main 
+
+
+.block-main_text {
+  text-align: center;
+  color: $color-violet;
+}
+
 // description
 
+.section-description {
+  background-color: $color-yellow-light;
+  padding-bottom: 25px;
+}
+
+.title-description {
+  color: $color-green-dark;
+}
+
 .block-description-text {
-  // text-align: left;
+  text-align: left;
+  font-size: 15px;
+}
+
+.button-description {
+  background-color: $color-violet;
+  color: $color-yellow-dark;
 }
 
 // uniqueness
@@ -117,6 +175,17 @@ html {
   width: 40px;
   height: 40px;
   margin-right: 20px;
+}
+
+.list-uniqueness {
+  &_item {
+    font-size: 13px;
+    &:before {
+      color: $color-yellow-dark;
+      content: "⇒";
+      padding-right: 15px;
+    }
+  }
 }
 
 // obtaining

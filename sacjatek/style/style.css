@@ -1,8 +1,10 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   text-decoration: none;
+  list-style-type: none;
 }
 
 html {
@@ -11,13 +13,19 @@ html {
 }
 
 .header {
+  display: flex;
+  align-items: center;
+  max-width: 320px;
+  min-height: 100px;
+  background-color: #00D4AA;
   margin: auto;
+  margin-bottom: 30px;
 }
 .header-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 15px 15px 25px;
+  margin: 0 20px;
 }
 .header-button {
   width: 50px;
@@ -26,34 +34,35 @@ html {
   border: none;
 }
 
-.logo {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 50px;
-  height: 50px;
-  font-size: 25px;
+.logo-container {
+  width: 200px;
+}
+.logo-image {
+  width: 200px;
 }
 
 .section {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  max-width: 300px;
   margin: auto;
   margin-bottom: 35px;
+  padding: 15px;
 }
 
 .title {
-  font-size: 30px;
+  font-size: 25px;
   text-align: center;
-  text-transform: uppercase;
   margin: auto;
-  margin-bottom: 25px;
+  margin-bottom: 40px;
+  color: #7137C8;
 }
 
 .subtitle {
+  font-size: 20px;
+  font-weight: 400;
   margin-bottom: 15px;
+  color: #FFDD55;
+  text-align: center;
 }
 
 .text {
@@ -67,20 +76,53 @@ html {
 }
 .list-item {
   max-width: 300px;
-  margin-left: 30px;
+  margin-left: 10px;
   margin-bottom: 15px;
+}
+.list-item:before {
+  color: #7137C8;
+  content: "•";
+  padding-right: 10px;
 }
 
 .button {
   width: 170px;
   height: 40px;
   border: none;
-  border-radius: 15px;
-  background-color: #E8EDFB;
+  background-color: #FFDD55;
+  color: #7137C8;
+}
+.button-container {
+  display: flex;
+  justify-content: center;
 }
 
 .video {
   margin-bottom: 25px;
+}
+
+.block-main_text {
+  text-align: center;
+  color: #7137C8;
+}
+
+.section-description {
+  background-color: #FFE680;
+  padding-bottom: 25px;
+}
+
+.title-description {
+  color: #00AA88;
+}
+
+.block-description-text {
+  text-align: left;
+  font-size: 15px;
+}
+
+.button-description {
+  background-color: #7137C8;
+  color: #FFDD55;
 }
 
 .block-uniqueness {
@@ -98,6 +140,15 @@ html {
   width: 40px;
   height: 40px;
   margin-right: 20px;
+}
+
+.list-uniqueness_item {
+  font-size: 13px;
+}
+.list-uniqueness_item:before {
+  color: #FFDD55;
+  content: "⇒";
+  padding-right: 15px;
 }
 
 .list-obtaining_item {
