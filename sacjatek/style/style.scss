@@ -28,7 +28,6 @@ $color-black: #1A1A1A;
 .header {
   display: flex;
   align-items: center;
-  max-width: 320px;
   min-height: 100px;
   background-color: $color-green-light;
   margin: auto;
@@ -38,14 +37,46 @@ $color-black: #1A1A1A;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    max-width: 1200px;
+    width: 100%;
     margin: 0 20px;
+
+    @media (max-width: 320px) {
+      
+    }
   }
+
+  &-list {
+    max-width: 800px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+    &_item {
+
+    }
+
+    &_link {
+      color: $color-white;
+      font-size: 18px;
+
+      &:hover {
+        color: $color-violet;
+      }
+    }
+  }
+
 
   &-button {
     width: 50px;
     height: 50px;
     background: none;
     border: none;
+  }
+
+  &-lang {
+    width: 50px;
+    height: 50px;
   }
 }
 

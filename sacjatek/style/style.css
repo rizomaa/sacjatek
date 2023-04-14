@@ -15,7 +15,6 @@ html {
 .header {
   display: flex;
   align-items: center;
-  max-width: 320px;
   min-height: 100px;
   background-color: #00D4AA;
   margin: auto;
@@ -25,13 +24,32 @@ html {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  max-width: 1200px;
+  width: 100%;
   margin: 0 20px;
+}
+.header-list {
+  max-width: 800px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.header-list_link {
+  color: #FFFFFF;
+  font-size: 18px;
+}
+.header-list_link:hover {
+  color: #7137C8;
 }
 .header-button {
   width: 50px;
   height: 50px;
   background: none;
   border: none;
+}
+.header-lang {
+  width: 50px;
+  height: 50px;
 }
 
 .logo-container {
