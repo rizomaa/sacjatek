@@ -312,19 +312,19 @@ $color-black: #1a1a1a;
   margin: auto;
 }
 
-.block-uniqueness {
+.block-list {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  row-gap: 50px;
+  column-gap: 60px;
 
-  &-content {
+  &-item {
     max-width: 280px;
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 50px;
-
 
     @media (max-width: 768px) {
       display: flex;
@@ -333,14 +333,11 @@ $color-black: #1a1a1a;
       align-items: center;
       margin-bottom: 20px;
     }
-
-    &_inactive {
-      display: none;
-    }
   }
 
   &-text {
     max-width: 240px;
+    font-size: 17px;
     text-align: center;
   }
 
@@ -352,7 +349,7 @@ $color-black: #1a1a1a;
     height: 70px;
     border-radius: 50px;
     background-color: $color-yellow-dark;
-    margin-bottom: 20px;
+    margin-bottom: 25px;
   }
 
   &-image {
@@ -375,43 +372,19 @@ $color-black: #1a1a1a;
       background-color: $color-yellow-dark;
       cursor: pointer;
     }
-
-    &-active {
-      background-color: $color-yellow-dark;
-
-      &:hover {
-        background: none;
-        cursor: pointer;
-      }
-    }
   }
 }
 
+.item-uniqueness_inactive {
+  display: none;
+}
 
+.button-uniqueness-active {
+  background-color: $color-yellow-dark;
 
-.list-uniqueness {
-  display: flex;
-
-  &_item {
-    font-size: 20px;
-    line-height: 30px;
-    margin-bottom: 10px;
-
-    @media (max-width: 768px) {
-      font-size: 18px;
-    }
-
-    @media (max-width: 320px) {
-      font-size: 13px;
-
-      &_item {
-        &:before {
-          color: $color-yellow-dark;
-          content: "⇒";
-          padding-right: 15px;
-        }
-      }
-    }
+  &:hover {
+    background: none;
+    cursor: pointer;
   }
 }
 
@@ -425,19 +398,41 @@ $color-black: #1a1a1a;
   color: $color-green-dark;
 }
 
-.list-obtaining {
-  &_item {
-    max-width: 1000px;
-    width: 100%;
+.block-obtaining-button {
+  background-color: $color-white;
+  color: $color-black;
+  border: $color-green-dark solid 2px;
+  transition: 1s;
 
-    @media (max-width: 768px) {
-      max-width: 290px;
-      width: 100%;
-      list-style-type: none;
-      margin-bottom: 15px;
-      padding: 10px;
-    }
+  &:hover {
+    background-color: $color-green-dark;
+    cursor: pointer;
   }
+}
+
+.button-obtaining-active {
+  background-color: $color-green-dark;
+
+  &:hover {
+    background: $color-white;
+    cursor: pointer;
+  }
+}
+
+// .container_image-obtaining {
+//   background-color: $color-white;
+// }
+
+.item-obtaining {
+  height: 243px;
+  background: $color-white;
+  border: $color-green-dark solid 4px;
+  border-radius: 10px;
+  padding: 10px
+}
+
+.item-obtaining_inactive {
+  display: none;
 }
 
 // project
