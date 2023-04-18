@@ -494,13 +494,20 @@ $color-black: #1a1a1a;
   padding: 10px
 }
 
-// price
+// section price
 
 .section-price {
   background-color: $color-yellow-light;
 }
 
-// content
+// section author
+
+.section-author {
+  max-width: 1000px;
+}
+
+
+// section content
 
 .list-content {
   &_item {

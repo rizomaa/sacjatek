@@ -442,6 +442,10 @@ html {
   background-color: #ffe680;
 }
 
+.section-author {
+  max-width: 1000px;
+}
+
 .list-content_item {
   list-style-type: none;
   margin-bottom: 20px;
