@@ -71,6 +71,14 @@ html {
   margin-bottom: 35px;
   padding: 15px;
 }
+.section-container {
+  display: flex;
+  flex-direction: column;
+  max-width: 1000px;
+  margin: auto;
+  margin-bottom: 35px;
+  padding: 15px;
+}
 
 .title {
   font-size: 60px;
@@ -345,6 +353,7 @@ html {
 }
 .block-list-button:hover {
   background-color: #ffdd55;
+  color: #1a1a1a;
   cursor: pointer;
 }
 
@@ -362,14 +371,6 @@ html {
 
 .section-obtaining {
   background-color: #ffe680;
-}
-.section-obtaining-container {
-  display: flex;
-  flex-direction: column;
-  max-width: 1000px;
-  margin: auto;
-  margin-bottom: 35px;
-  padding: 15px;
 }
 
 .title-obtaining {
@@ -424,6 +425,17 @@ html {
 
 .section-who {
   background-color: #ffe680;
+}
+
+.item-who {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 108px;
+  background: #ffffff;
+  border: #00aa88 solid 4px;
+  border-radius: 10px;
+  padding: 10px;
 }
 
 .section-price {
