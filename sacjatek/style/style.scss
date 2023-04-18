@@ -107,7 +107,7 @@ $color-black: #1a1a1a;
   font-size: 60px;
   text-align: center;
   margin: auto;
-  margin-bottom: 40px;
+  margin-bottom: 60px;
   color: $color-violet;
 
   @media (max-width: 768px) {
@@ -333,20 +333,61 @@ $color-black: #1a1a1a;
       align-items: center;
       margin-bottom: 20px;
     }
+
+    &_inactive {
+      display: none;
+    }
   }
-}
 
-.block-uniqueness-image {
-  width: 50px;
-  height: 50px;
-  margin-bottom: 20px;
+  &-text {
+    max-width: 240px;
+    text-align: center;
+  }
 
-  @media (max-width: 768px) {
+  &-container_image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70px;
+    height: 70px;
+    border-radius: 50px;
+    background-color: $color-yellow-dark;
+    margin-bottom: 20px;
+  }
+
+  &-image {
     width: 40px;
     height: 40px;
-    margin-right: 20px;
+  
+    @media (max-width: 768px) {
+      width: 40px;
+      height: 40px;
+    }
+  }
+
+  &-button {
+    background: none;
+    border: $color-yellow-dark solid 2px;
+    color: $color-black;
+    transition: 1s;
+
+    &:hover {
+      background-color: $color-yellow-dark;
+      cursor: pointer;
+    }
+
+    &-active {
+      background-color: $color-yellow-dark;
+
+      &:hover {
+        background: none;
+        cursor: pointer;
+      }
+    }
   }
 }
+
+
 
 .list-uniqueness {
   display: flex;

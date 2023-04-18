@@ -76,7 +76,7 @@ html {
   font-size: 60px;
   text-align: center;
   margin: auto;
-  margin-bottom: 40px;
+  margin-bottom: 60px;
   color: #7137c8;
 }
 @media (max-width: 768px) {
@@ -298,18 +298,49 @@ html {
     margin-bottom: 20px;
   }
 }
-
-.block-uniqueness-image {
-  width: 50px;
-  height: 50px;
+.block-uniqueness-content_inactive {
+  display: none;
+}
+.block-uniqueness-text {
+  max-width: 240px;
+  text-align: center;
+}
+.block-uniqueness-container_image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 70px;
+  height: 70px;
+  border-radius: 50px;
+  background-color: #ffdd55;
   margin-bottom: 20px;
+}
+.block-uniqueness-image {
+  width: 40px;
+  height: 40px;
 }
 @media (max-width: 768px) {
   .block-uniqueness-image {
     width: 40px;
     height: 40px;
-    margin-right: 20px;
   }
+}
+.block-uniqueness-button {
+  background: none;
+  border: #ffdd55 solid 2px;
+  color: #1a1a1a;
+  transition: 1s;
+}
+.block-uniqueness-button:hover {
+  background-color: #ffdd55;
+  cursor: pointer;
+}
+.block-uniqueness-button-active {
+  background-color: #ffdd55;
+}
+.block-uniqueness-button-active:hover {
+  background: none;
+  cursor: pointer;
 }
 
 .list-uniqueness {
