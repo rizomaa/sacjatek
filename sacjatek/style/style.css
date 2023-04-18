@@ -24,9 +24,9 @@ html {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  max-width: 1000px;
+  max-width: 1200px;
   width: 100%;
-  margin: 0 20px;
+  margin: auto;
 }
 .header-list {
   max-width: 650px;
@@ -74,7 +74,7 @@ html {
 .section-container {
   display: flex;
   flex-direction: column;
-  max-width: 1000px;
+  max-width: 1200px;
   margin: auto;
   margin-bottom: 35px;
   padding: 15px;
@@ -131,12 +131,12 @@ html {
 }
 
 .list {
-  max-width: 1000px;
+  max-width: 1200px;
   width: 100%;
   margin-bottom: 15px;
 }
 .list-item {
-  max-width: 1000px;
+  max-width: 1200px;
   width: 100%;
 }
 @media (max-width: 768px) {
@@ -187,7 +187,7 @@ html {
 .section-main {
   flex-direction: row;
   justify-content: space-between;
-  max-width: 1000px;
+  max-width: 1200px;
   min-height: 500px;
   margin: auto;
 }
@@ -267,7 +267,7 @@ html {
   }
 }
 .section-description_container {
-  max-width: 1000px;
+  max-width: 1200px;
   width: 100%;
   margin: auto;
 }
@@ -292,7 +292,7 @@ html {
 }
 
 .section-uniqueness {
-  max-width: 1000px;
+  max-width: 1200px;
   margin: auto;
 }
 
@@ -443,7 +443,7 @@ html {
 }
 
 .section-author {
-  max-width: 1000px;
+  max-width: 1200px;
 }
 
 .list-content_item {
