@@ -546,18 +546,38 @@ $color-black: #1a1a1a;
 }
 
 .input {
-  width: 280px;
-  height: 30px;
-  margin-bottom: 10px;
+  width: 600px;
+  height: 40px;
+  margin-bottom: 15px;
   padding: 0 10px;
-  background: none;
+  background-color: $color-white;
+  border: $color-violet solid 3px;
+  font-size: 20px;
+
+  @media (max-width: 768px) {
+    width: 280px;
+    height: 30px;
+    margin-bottom: 10px;
+    font-size: 15px;
+  }
 }
 
 .textarea {
-  width: 280px;
+  width: 600px;
+  height: 300px;
   margin-bottom: 15px;
   padding: 10px;
-  background: none;
+  background-color: $color-white;
+  border: $color-violet solid 3px;
+  font-size: 20px;
+  resize: none;
+
+  @media (max-width: 768px) {
+    width: 280px;
+    height: 200px;
+    font-size: 15px;
+  }
+  
 }
 
 // footer
