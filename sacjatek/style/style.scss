@@ -183,6 +183,13 @@ $color-black: #1a1a1a;
   background-color: $color-yellow-dark;
   color: $color-violet;
   font-size: 18px;
+  transition: 1s;
+
+  &:hover {
+    background-color: $color-violet;
+    color: $color-yellow-dark;
+    cursor: pointer;
+  }
 
   @media (max-width: 320px) {
     width: 170px;
@@ -303,6 +310,13 @@ $color-black: #1a1a1a;
 .button-violet {
   background-color: $color-violet;
   color: $color-yellow-dark;
+  transition: 1s;
+
+  &:hover {
+    background-color: $color-yellow-light;
+    border: $color-violet solid 2px;
+    color: $color-violet;
+  }
 }
 
 // uniqueness
@@ -392,6 +406,15 @@ $color-black: #1a1a1a;
 
 .section-obtaining {
   background-color: $color-yellow-light;
+
+  &-container {
+    display: flex;
+    flex-direction: column;
+    max-width: 1000px;
+    margin: auto;
+    margin-bottom: 35px;
+    padding: 15px;
+  }
 }
 
 .title-obtaining {
@@ -435,6 +458,7 @@ $color-black: #1a1a1a;
   display: none;
 }
 
+
 // project
 
 .section-project {
@@ -443,6 +467,16 @@ $color-black: #1a1a1a;
 
 .title-project {
   color: $color-green-dark;
+}
+
+// section joining
+
+.item-joining {
+  
+  background: $color-white;
+  border: $color-yellow-dark solid 4px;
+  border-radius: 10px;
+  padding: 10px
 }
 
 // who

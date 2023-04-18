@@ -150,6 +150,12 @@ html {
   background-color: #ffdd55;
   color: #7137c8;
   font-size: 18px;
+  transition: 1s;
+}
+.button:hover {
+  background-color: #7137c8;
+  color: #ffdd55;
+  cursor: pointer;
 }
 @media (max-width: 320px) {
   .button {
@@ -269,6 +275,12 @@ html {
 .button-violet {
   background-color: #7137c8;
   color: #ffdd55;
+  transition: 1s;
+}
+.button-violet:hover {
+  background-color: #ffe680;
+  border: #7137c8 solid 2px;
+  color: #7137c8;
 }
 
 .section-uniqueness {
@@ -351,6 +363,14 @@ html {
 .section-obtaining {
   background-color: #ffe680;
 }
+.section-obtaining-container {
+  display: flex;
+  flex-direction: column;
+  max-width: 1000px;
+  margin: auto;
+  margin-bottom: 35px;
+  padding: 15px;
+}
 
 .title-obtaining {
   color: #00aa88;
@@ -393,6 +413,13 @@ html {
 
 .title-project {
   color: #00aa88;
+}
+
+.item-joining {
+  background: #ffffff;
+  border: #ffdd55 solid 4px;
+  border-radius: 10px;
+  padding: 10px;
 }
 
 .section-who {
