@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,13 +13,13 @@
       font-family: Open Sans Condensed;
       src: url(assets/fonts/OpenSans_Condensed-Regular.ttf);
     }
+
     h1,
     h2,
     h3,
     h4,
     h5,
-    h6
-    {
+    h6 {
       font-family: Open Sans Condensed;
     }
 
@@ -26,8 +27,10 @@
       font-family: Open Sans Condensed;
       src: url(assets/fonts/OpenSans_Condensed-Bold.ttf);
     }
-    button
-    {
+
+    button,
+    textarea,
+    input {
       font-family: Open Sans Condensed;
     }
 
@@ -35,6 +38,7 @@
       font-family: Deja Vu Serif;
       src: url(assets/fonts/DejaVuSerif.ttf);
     }
+
     p,
     span,
     a,
@@ -43,194 +47,370 @@
     }
   </style>
 </head>
+
 <body>
   <header class="header">
     <div class="header-container">
       <div class="logo-container">
         <img class="logo-image" src="assets/logo_header.png" alt="Sacjatek">
       </div>
-      <!-- <div class="header-container_button">
-        <button class="header-button">
-          <svg width="30" height="27" viewBox="0 0 30 27" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <line x1="-7.69195e-10" y1="0.5" x2="50" y2="0.5" stroke="black" />
-            <line x1="-7.69195e-10" y1="26.5" x2="50" y2="26.5" stroke="black" />
-            <line x1="-7.69195e-10" y1="13.5" x2="50" y2="13.5" stroke="black" />
-          </svg>
-        </button>
-      </div> -->
+      <ul class="header-list">
+        <li class="header-list_item">
+          <a class="header-list_link" href="#description">Апісанне</a>
+        </li>
+        <li class="header-list_item">
+          <a class="header-list_link" href="#uniqueness">Унікальнасць</a>
+        </li>
+        <li class="header-list_item">
+          <a class="header-list_link" href="#who">Для каго</a>
+        </li>
+        <li class="header-list_item">
+          <a class="header-list_link" href="#content">Змест</a>
+        </li>
+        <li class="header-list_item">
+          <a class="header-list_link" href="#author">Пра аутара</a>
+        </li>
+        <li class="header-list_item">
+          <a class="header-list_link" href="#contact">Звязацца</a>
+        </li>
+      </ul>
+      <div class="header-lang"></div>
     </div>
   </header>
   <main>
     <section class="section section-main">
-      <h1 class="title">Практычная сацыятэхніка</h1>
-      <h2 class="subtitle">Будуем супольнасці з нуля</h2>
-      <p class="text block-main_text">Графік</p>
-      <ul class="list">
-        <li class="list-item"></li>
-        <li class="list-item"></li>
-        <li class="list-item"></li>
+      <div class="block-main">
+        <h1 class="title title-main">Практычная сацыятэхніка</h1>
+        <h2 class="subtitle subtitle-main">Будуем супольнасці з нуля</h2>
+        <div class="button-container">
+          <button class="button">Запісацца на курс</button>
+        </div>
+      </div>
+      <div class="block-main block-main_schedule">
+        <h2 class="block-main_subtitle">Графік</h2>
+        <ul class="block-main_list">
+          <li class="block-main_list-item text"></li>
+          <li class="block-main_list-item text"></li>
+          <li class="block-main_list-item text"></li>
+        </ul>
+      </div>
+    </section>
+    <section class="section section-description" id="description">
+      <div class="section-description_container">
+        <h2 class="title title-description">Апісанне</h2>
+        <div class="block-description">
+          <p class="text">
+            Цікава ўдзельнічаць у розных калектывах? Ці ствараць свой уласны? Хочаш
+            даведацца, па якім законам развіваецца клуб па інтарэсах, ці анлайн супольнасць? Выдатна! Вы пастукаліся ў
+            патрэбныя дзверы.
+          </p>
+          <p class="text">
+            Ты далучаешся да курса са сваімі досведам і па выніку атрымліваеш сістэматызаваныя веды, як ствараць сваю ці
+            эфектыўна ўдзельнічаць у розных супольнасцях і нефармальных групах.
+          </p>
+          <p class="text">
+            Для атрымання патрэбнага выніку, я падрыхтаваў відэа лекцыі, таксама пытанні ў тым ліку практычныя пытанні,
+            а
+            таксама жывыя анлайн семінары.
+          </p>
+          <p class="text">
+            У гэтым курсе я кранаюся невялікіх суполак, звычайнай колькасцю да 15-25 чалавек у ядры, але буду часам
+            аналізаваць і большыя прыклады.
+          </p>
+          <p class="text">
+            Усе матэрыялы, пытанні і семінары, будуць засноўвацца на маёй 15-гадовай грамадскай дзейнасці. Падчас якой
+            мне
+            давялося паўдзельнічаць у шэрагу фармальных і нефармальных калектывах, а таксама стварыць свой.
+          </p>
+          <p class="text">
+            Таксама буду прапаноўваць не толькі свае тэарэтычныя напрацоўкі, але і даследванні антраполагаў і
+            сацыёлагаў,
+            этнолагай, якія сваімі працамі натхнілі мяне зрабіць гэты курс.
+          </p>
+          <p class="text">
+            Існуе думка, што грамадства - гэта сума грамадзян, я прытрымліваюся пазіцыі: грамаства - гэта узаемасувяць
+            шматлікіх супольнасцяў, якія стварылі самавызначаныя індывіды - грамадзяне. Таму…
+          </p>
+          <p class="text">
+            Будаваць калектывы - гэта не толькі займальна, гэта таксама ўплывае на будучае грамадства, ў якім вы жывеце.
+            І
+            калі мы хочам грамадства вашай мары, варта пачаць з невялікай цаглінкі, а менавіта малой нефармальнай групы.
+          </p>
+          <p class="text">
+            Дадам, што падчас рэалізацыі курса я пішу кнігу, таму, ўдзельнічаючы ў курсе, вы таксама дапаможаце мне
+            адшліфаваць думкі і паскорыць выданне кнігі.
+          </p>
+        </div>
+        <div class="video">
+          <!-- <iframe width="300" height="168" src="https://www.youtube.com/embed/-LlK2Ge5DIk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      </div> -->
+          <div class="button-container">
+            <button class="button button-violet">Далучыцца да курса</button>
+          </div>
+        </div>
+    </section>
+    <section class="section section-uniqueness" id="uniqueness">
+      <h2 class="title">Унікальнасць</h2>
+      <ul class="block-list">
+        <li class="block-list-item">
+          <div class="block-list-container_image">
+            <img class="block-list-image" src="assets/icons/home.svg" alt="">
+          </div>
+          <p class="block-list-text">На беларускай мове</p>
+        </li>
+        <li class="block-list-item">
+          <div class="block-list-container_image">
+            <img class="block-list-image" src="assets/icons/play-alt.svg" alt="">
+          </div>
+          <p class="block-list-text">30 відэалекцый</p>
+        </li>
+        <li class="block-list-item">
+          <div class="block-list-container_image">
+            <img class="block-list-image" src="assets/icons/briefcase.svg" alt="">
+          </div>
+          <p class="block-list-text">20 анлайн заняткаў, <br>200 пытанняў</p>
+        </li>
+        <li class="block-list-item">
+          <div class="block-list-container_image">
+            <img class="block-list-image" src="assets/icons/users-alt.svg" alt="">
+          </div>
+          <p class="block-list-text">Магчымасць разглядзець сітуацыі ў вашай супольнасці
+          </p>
+        </li>
+        <li class="block-list-item">
+          <div class="block-list-container_image">
+            <img class="block-list-image" src="assets/icons/book-alt.svg" alt="">
+          </div>
+          <p class="block-list-text">Кніга аўтара курса ў падарунак
+          </p>
+        </li>
+        <li class="block-list-item">
+          <div class="block-list-container_image">
+            <img class="block-list-image" src="assets/icons/star.svg" alt="">
+          </div>
+          <p class="block-list-text">3 кансультацыі для паспяховых выпускнікоў
+          </p>
+        </li>
+        <li class="block-list-item item-uniqueness_inactive">
+          <div class="block-list-container_image">
+            <img class="block-list-image" src="assets/icons/share.svg" alt="">
+          </div>
+          <p class="block-list-text">Кантэнт курса распаўсюджваецца пад ліцэнзіяй Creative Commons BY-SA.
+          </p>
+        </li>
+        <li class="block-list-item item-uniqueness_inactive">
+          <div class="block-list-container_image">
+            <img class="block-list-image" src="assets/icons/clock.svg" alt="">
+          </div>
+          <p class="block-list-text">Працягласць 3 месяцы, <br>анлайн заняткі 2 разы на тыдзень
+          </p>
+        </li>
+        <li class="block-list-item item-uniqueness_inactive">
+          <div class="block-list-container_image">
+            <img class="block-list-image" src="assets/icons/check.svg" alt="">
+          </div>
+          <p class="block-list-text">Запісаныя лекцыі даступны наўпрост з сайта
+          </p>
+        </li>
+        <li class="block-list-item item-uniqueness_inactive">
+          <div class="block-list-container_image">
+            <img class="block-list-image" src="assets/icons/globe.svg" alt="">
+          </div>
+          <p class="block-list-text">Удзел дыстанцыйны
+          </p>
+        </li>
+      </ul>
+      <div class="button-container">
+        <button id="button-uniqueness" class="button block-list-button">Паказаць больш</button>
+      </div>
+    </section>
+    <section class="section section-obtaining">
+      <div class="section-container">
+        <h2 class="title title-green">Што засвоіце і атрымаеце</h2>
+        <!-- <p class="text">Па сканчэнні курса вы ўжо будзеце пачынаючым сацыятэхнікам, а менавіта зможаце:</p> -->
+        <ul class="block-list">
+          <li class="block-list-item item-obtaining">
+            <div class="block-list-container_image">
+              <img class="block-list-image" src="assets/icons/marker.svg" alt="">
+            </div>
+            <p class="block-list-text">Хутка арыентавацца ў існуючай супольнасці і ўключацца ў яе працу.</p>
+          </li>
+          <li class="block-list-item item-obtaining">
+            <div class="block-list-container_image">
+              <img class="block-list-image" src="assets/icons/handshake.svg" alt="">
+            </div>
+            <p class="block-list-text">Умець ствараць сваю супольнасць, менавіта супольнасць, а не арганізацыю.</p>
+          </li>
+          <li class="block-list-item item-obtaining">
+            <div class="block-list-container_image">
+              <img class="block-list-image" src="assets/icons/chat-arrow-grow.svg" alt="">
+            </div>
+            <p class="block-list-text">Разумець дынаміку развіцця нефармальнай групы і ведаць, якія інструменты найлепей
+              прымяняць для падтрымання яе роста.</p>
+          </li>
+          <li class="block-list-item item-obtaining">
+            <div class="block-list-container_image">
+              <img class="block-list-image" src="assets/icons/user-add.svg" alt="">
+            </div>
+            <p class="block-list-text">Эфектыўна фасілітаваць станаўленне розных роляў у супольнасці, а таксама
+              самавызначэнне новых удзельнікаў.</p>
+          </li>
+          <li class="block-list-item item-obtaining">
+            <div class="block-list-container_image">
+              <img class="block-list-image" src="assets/icons/heart.svg" alt="">
+            </div>
+            <p class="block-list-text">Узмацняць імунітэт супольнасці і хутка нейтралізаваць таксічных удзельнікаў.</p>
+          </li>
+          <li class="block-list-item item-obtaining">
+            <div class="block-list-container_image">
+              <img class="block-list-image" src="assets/icons/settings-sliders.svg" alt="">
+            </div>
+            <p class="block-list-text">Кіраваць ведамі, перадаваць шаблоны паводзінаў і стымуляваць культуру.</p>
+          </li>
+          <li class="block-list-item item-obtaining item-obtaining_inactive">
+            <div class="block-list-container_image">
+              <img class="block-list-image" src="assets/icons/social-network.svg" alt="">
+            </div>
+            <p class="block-list-text">Фарміраваць каштоўнаснае ядро і ўлучаць яго ў жыццё нефармальнай групы.</p>
+          </li>
+          <li class="block-list-item item-obtaining item-obtaining_inactive">
+            <div class="block-list-container_image">
+              <img class="block-list-image" src="assets/icons/users.svg" alt="">
+            </div>
+            <p class="block-list-text">Уплываць на колькасць удзельнікаў і запускаць працэсы дзялення супольнасці.</p>
+          </li>
+          <li class="block-list-item item-obtaining item-obtaining_inactive">
+            <div class="block-list-container_image container_image-obtaining">
+              <img class="block-list-image" src="assets/icons/refresh.svg" alt="">
+            </div>
+            <p class="block-list-text">Адаптаваць калектыў да новага віду дзейнасці ці выдзялення новых суполак.</p>
+          </li>
+          <li class="block-list-item item-obtaining item-obtaining_inactive">
+            <div class="block-list-container_image container_image-obtaining">
+              <img class="block-list-image" src="assets/icons/comments.svg" alt="">
+            </div>
+            <p class="block-list-text">Інтэграваць найбольш эфектыўную мадэль прыняцця рашэнняў і вырашэння ўнутраных
+              групавых канфліктаў</p>
+          </li>
+        </ul>
+        <div class="button-container">
+          <button id="button-obtaining" class="button block-obtaining-button">Паказаць больш</button>
+        </div>
+      </div>
+    </section>
+    <!-- <section class="section">
+      <h2 class="title">Супольнасці разглядаем</h2>
+      <p class="text">Падчас заняткаў мы будзем раўглядаць дзейнасць наступных супольнасцяў:</p>
+      <ol class="list">
+        <li class="list-item "><span class="list-item-title">Дваровага футбола “Забей” (2006 - 2012).</span> Рух аматарскіх дваровых камандаў.</li>
+        <li class="list-item "><span class="list-item-title">Самвыдата “Забей” (2006-2012).</span> Маладзёвы грамадства-палітычны зін.</li>
+        <li class="list-item "><span class="list-item-title">Мінская роварная супольнасць (2012 - 2016).</span> Свараем роварны дапаможнік і аб’ядноўваем гаратскіх раварыстаў.</li>
+        <li class="list-item "><span class="list-item-title">Супольнасць Друпал (2009 - 2012).</span> Дадаем новыя формы дзейнасці распрацоўшчыкам. Хакатоны, клубы і пераклады.</li>
+        <li class="list-item "><span class="list-item-title">Вікі супольнасць у Беларусі (2011-2023).</span> Робім супольнасць больш адкрытай для новых людзей і папулярызуем рух у Беларусі. Ствараем міжнародныя сувязі.</li>
+        <li class="list-item "><span class="list-item-title">Палітычныя піраты (2011 - 2015).</span> Ствараем дыскурс больш адкрытага і уключанага грамдаства ў Беларусі.</li>
+        <li class="list-item "><span class="list-item-title">Фаланстэр (2011 - 2021).</span> Як спроба фармалізацыі ўніверсальнай супольнасці</li>
+        <li class="list-item "><span class="list-item-title">Лічбавых валанцёры (2013-2019).</span> Як айціпатэнцыял дапамагаў грамадзянскім ініцыятывам.</li>
+        <li class="list-item "><span class="list-item-title">Хакерспэйс (2013-2022).</span> Як развіваўся транслятар і ў што пераудварыўся зараз.</li>
+        <li class="list-item "><span class="list-item-title">Рух за свабоднае праграмнае забяспечанне (2011-цяпер).</span> Прыклад Лінукс і Творчых Суполак.</li>
+        <li class="list-item "><span class="list-item-title">Роварная кухня Мінска (2013-2015).</span> Як атрымалася магчымай сацыяльная майстэрня.</li>
+        <li class="list-item "><span class="list-item-title">Навукова папулярны зін “Памылка” (2023 - цяпер).</span> Чаму 1.5 на разагрэў гэта нармальна.</li>
+      </ol>
+    </section> -->
+    <!-- <section class="section section-project">
+      <h2 class="title title-green">Фінальны праект</h2>
+      <p class="text block-project-text">Калі студэнт будзе актыўна практываць працу ў стварэнні ці даследванні супольнасці па паспяховаму выніку праходжання секцыі пытанняў студэнту выдаецца сертыфікат.</p>
+    </section> -->
+    <section class="section section-joining">
+      <h2 class="title">Што неабходна, каб далучыцца</h2>
+      <!-- <p class="text">Насамрэч вам спатрэбіцца сябе падрыхтаваць трохі:</p> -->
+      <ul class="block-list">
+        <li class="block-list-item item-joining">
+          <div class="block-list-container_image">
+            <img class="block-list-image" src="assets/icons/clock.svg" alt="">
+          </div>
+          <p class="block-list-text">Спатрэбіцца 4 гадзіны на тыдзень.</p>
+        </li>
+        <li class="block-list-item item-joining">
+          <div class="block-list-container_image">
+            <img class="block-list-image" src="assets/icons/heart.svg" alt="">
+          </div>
+          <p class="block-list-text">Быць гатовым да прымянення атрыманых ведаў.</p>
+        </li>
+        <li class="block-list-item item-joining">
+          <div class="block-list-container_image">
+            <img class="block-list-image" src="assets/icons/bulb.svg" alt="">
+          </div>
+          <p class="block-list-text">Быць адкрытым для абмеркавання складаных пытанняў.</p>
+        </li>
       </ul>
       <div class="button-container">
         <button class="button">Далучыцца да курса</button>
       </div>
     </section>
-    <section class="section section-description">
-      <h2 class="title title-description">Апісанне</h2>
-      <p class="text block-description-text">
-        Цікава ўдзельнічаць у розных калектывах? Ці ствараць свой уласны? Хочаш
-        даведацца, па якім законам развіваецца клуб па інтарэсах, ці анлайн супольнасць? Выдатна! Вы пастукаліся ў
-        патрэбныя дзверы.
-      </p>
-      <p class="text block-description-text">
-        Ты далучаешся да курса са сваімі досведам і па выніку атрымліваеш сістэматызаваныя веды, як ствараць сваю ці
-        эфектыўна ўдзельнічаць у розных супольнасцях і нефармальных групах.
-      </p>
-      <p class="text block-description-text">
-        Для атрымання патрэбнага выніку, я падрыхтаваў відэа лекцыі, таксама пытанні ў тым ліку практычныя пытанні, а
-        таксама жывыя анлайн семінары.
-      </p>
-      <p class="text block-description-text">
-        У гэтым курсе я кранаюся невялікіх суполак, звычайнай колькасцю да 15-25 чалавек у ядры, але буду часам
-        аналізаваць і большыя прыклады.
-      </p>
-      <p class="text block-description-text">
-        Усе матэрыялы, пытанні і семінары, будуць засноўвацца на маёй 15-гадовай грамадскай дзейнасці. Падчас якой мне
-        давялося паўдзельнічаць у шэрагу фармальных і нефармальных калектывах, а таксама стварыць свой.
-      </p>
-      <p class="text block-description-text">
-        Таксама буду прапаноўваць не толькі свае тэарэтычныя напрацоўкі, але і даследванні антраполагаў і сацыёлагаў,
-        этнолагай, якія сваімі працамі натхнілі мяне зрабіць гэты курс.
-      </p>
-      <p class="text block-description-text">
-        Існуе думка, што грамадства - гэта сума грамадзян, я прытрымліваюся пазіцыі: грамаства - гэта узаемасувяць
-        шматлікіх супольнасцяў, якія стварылі самавызначаныя індывіды - грамадзяне. Таму…
-      </p>
-      <p class="text block-description-text">
-        Будаваць калектывы - гэта не толькі займальна, гэта таксама ўплывае на будучае грамадства, ў якім вы жывеце. І
-        калі мы хочам грамадства вашай мары, варта пачаць з невялікай цаглінкі, а менавіта малой нефармальнай групы.
-      </p>
-      <p class="text block-description-text">
-        Дадам, што падчас рэалізацыі курса я пішу кнігу, таму, ўдзельнічаючы ў курсе, вы таксама дапаможаце мне
-        адшліфаваць думкі і паскорыць выданне кнігі.
-      </p>
-      <div class="video">
-        <iframe width="300" height="168" src="https://www.youtube.com/embed/-LlK2Ge5DIk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-      </div>
-      <div class="button-container">
-        <button class="button button-description">Далучыцца да курса</button>
+    <section class="section section-who" id="who">
+      <div class="section-container">
+        <h2 class="title title-green">Для каго курс</h2>
+        <ul class="block-list">
+          <li class="block-list-item item-who">
+            <!-- <div class="block-list-container_image">
+              <img class="block-list-image" src="assets/icons/marker.svg" alt="">
+            </div> -->
+            <p class="block-list-text">Хто хоча стварыць сваю супольнасць.</p>
+          </li>
+          <li class="block-list-item item-who">
+            <!-- <div class="block-list-container_image">
+              <img class="block-list-image" src="assets/icons/marker.svg" alt="">
+            </div> -->
+            <p class="block-list-text">Хто жадае разумець як развіваюцца супольнасці.</p>
+          </li>
+          <li class="block-list-item item-who">
+            <!-- <div class="block-list-container_image">
+              <img class="block-list-image" src="assets/icons/marker.svg" alt="">
+            </div> -->
+            <p class="block-list-text">Каму важна дапамагаць развіваць нефармальныя групы.</p>
+          </li>
+          <li class="block-list-item item-who">
+            <!-- <div class="block-list-container_image">
+              <img class="block-list-image" src="assets/icons/marker.svg" alt="">
+            </div> -->
+            <p class="block-list-text">Каму цікавы гарызантальныя практыкі кіравання нефармальнымі групамі.</p>
+          </li>
+          <li class="block-list-item item-who">
+            <!-- <div class="block-list-container_image">
+              <img class="block-list-image" src="assets/icons/marker.svg" alt="">
+            </div> -->
+            <p class="block-list-text">Хто верыць, што для пабудовы адкрытага і ўключанага грамадства, патрэбны супольнасці.</p>
+          </li>
+          <li class="block-list-item item-who">
+            <!-- <div class="block-list-container_image">
+              <img class="block-list-image" src="assets/icons/marker.svg" alt="">
+            </div> -->
+            <p class="block-list-text">Хто жадае ведаць простую метадалогію для даследвання супольнасцяў.</p>
+          </li>
+        </ul>
       </div>
     </section>
-    <section class="section section-uniqueness">
-      <h2 class="title">Унікальнасць</h2>
-      <ul class="list-uniqueness">
-        <li class="list-item list-uniqueness_item">Мова: беларуская</li>
-        <li class="list-item list-uniqueness_item">30 відэалекцый</li>
-        <li class="list-item list-uniqueness_item">20 анлайн заняткаў, 200 практычных і тэарэтычных пытанняў</p></li>
-        <li class="list-item list-uniqueness_item">Магчымасць разглядзець сітуацыі ў вашай супольнасці</li>
-        <li class="list-item list-uniqueness_item">Кніга аўтара курса у падарунак</li>
-        <li class="list-item list-uniqueness_item">3 кансультацыі для кожнага паспяховага выпускніка напрацягу года</li>
-      </ul>
-      <!-- <div class="block-uniqueness">
-        <div class="block-uniqueness-content">
-          <img class="block-uniqueness-image" src="assets/icons/mark.svg" alt="">
-          <p class="block-uniqueness-text">Мова: беларуская</p>
-        </div>
-        <div class="block-uniqueness-content">
-          <img class="block-uniqueness-image" src="assets/icons/mark.svg" alt="">
-          <p class="block-uniqueness-text">30 відэалекцый</p>
-        </div>
-        <div class="block-uniqueness-content">
-          <img class="block-uniqueness-image" src="assets/icons/mark.svg" alt="">
-          <p class="block-uniqueness-text">20 анлайн заняткаў, <br>200 практычных і тэарэтычных пытанняў</p>
-        </div>
-        <div class="block-uniqueness-content">
-          <img class="block-uniqueness-image" src="assets/icons/mark.svg" alt="">
-          <p class="block-uniqueness-text">Магчымасць разглядзець сітуацый ў вашай супольнасці
-          </p>
-        </div>
-        <div class="block-uniqueness-content">
-          <img class="block-uniqueness-image" src="assets/icons/mark.svg" alt="">
-          <p class="block-uniqueness-text">Кніга аўтара курса у падарунак
-          </p>
-        </div>
-        <div class="block-uniqueness-content">
-          <img class="block-uniqueness-image" src="assets/icons/mark.svg" alt="">
-          <p class="block-uniqueness-text">3 кансультацыі для кожнага паспяховага выпускніка напрацягу года
-          </p>
-        </div>
-      </div> -->
-    </section>
-    <section class="section section-obtaining">
-      <h2 class="title">Што засвоіце і атрымаеце</h2>
-      <h3 class="subtitle">Па сканчэнні курса вы ўжо будзеце пачынаючым сацыятэхнікам, а менавіта зможаце:</h3>
-      <ul class="list-obtaining">
-        <li class="list-obtaining_item">Хутка арыентавацца ў існуючай супольнасці і ўключацца ў яе працу.</li>
-        <li class="list-obtaining_item">Умець ствараць сваю супольнасць, менавіта супольнасць, а не арганізацыю.</li>
-        <li class="list-obtaining_item">Разумець дынаміку развіцця нефармальнай групы і ведаць, якія інструменты на якім этапе найлепей прымяняць для падтрымання яе арганічнага роста.</li>
-        <li class="list-obtaining_item">Эфектыўна фасілітаваць станаўленне розных роляў у супольнасці, а таксама самавызначэнне новых удзельнікаў.</li>
-        <li class="list-obtaining_item">Узмацняць імунітэт супольнасці і хутка нейтралізаваць таксічных удзельнікаў.</li>
-        <li class="list-obtaining_item">Кіраваць ведамі, перадаваць шаблоны паводзінаў і стымуляваць культуру.</li>
-        <li class="list-obtaining_item">Фарміраваць каштоўнаснае ядро і ўлучаць яго ў жыццё нефармальнай групы.</li>
-        <li class="list-obtaining_item">Уплываць на колькасць удзельнікаў і запускаць працэсы дзялення супольнасці.</li>
-        <li class="list-obtaining_item">Адаптаваць калектыў да новага віду дзейнасці ці выдзялення новых суполак.</li>
-        <li class="list-obtaining_item">Інтэграваць найбольш эфектыўную мадэль прыняцця рашэнняў і вырашэння ўнутраных групавых канфліктаў.</li>
-      </ul>
-    </section>
-    <section class="section">
-      <h2 class="title">Мае паспяховыя кейсы</h2>
-      <h3 class="subtitle">Падчас заняткаў мы будзем раўглядаць дзейнасць наступных супольнасцяў:</h3>
-      <ol class="list">
-        <li class="list-item">Дваровага футбола “Забей” 2006 - 2012</li>
-        <li class="list-item">Самвыдата “Забей” 2006-2012</li>
-        <li class="list-item"></li>
-      </ol>
-    </section>
-    <section class="section section-project">
-      <h2 class="title">Фінальны праект</h2>
-      <p class="block-project-text">Калі студэнт будзе актыўна практываць працу ў стварэнні ці даследванні супольнасці па паспяховаму выніку праходжання секцыі пытанняў студэнту выдаецца сертыфікат.</p>
-    </section>
-    <section class="section">
-      <h2 class="title">Што неабходна, каб далучыцца</h2>
-      <h3 class="subtitle">Насамрэч вам спатрэбіцца сябе падрыхтаваць трохі:</h3>
-      <ol class="list">
-        <li class="list-item">Спатрэбіцца 4 гадзін на тыдзень для удзелу ў анлайн занятках, азнаямлення з лекцыямі і выканання заданняў.</li>
-        <li class="list-item">Быць гатовым да прымянення атрыманых ведаў.</li>
-        <li class="list-item">Быць адкрытым для абмеркавання складаных пытанняў.</li>
-      </ol>
-      <button class="button">Далучыцца да курса</button>
-    </section>
-    <section class="section">
-      <h2 class="title">Для каго курс</h2>
-      <ul class="list">
-        <li class="list-item">Хто хоча стварыць сваю супольнасць</li>
-        <li class="list-item">Хто жадае разумець як развіваюцца супольнасці</li>
-        <li class="list-item">Каму важна дапамагаць развіваць нефармальныя групы.</li>
-        <li class="list-item">Хто верыць, што для пабуовы адкрытага і ўключанага грамадства, патрэбны супольнасці.</li>
-        <li class="list-item">Каму цікавы гарызантальныя практыкі кіравання нефармальнымі групамі.</li>
-        <li class="list-item">Хто жадае ведаць простую метадалогію для даследвання супольнасцяў.</li>
-      </ul>
-    </section>
-    <section class="section section-content">
+    <section class="section section-content" id="content">
       <h2 class="title">Змест</h2>
-      <h3 class="subtitle">Частка 1.</h3>
+      <h3 class="subtitle subtitle-content">Частка 1.</h3>
       <ul class="list-content">
         <li class="list-content_item">
           <div class="list-content_item-container">
-            <button class="list-content_button">
-              <img class="list-content_button-image" src="assets/icons/play.svg" alt="play"> 
+            <button id="button-content" class="list-content_button">
+              <img class="list-content_button-image" src="assets/icons/play-alt.svg" alt="play">
             </button>
-            <p>Тэма 1. Якую супольнасць мы ствараем.</p>
+            <p class="text">Тэма 1. Якую супольнасць мы ствараем.</p>
           </div>
           <div class="list-content_video">
-            <iframe width="300" height="168" src="https://www.youtube.com/embed/0EwXNXLLn98" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <!-- <iframe width="300" height="168" src="https://www.youtube.com/embed/0EwXNXLLn98" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> -->
           </div>
         </li>
         <li class="list-content_item">
           <div class="list-content_item-container">
             <button class="list-content_button">
-              <img class="list-content_button-image" src="assets/icons/play.svg" alt="play"> 
+              <img class="list-content_button-image" src="assets/icons/play-alt.svg" alt="play">
             </button>
-            <p>Тэма 2. Які базавы набор роляў ў супольнасці.</p>
+            <p class="text">Тэма 2. Які базавы набор роляў ў супольнасці.</p>
           </div>
           <div class="list-content_video">
             <!-- <iframe width="300" height="168" src="https://www.youtube.com/embed/pvsjw4MTUHE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> -->
@@ -238,55 +418,80 @@
         </li>
       </ul>
     </section>
-    <section class="section">
-      <h2 class="title">Кошт</h2>
-      <p class="text">500 EUR</p>
-      <p class="text">Можна аплочваць часткамі 200/150/150. 
-        Грошы, якія я збіраю за курс пойдуць на выдавецтва маё кнігі “Практычная сацыятэхніка: ствараем супольнасці”.
-        У залежнасці ад матывацыі, магу рабіць сур’ёзную зніжку студэнтам ці наогул вызваліць ад аплаты 2-3 часткі руплівых студэнтаў і практыкаў майго курса.</p>
+    <section class="section section-price">
+      <div class="section-container">
+        <h2 class="title title-green">Кошт</h2>
+        <p class="text">500 EUR*</p>
+        <p class="text">Можна аплочваць часткамі 200/150/150.</p>
+        <p class="text">Грошы, якія я збіраю за курс пойдуць на выдавецтва маё кнігі “Практычная сацыятэхніка: ствараем
+          супольнасці”.</p>
+        <p class="text">У залежнасці ад матывацыі, магу рабіць сур’ёзную зніжку студэнтам ці наогул вызваліць ад аплаты
+          2-3 часткі руплівых студэнтаў і практыкаў майго курса.</p>
+      </div>
     </section>
-    <section class="section">
+    <section class="section section-author" id="author">
       <h3 class="title">Пра аутара</h3>
       <img src="" alt="">
-      <p class="text">Прывітанне, Я, Міхаіл Волчак. Люблю Беларусь. З 2003 года я актыўна пагружаны ў грамадскае жыццё і атрымаў гару досведу. Мой досвед пачаўся з маладзёвага руху “Зубр”, пасля я ствараў свае адукацыйныя гурткі з 2003 па 2005. Прысвяціў вялікую частку свайго жыцця арганізацыі нефармальнай футбольнай супольнасці Забей (2006-2012), выдаваў самвыдат зін з такой жа назвай. У 2010 годзе я стварыў новую супольнасць, і яна атрымала афіцыйны статус як грамадская арганізацыя “Фаланстэр”: дзе арганізаваў дзясяткі, а можа сотні асветніцкіх мерапрыемстваў, валанцёрскіх праектаў, а таксама нефармальных супольнасцяў. З 2011 я з’яўляюся ўдзельнікам Мінскага Роварнага Таварыства, у 2013-2016 быў палітычным піратам, удзельнічаю ў супольнасці Вікіпедыі з 2011 года. Рэалізоўваў розныя задумы, пабудаваныя на флэшгрупах ці тэматычных клубах. Большасць маёй практыкі грамадскага актывізма - гэта праца ў нефармальных калектывах, іх развіццё. Да вымушанага ад’езду з Беларусі (канец 2022) я займаўся аматарскім пчалярствам і пачынаў жыццё ў вёсцы на Палессі. На жыццё зарабляю коўчынгам англійскай мовы. Люблю чытаць кнігі і дзейнічаць згодна кантаўскаму “маральнаму імператыву”. 
+      <p class="text">Прывітанне, Я, Міхаіл Волчак. Люблю Беларусь. З 2003 года я актыўна пагружаны ў грамадскае жыццё і
+        атрымаў гару досведу. Мой досвед пачаўся з маладзёвага руху “Зубр”, пасля я ствараў свае адукацыйныя гурткі з
+        2003 па 2005. Прысвяціў вялікую частку свайго жыцця арганізацыі нефармальнай футбольнай супольнасці Забей
+        (2006-2012), выдаваў самвыдат зін з такой жа назвай. У 2010 годзе я стварыў новую супольнасць, і яна атрымала
+        афіцыйны статус як грамадская арганізацыя “Фаланстэр”: дзе арганізаваў дзясяткі, а можа сотні асветніцкіх
+        мерапрыемстваў, валанцёрскіх праектаў, а таксама нефармальных супольнасцяў. З 2011 я з’яўляюся ўдзельнікам
+        Мінскага Роварнага Таварыства, у 2013-2016 быў палітычным піратам, удзельнічаю ў супольнасці Вікіпедыі з 2011
+        года. Рэалізоўваў розныя задумы, пабудаваныя на флэшгрупах ці тэматычных клубах. Большасць маёй практыкі
+        грамадскага актывізма - гэта праца ў нефармальных калектывах, іх развіццё. Да вымушанага ад’езду з Беларусі
+        (канец 2022) я займаўся аматарскім пчалярствам і пачынаў жыццё ў вёсцы на Палессі. На жыццё зарабляю коўчынгам
+        англійскай мовы. Люблю чытаць кнігі і дзейнічаць згодна кантаўскаму “маральнаму імператыву”.
       </p>
-      <button class="button">Далучыцца да курса</button>
+      <div class="button-container">
+        <button class="button">Далучыцца да курса</button>
+      </div>
     </section>
-    <section class="section">
-      <h3 class="title">Звязацца</h3>
+    <section class="section section-contact" id="contact">
+      <h3 class="title title-green">Звязацца</h3>
       <form class="form" action="">
         <input class="input" type="text" placeholder="Імэйл">
-        <textarea class="textarea" placeholder="Паведамленне" name="" id="" cols="30" rows="10"></textarea>
-        <button class="button">Адправіць</button>
+        <textarea class="textarea" placeholder="Паведамленне" name="" id=""></textarea>
+        <div class="button-container">
+          <button class="button button-violet">Адправіць</button>
+        </div>
       </form>
     </section>
   </main>
   <footer class="footer">
-    <a class="footer-link" href="">
-      <div class="footer-container_image">
-        <img class="footer-image" src="" alt="">
-      </div>
-    </a>
-    <a class="footer-link" href="">
-      <div class="footer-container_image">
-        <img class="footer-image" src="" alt="">
-      </div>
-    </a>
-    <a class="footer-link" href="">
-      <div class="footer-container_image">
-        <img class="footer-image" src="" alt="">
-      </div>
-    </a>
-    <a class="footer-link" href="">
-      <div class="footer-container_image">
-        <img class="footer-image" src="" alt="">
-      </div>
-    </a>
-    <a class="footer-link" href="">
-      <div class="footer-container_image">
-        <img class="footer-image" src="" alt="">
-      </div>
-    </a>
+    <div class="footer-container">
+      <a class="footer-link" href="">
+        <div class="footer-container_image">
+          <img class="footer-image" src="assets/icons/facebook.svg" alt="">
+        </div>
+      </a>
+      <a class="footer-link" href="">
+        <div class="footer-container_image">
+          <img class="footer-image" src="assets/icons/instagram.svg" alt="">
+        </div>
+      </a>
+      <a class="footer-link" href="">
+        <div class="footer-container_image">
+          <img class="footer-image" src="assets/icons/github.svg" alt="">
+        </div>
+      </a>
+      <a class="footer-link" href="">
+        <div class="footer-container_image">
+          <img class="footer-image" src="assets/icons/youtube.svg" alt="">
+        </div>
+      </a>
+      <a class="footer-link" href="">
+        <div class="footer-container_image">
+          <img class="footer-image" src="assets/icons/hand-holding-heart.svg" alt="">
+        </div>
+      </a>
+      <a class="footer-link" href="">
+        <div class="footer-container_image">
+          <img class="footer-image" src="assets/icons/blog-pencil.svg" alt="">
+        </div>
+      </a>
+    </div>
   </footer>
   <script src="script/scrtipt.js"></script>
 </body>
