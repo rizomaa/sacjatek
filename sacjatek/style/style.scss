@@ -62,6 +62,7 @@ $color-black: #1a1a1a;
     &_link {
       color: $color-white;
       font-size: 17px;
+      transition: 1s;
 
       &:hover {
         color: $color-violet;
@@ -122,10 +123,12 @@ $color-black: #1a1a1a;
 
   @media (max-width: 768px) {
     font-size: 40px;
+    margin-bottom: 40px;
   }
 
   @media (max-width: 320px) {
     font-size: 25px;
+    margin-bottom: 20px;
   }
 
   &-green {
@@ -437,6 +440,7 @@ $color-black: #1a1a1a;
 
   &:hover {
     background: $color-white;
+    color: $color-green-dark;
     cursor: pointer;
   }
 }
@@ -457,8 +461,137 @@ $color-black: #1a1a1a;
   display: none;
 }
 
+// section surliness
 
-// project
+.section-surliness {
+  max-width: 1200px;
+}
+
+.slider {
+  display: flex;
+  // justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  min-height: 300px;
+  margin: auto;
+
+  @media (max-width: 700px) {
+    max-width: 700px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  &-content {
+    text-align: center;
+
+    @media (max-width: 700px) {
+      max-width: 700px;
+      min-height: 200px;
+      order: 1;
+      margin-bottom: 30px;
+    }
+  }
+
+  &-button-img {
+    width: 30px;
+    height: 30px;
+
+    @media (max-width: 700px) {
+      width: 25px;
+      height: 25px;
+    }
+  }
+
+  &-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70px;
+    height: 70px;
+    background: none;
+    border: $color-yellow-light solid 3px;
+    margin: 15px;
+    border-radius: 50px;
+    background-color: $color-yellow-light;
+    transition: 1s;
+
+    &:hover {
+      background-color: white;
+      cursor: pointer;
+    }
+
+    @media (max-width: 700px) {
+      margin: 10px;
+      width: 50px;
+      height: 50px;
+    }
+  }
+  
+  &-button-prev {
+    @media (max-width: 700px) {
+      order: 2;
+    }
+  }
+
+  &-button-next {
+    @media (max-width: 700px) {
+      order: 3;
+    }
+  }
+
+  &-container-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1000px;
+    min-height: 500px;
+    object-fit: cover;
+    margin-bottom: 25px;
+
+    @media (max-width: 1150px) {
+      max-width: 1000px;
+      width: 100%;
+    }
+
+    @media (max-width: 768px) {
+      min-height: 150px;
+    }
+  }
+
+  &-image {
+    width: 100%;
+  }
+
+  &-title {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 15px;
+
+    @media (max-width: 500px) {
+      font-size: 17px;
+      margin-bottom: 10px;
+    }
+
+    @media (max-width: 320px) {
+      font-size: 15px;
+    }
+  }
+
+  &-text {
+    font-size: 19px;
+
+    @media (max-width: 500px) {
+      font-size: 16px;
+    }
+
+    @media (max-width: 320px) {
+      font-size: 15px;
+    }
+  }
+}
+
+
+// section project
 
 .section-project {
   background-color: $color-yellow-light;
