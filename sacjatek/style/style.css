@@ -393,6 +393,7 @@ html {
 }
 .button-obtaining-active:hover {
   background: #ffffff;
+  color: #00aa88;
   cursor: pointer;
 }
 
@@ -406,6 +407,53 @@ html {
 
 .item-obtaining_inactive {
   display: none;
+}
+
+.ection-surliness {
+  max-width: 1200px;
+}
+
+.slider {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  min-height: 300px;
+  margin: auto;
+}
+.slider-content {
+  text-align: center;
+}
+.slider-button-img {
+  width: 30px;
+  height: 30px;
+}
+.slider-button-prev {
+  background: none;
+  border: none;
+  margin: 15px;
+}
+.slider-button-next {
+  background: none;
+  border: none;
+  margin: 15px;
+}
+.slider-container-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 1000px;
+  min-height: 500px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.slider-title {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+.slider-text {
+  font-size: 19px;
 }
 
 .section-project {

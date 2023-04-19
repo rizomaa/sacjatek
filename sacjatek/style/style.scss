@@ -437,6 +437,7 @@ $color-black: #1a1a1a;
 
   &:hover {
     background: $color-white;
+    color: $color-green-dark;
     cursor: pointer;
   }
 }
@@ -457,8 +458,67 @@ $color-black: #1a1a1a;
   display: none;
 }
 
+// section surliness
 
-// project
+.ection-surliness {
+  max-width: 1200px;
+}
+
+.slider {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  min-height: 300px;
+  margin: auto;
+
+  &-content {
+    text-align: center;
+  }
+
+  &-button-img {
+    width: 30px;
+    height: 30px;
+  }
+  
+  &-button-prev {
+    background: none;
+    border: none;
+    margin: 15px;
+  }
+
+  &-button-next {
+    background: none;
+    border: none;
+    margin: 15px;
+  }
+
+  &-container-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1000px;
+    min-height: 500px;
+    object-fit: cover;
+  }
+
+  &-image {
+
+  }
+
+  &-title {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 15px;
+  }
+
+  &-text {
+    font-size: 19px;
+  }
+}
+
+
+// section project
 
 .section-project {
   background-color: $color-yellow-light;
