@@ -8,7 +8,6 @@ function addList() {
   for (let i = 0; i < video.length; i++) {
     const element = video[i];
     const index = video.indexOf(element);
-    console.log(index);
 
     for (let i = 0; i < element.length; i++) {
       const itemContent = document.createElement("div");
@@ -43,7 +42,6 @@ addList();
 
 const tabsBlocks = document.querySelectorAll(".tabs__block");
 const tabsItems = document.querySelector(".tabs__items");
-console.log(tabsBlocks);
 
 tabsItems.addEventListener("click", (event) => {
   const tabItemsTarget = event.target.closest(".tabs__item");
@@ -58,7 +56,6 @@ tabsItems.addEventListener("click", (event) => {
     if(tabsBlocks[tabItemsTargetID].classList.contains("tabs__block-active")) {
       
     }
-    console.log(tabsBlocks[tabItemsTargetID]);
   }
   
 });
@@ -157,7 +154,6 @@ function getImageSlider() {
   sliderImage.alt = images[num].name;
   sliderTitle.innerHTML = `${images[num].name}, ${images[num].years}`;
   sliderText.innerHTML = images[num].description;
-  console.log(num);
 }
 
 getImageSlider();
