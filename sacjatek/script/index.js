@@ -31,6 +31,7 @@ function addList() {
       const textContent = document.createElement("p");
       containerContent.append(textContent);
       textContent.classList.add("text");
+      textContent.classList.add("text-content");
       textContent.innerHTML = element[i].name;
     }
   }
