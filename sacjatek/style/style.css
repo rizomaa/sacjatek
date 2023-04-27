@@ -558,6 +558,7 @@ html {
   min-height: 500px;
   -o-object-fit: cover;
      object-fit: cover;
+  margin: auto;
   margin-bottom: 25px;
 }
 @media (max-width: 1150px) {
@@ -709,7 +710,8 @@ html {
 .tabs__item {
   width: 33.33%;
   text-align: center;
-  border: solid #1a1a1a 1px;
+  border: none;
+  border-bottom: solid #ffdd55 1px;
   transition: 1s;
   min-height: 50px;
   font-size: 20px;
@@ -726,7 +728,6 @@ html {
 
 .tabs__body {
   height: 100%;
-  border: solid #1a1a1a 1px;
   border-top: none;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;

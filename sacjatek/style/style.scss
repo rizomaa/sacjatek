@@ -107,7 +107,7 @@ $color-black: #1a1a1a;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    
+
     @media (max-width: 870px) {
       display: flex;
       width: 320px;
@@ -613,6 +613,7 @@ $color-black: #1a1a1a;
     width: 900px;
     min-height: 500px;
     object-fit: cover;
+    margin: auto;
     margin-bottom: 25px;
 
     @media (max-width: 1150px) {
@@ -788,7 +789,9 @@ $color-black: #1a1a1a;
 .tabs__item {
   width: 33.33%;
   text-align: center;
-  border: solid $color-black 1px;
+  // border: solid $color-black 1px;
+  border: none;
+  border-bottom: solid $color-yellow-dark 1px;;
   transition: 1s;
   min-height: 50px;
   font-size: 20px;
@@ -806,8 +809,7 @@ $color-black: #1a1a1a;
 
 .tabs__body {
   height: 100%;
-
-  border: solid $color-black 1px;
+  // border: solid $color-black 1px;
   border-top: none;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
