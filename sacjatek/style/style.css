@@ -12,6 +12,20 @@ html {
   transition: 1s;
 }
 
+.modal_wrap {
+  display: none;
+  background-color: #000000;
+  height: 100%;
+  width: 100%;
+  opacity: 0.6;
+  position: fixed;
+  z-index: 4;
+}
+
+.modal_wrap-active {
+  overflow: hidden;
+}
+
 .header {
   display: flex;
   align-items: center;
@@ -33,10 +47,14 @@ html {
   width: 100%;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 @media (max-width: 870px) {
   .header-list {
-    display: none;
+    flex-direction: column;
+    margin-top: 100px;
+    margin-left: 36px;
+    align-items: center;
   }
 }
 .header-list_link {
@@ -47,15 +65,55 @@ html {
 .header-list_link:hover {
   color: #7137c8;
 }
+.header-button_line {
+  height: 2px;
+  width: 30px;
+  background-color: #ffffff;
+  margin-bottom: 10px;
+}
+.header-button_line:last-child {
+  margin-bottom: 0;
+}
+@media (max-width: 870px) {
+  .header-burger_menu {
+    display: flex;
+    width: 320px;
+    height: 100vh;
+    padding: 30px 20px;
+    background: #00d4aa;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 5;
+    right: -100%;
+    transition: right 1s ease 0s;
+  }
+}
 .header-button {
-  width: 50px;
-  height: 50px;
+  display: none;
   background: none;
   border: none;
+  width: 50px;
+  height: 50px;
+  transition: all 1s;
+}
+@media (max-width: 870px) {
+  .header-button {
+    display: block;
+    z-index: 6;
+  }
 }
 .header-lang {
   width: 50px;
   height: 50px;
+}
+
+.burger_menu-active {
+  right: 0;
+}
+
+.button-active {
+  transform: rotate(90deg);
 }
 
 .logo-container {

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -46,34 +47,43 @@
     }
   </style>
 </head>
-<body>
+
+<body class="body">
+  <div class="modal_wrap"></div>
   <header class="header">
     <div class="header-container">
       <div class="logo-container">
         <img class="logo-image" src="assets/logo_header.png" alt="Sacjatek">
       </div>
-      <ul class="header-list">
-        <li class="header-list_item">
-          <a class="header-list_link" href="#description">Апісанне</a>
-        </li>
-        <li class="header-list_item">
-          <a class="header-list_link" href="#uniqueness">Унікальнасць</a>
-        </li>
-        <li class="header-list_item">
-          <a class="header-list_link" href="#who">Для каго</a>
-        </li>
-        <li class="header-list_item">
-          <a class="header-list_link" href="#content">Змест</a>
-        </li>
-        <li class="header-list_item">
-          <a class="header-list_link" href="#author">Пра аутара</a>
-        </li>
-        <li class="header-list_item">
-          <a class="header-list_link" href="#contact">Звязацца</a>
-        </li>
-      </ul>
-      <div class="header-lang"></div>
+      <div class="header-burger_menu">
+        <ul class="header-list">
+          <li class="header-list_item">
+            <a class="header-list_link" href="#description">Апісанне</a>
+          </li>
+          <li class="header-list_item">
+            <a class="header-list_link" href="#uniqueness">Унікальнасць</a>
+          </li>
+          <li class="header-list_item">
+            <a class="header-list_link" href="#who">Для каго</a>
+          </li>
+          <li class="header-list_item">
+            <a class="header-list_link" href="#content">Змест</a>
+          </li>
+          <li class="header-list_item">
+            <a class="header-list_link" href="#author">Пра аутара</a>
+          </li>
+          <li class="header-list_item">
+            <a class="header-list_link" href="#contact">Звязацца</a>
+          </li>
+        </ul>
+        <!-- <div class="header-lang"></div> -->
+      </div>
     </div>
+    <button class="header-button">
+      <div class="header-button_line"></div>
+      <div class="header-button_line"></div>
+      <div class="header-button_line"></div>
+    </button>
   </header>
   <main>
     <section class="section section-main">
@@ -141,11 +151,11 @@
         </div>
         <div class="video">
           <!-- <iframe width="300" height="168" src="https://www.youtube.com/embed/-LlK2Ge5DIk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> -->
-      </div>
-          <div class="button-container">
-            <button class="button button-violet">Далучыцца да курса</button>
-          </div>
         </div>
+        <div class="button-container">
+          <button class="button button-violet">Далучыцца да курса</button>
+        </div>
+      </div>
     </section>
     <section class="section section-uniqueness" id="uniqueness">
       <h2 class="title">Унікальнасць</h2>
@@ -311,14 +321,15 @@
           <p class="slider-text"></p>
         </div>
         <button class="slider-button-next slider-btn">
-          <img class="slider-button-img"  src="assets/buttons/angle-right.svg" alt="">
+          <img class="slider-button-img" src="assets/buttons/angle-right.svg" alt="">
         </button>
       </div>
     </section>
     <section class="section section-project">
       <div class="section-container">
         <h2 class="title title-green">Фінальны праект</h2>
-        <p class="text block-project-text">Калі студэнт будзе актыўна практываць працу ў стварэнні ці даследванні супольнасці па паспяховаму выніку праходжання секцыі пытанняў студэнту выдаецца сертыфікат.</p>
+        <p class="text block-project-text">Калі студэнт будзе актыўна практываць працу ў стварэнні ці даследванні
+          супольнасці па паспяховаму выніку праходжання секцыі пытанняў студэнту выдаецца сертыфікат.</p>
       </div>
     </section>
     <section class="section section-joining">
@@ -365,7 +376,8 @@
             <p class="block-list-text">Каму цікавы гарызантальныя практыкі кіравання нефармальнымі групамі.</p>
           </li>
           <li class="block-list-item item-who">
-            <p class="block-list-text">Хто верыць, што для пабудовы адкрытага і ўключанага грамадства, патрэбны супольнасці.</p>
+            <p class="block-list-text">Хто верыць, што для пабудовы адкрытага і ўключанага грамадства, патрэбны
+              супольнасці.</p>
           </li>
           <li class="block-list-item item-who">
             <p class="block-list-text">Хто жадае ведаць простую метадалогію для даследвання супольнасцяў.</p>
@@ -396,8 +408,8 @@
         </div>
       </div>
       <!-- <h3 class="subtitle subtitle-content">Частка 1.</h3> -->
-      
-        <!-- <li class="list-content_item">
+
+      <!-- <li class="list-content_item">
           <div class="list-content_item-container">
             <button id="button-content" class="list-content_button">
               <img class="list-content_button-image" src="assets/icons/play-alt.svg" alt="play">
@@ -497,5 +509,7 @@
     </div>
   </footer>
   <script type="module" src="script/index.js"></script>
+  <script src="script/burger.js"></script>
 </body>
+
 </html>
