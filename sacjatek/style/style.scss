@@ -23,6 +23,22 @@ $color-green-dark: #00aa88;
 $color-violet: #7137c8;
 $color-black: #1a1a1a;
 
+// modal wrap
+
+.modal_wrap {
+  display: none;
+  background-color: #000000;
+  height: 100%;
+  width: 100%;
+  opacity: 0.6;
+  position: fixed;
+  z-index: 4;
+}
+
+.modal_wrap-active {
+  overflow: hidden;
+}
+
 // header
 
 .header {
@@ -51,9 +67,13 @@ $color-black: #1a1a1a;
     width: 100%;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 
     @media (max-width: 870px) {
-      display: none;
+      flex-direction: column;
+      margin-top: 100px;
+      margin-left: 36px;
+      align-items: center;
     }
 
     &_item {
@@ -70,17 +90,64 @@ $color-black: #1a1a1a;
     }
   }
 
+  &-button_line {
+    height: 2px;
+    width: 30px;
+    background-color: $color-white;
+    margin-bottom: 10px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &-burger_menu {
+    max-width: 650px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @media (max-width: 870px) {
+      display: flex;
+      width: 320px;
+      height: 100vh;
+      padding: 30px 20px;
+      background: $color-green-light;
+      position: fixed;
+      right: 0;
+      top: 0;
+      z-index: 5;
+      right: -100%;
+      transition: right 1s ease 0s;
+    }
+  }
+
   &-button {
-    width: 50px;
-    height: 50px;
+    display: none;
     background: none;
     border: none;
+    width: 50px;
+    height: 50px;
+    transition: all 1s;
+    @media (max-width: 870px) {
+      display: block;
+      z-index: 6;
+    }
   }
 
   &-lang {
     width: 50px;
     height: 50px;
   }
+}
+
+.burger_menu-active {
+  right: 0;
+}
+
+.button-active {
+  transform: rotate(90deg);
 }
 
 .logo {
@@ -177,7 +244,7 @@ $color-black: #1a1a1a;
       margin-left: 10px;
       margin-bottom: 15px;
     }
-    
+
     &:before {
       color: $color-violet;
       content: "•";
@@ -379,7 +446,7 @@ $color-black: #1a1a1a;
   &-image {
     width: 40px;
     height: 40px;
-  
+
     @media (max-width: 768px) {
       width: 40px;
       height: 40px;
@@ -454,7 +521,7 @@ $color-black: #1a1a1a;
   background: $color-white;
   border: $color-green-dark solid 4px;
   border-radius: 10px;
-  padding: 10px
+  padding: 10px;
 }
 
 .item-obtaining_inactive {
@@ -526,7 +593,7 @@ $color-black: #1a1a1a;
       height: 50px;
     }
   }
-  
+
   &-button-prev {
     @media (max-width: 700px) {
       order: 2;
@@ -546,6 +613,7 @@ $color-black: #1a1a1a;
     width: 900px;
     min-height: 500px;
     object-fit: cover;
+    margin: auto;
     margin-bottom: 25px;
 
     @media (max-width: 1150px) {
@@ -590,7 +658,6 @@ $color-black: #1a1a1a;
   }
 }
 
-
 // section project
 
 .section-project {
@@ -604,11 +671,10 @@ $color-black: #1a1a1a;
 // section joining
 
 .item-joining {
-  
   background: $color-white;
   border: $color-yellow-dark solid 4px;
   border-radius: 10px;
-  padding: 10px
+  padding: 10px;
 }
 
 // who
@@ -625,7 +691,7 @@ $color-black: #1a1a1a;
   background: $color-white;
   border: $color-green-dark solid 4px;
   border-radius: 10px;
-  padding: 10px
+  padding: 10px;
 }
 
 // section price
@@ -639,7 +705,6 @@ $color-black: #1a1a1a;
 .section-author {
   max-width: 1200px;
 }
-
 
 // section content
 
@@ -712,11 +777,9 @@ $color-black: #1a1a1a;
 }
 
 .tabs-container {
-
 }
 
 .tabs {
-   
 }
 
 .tabs__items {
@@ -726,7 +789,9 @@ $color-black: #1a1a1a;
 .tabs__item {
   width: 33.33%;
   text-align: center;
-  border: solid $color-black 1px;
+  // border: solid $color-black 1px;
+  border: none;
+  border-bottom: solid $color-yellow-dark 1px;;
   transition: 1s;
   min-height: 50px;
   font-size: 20px;
@@ -736,7 +801,6 @@ $color-black: #1a1a1a;
   font-weight: 400px;
   color: $color-violet;
 
-
   &:hover {
     background-color: $color-yellow-light;
     cursor: pointer;
@@ -745,8 +809,7 @@ $color-black: #1a1a1a;
 
 .tabs__body {
   height: 100%;
-  
-  border: solid $color-black 1px;
+  // border: solid $color-black 1px;
   border-top: none;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
@@ -806,7 +869,6 @@ $color-black: #1a1a1a;
     height: 200px;
     font-size: 15px;
   }
-  
 }
 
 // footer
@@ -815,7 +877,6 @@ $color-black: #1a1a1a;
   // min-height: 100px;
   padding: 15px;
   background-color: $color-white;
-  
 
   &-container {
     min-height: 100px;

@@ -139,8 +139,6 @@ buttonObtaining.addEventListener("click", function () {
   }
 });
 
-// burger menu
-
 // slider
 
 const sliderButtonPrev = document.querySelector(".slider-button-prev");
