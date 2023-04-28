@@ -84,6 +84,7 @@ html {
 @media (max-width: 870px) {
   .header-burger_menu {
     display: flex;
+    align-items: stretch;
     width: 320px;
     height: 100vh;
     padding: 30px 20px;
