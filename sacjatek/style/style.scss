@@ -911,33 +911,55 @@ $color-black: #1a1a1a;
 
 .footer {
   // min-height: 100px;
-  padding: 15px;
-  background-color: $color-white;
+  background-color: $color-green-light;
+  display: flex;
+  // max-width: 1200px;
+  min-height: 100px;
 
   &-container {
-    min-height: 100px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 500px;
+    max-width: 1200px;
+    width: 100%;
     margin: auto;
   }
 
+  &-text {
+    margin-right: 15px;
+    font-size: 20px;
+    color: $color-white;
+  }
+
+  &-content {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &_container-link {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 20%;
+  }
+
   &-link {
+    color: $color-white;
+    font-size: 20px;
   }
 
   &-container_image {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 50px;
-    height: 50px;
+    width: 35px;
+    height: 35px;
     background-color: $color-yellow-light;
     border-radius: 30px;
   }
 
   &-image {
-    width: 30px;
-    height: 30px;
+    width: 20px;
+    height: 20px;
   }
 }
