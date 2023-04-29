@@ -835,11 +835,14 @@ html {
 .footer-text {
   margin-right: 15px;
   font-size: 20px;
-  color: #ffffff;
+  color: #7137c8;
 }
 .footer-content {
+  max-width: 200px;
+  width: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  background-color: #ffe680;
 }
 .footer_container-link {
   display: flex;
@@ -848,8 +851,8 @@ html {
   width: 20%;
 }
 .footer-link {
-  color: #ffffff;
   font-size: 20px;
+  color: #7137c8;
 }
 .footer-container_image {
   display: flex;

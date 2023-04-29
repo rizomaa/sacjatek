@@ -928,12 +928,16 @@ $color-black: #1a1a1a;
   &-text {
     margin-right: 15px;
     font-size: 20px;
-    color: $color-white;
+    color: $color-violet;
   }
 
   &-content {
+    max-width: 200px;
+    width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    background-color: $color-yellow-light;
+    // justify-content: space-between;
   }
 
   &_container-link {
@@ -944,8 +948,8 @@ $color-black: #1a1a1a;
   }
 
   &-link {
-    color: $color-white;
     font-size: 20px;
+    color: $color-violet;
   }
 
   &-container_image {
