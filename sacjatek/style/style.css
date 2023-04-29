@@ -256,6 +256,8 @@ html {
 
 .section-main {
   background: url(../assets/images/background-1.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
   -o-object-fit: cover;
      object-fit: cover;
   background-position: center;
