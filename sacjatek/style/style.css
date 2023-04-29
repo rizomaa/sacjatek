@@ -58,8 +58,9 @@ html {
   }
 }
 .header-list_link {
+  font-family: Open Sans Condensed;
   color: #ffffff;
-  font-weight: 600;
+  font-weight: 500;
   font-size: 17px;
   transition: 1s;
 }
