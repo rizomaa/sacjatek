@@ -45,9 +45,11 @@ $color-black: #1a1a1a;
   display: flex;
   align-items: center;
   min-height: 100px;
+  // max-width: 1200px;
+  padding: 0 10px;
   background-color: $color-green-light;
   margin: auto;
-  margin-bottom: 30px;
+  // margin-bottom: 30px;
 
   &-container {
     display: flex;
@@ -80,7 +82,9 @@ $color-black: #1a1a1a;
     }
 
     &_link {
+      font-family: Open Sans Condensed;
       color: $color-white;
+      font-weight: 500;
       font-size: 17px;
       transition: 1s;
 
@@ -110,6 +114,7 @@ $color-black: #1a1a1a;
 
     @media (max-width: 870px) {
       display: flex;
+      align-items: stretch;
       width: 320px;
       height: 100vh;
       padding: 30px 20px;
@@ -165,8 +170,7 @@ $color-black: #1a1a1a;
 .section {
   display: flex;
   flex-direction: column;
-  // align-items: center;
-  // max-width: 300px;
+  // max-width: 1200px;
   margin: auto;
   margin-bottom: 35px;
   padding: 15px;
@@ -293,20 +297,51 @@ $color-black: #1a1a1a;
 //  section main
 
 .section-main {
-  flex-direction: row;
-  justify-content: space-between;
-  max-width: 1200px;
+  background: url(../assets/images/background-1.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  object-fit: cover;
+  background-position: center;
+  
+  // max-width: 1200px;
   min-height: 500px;
+  height: 100%;
   margin: auto;
+  position: relative;
+  padding: 0;
+  z-index: 2;
+
+  &::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: $color-yellow-light;
+    opacity: 0.1;
+    display: block;
+    position: absolute;
+  }
 
   @media (max-width: 600px) {
     flex-direction: column;
     min-height: 300px;
   }
+
+  &_container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 1200px;
+    width: 100%;
+    min-height: 500px;
+    height: 100%;
+    margin: auto;
+  }
 }
+
 
 .block-main {
   width: 40%;
+  z-index: 3;
 
   @media (max-width: 600px) {
     width: 100%;
@@ -333,6 +368,7 @@ $color-black: #1a1a1a;
 
 .title-main {
   font-size: 70px;
+  color: $color-yellow-dark;
 
   @media (max-width: 600px) {
     font-size: 40px;
@@ -346,6 +382,7 @@ $color-black: #1a1a1a;
 .subtitle-main {
   font-size: 30px;
   margin-bottom: 100px;
+  color: $color-white;
 
   @media (max-width: 600px) {
     font-size: 20px;
@@ -646,7 +683,9 @@ $color-black: #1a1a1a;
   }
 
   &-text {
+    max-width: 900px;
     font-size: 19px;
+    min-height: 45px;
 
     @media (max-width: 500px) {
       font-size: 16px;
@@ -875,33 +914,59 @@ $color-black: #1a1a1a;
 
 .footer {
   // min-height: 100px;
-  padding: 15px;
-  background-color: $color-white;
+  background-color: $color-green-light;
+  display: flex;
+  // max-width: 1200px;
+  min-height: 100px;
 
   &-container {
-    min-height: 100px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 500px;
+    max-width: 1200px;
+    width: 100%;
     margin: auto;
   }
 
+  &-text {
+    margin-right: 15px;
+    font-size: 20px;
+    color: $color-violet;
+  }
+
+  &-content {
+    max-width: 200px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: $color-yellow-light;
+    // justify-content: space-between;
+  }
+
+  &_container-link {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 20%;
+  }
+
   &-link {
+    font-size: 20px;
+    color: $color-violet;
   }
 
   &-container_image {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 50px;
-    height: 50px;
+    width: 35px;
+    height: 35px;
     background-color: $color-yellow-light;
     border-radius: 30px;
   }
 
   &-image {
-    width: 30px;
-    height: 30px;
+    width: 20px;
+    height: 20px;
   }
 }
