@@ -107,11 +107,11 @@ buttonUniqueness.addEventListener("click", function () {
     ) {
       ItemUniquenessInactive[i].classList.remove("item-uniqueness_inactive");
       buttonUniqueness.classList.add("button-uniqueness-active");
-      buttonUniqueness.innerHTML = "Паказаць меньш";
+      buttonUniqueness.innerHTML = "Меней цікавостак";
     } else {
       ItemUniquenessInactive[i].classList.add("item-uniqueness_inactive");
       buttonUniqueness.classList.remove("button-uniqueness-active");
-      buttonUniqueness.innerHTML = "Паказаць больш";
+      buttonUniqueness.innerHTML = "Болей цікавостак";
     }
   }
 });
@@ -130,11 +130,11 @@ buttonObtaining.addEventListener("click", function () {
     ) {
       ItemObtainingInactive[i].classList.remove("item-obtaining_inactive");
       buttonObtaining.classList.add("button-obtaining-active");
-      buttonObtaining.innerHTML = "Паказаць меньш";
+      // buttonObtaining.innerHTML = "Паказаць меньш";
     } else {
       ItemObtainingInactive[i].classList.add("item-obtaining_inactive");
       buttonObtaining.classList.remove("button-obtaining-active");
-      buttonObtaining.innerHTML = "Паказаць больш";
+      // buttonObtaining.innerHTML = "Што яшчэ засвоіце";
     }
   }
 });
