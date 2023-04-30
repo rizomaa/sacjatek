@@ -259,9 +259,8 @@ html {
 
 .section-main {
   background: url(../assets/images/background-2.jpg);
+  background-size: cover;
   background-repeat: no-repeat;
-  -o-object-fit: cover;
-     object-fit: cover;
   background-position: center;
   min-height: 500px;
   height: 100%;
@@ -391,6 +390,12 @@ html {
 .block-description {
   width: 49%;
 }
+@media (max-width: 1024px) {
+  .block-description {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
 .block-description_subtitle {
   font-size: 20px;
   font-weight: 600;
@@ -400,18 +405,38 @@ html {
   font-size: 20px;
   margin-bottom: 7px;
 }
+@media (max-width: 1024px) {
+  .block-description_text {
+    text-align: justify;
+  }
+}
+.block-description_container {
+  display: flex;
+  justify-content: space-between;
+}
+@media (max-width: 1024px) {
+  .block-description_container {
+    flex-direction: column;
+  }
+}
+.block-description_container-image {
+  width: 49%;
+}
+@media (max-width: 1024px) {
+  .block-description_container-image {
+    width: 95%;
+    margin: auto;
+  }
+}
 .block-description_image {
   max-width: 600px;
   width: 100%;
   margin-bottom: 30px;
 }
-.block-description_container {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  row-gap: 20px;
-  -moz-column-gap: 10px;
-       column-gap: 10px;
+@media (max-width: 1024px) {
+  .block-description_image {
+    max-width: 100%;
+  }
 }
 
 .button-violet {
@@ -709,6 +734,51 @@ html {
 
 .section-author {
   max-width: 1200px;
+}
+
+.block-author {
+  width: 40%;
+}
+@media (max-width: 1024px) {
+  .block-author {
+    width: 95%;
+    margin: auto;
+    margin-bottom: 20px;
+  }
+}
+.block-author_content {
+  width: 57%;
+}
+@media (max-width: 1024px) {
+  .block-author_content {
+    width: 95%;
+    margin: auto;
+  }
+}
+.block-author_container {
+  display: flex;
+  justify-content: space-between;
+}
+@media (max-width: 1024px) {
+  .block-author_container {
+    flex-direction: column;
+  }
+}
+.block-author_text {
+  font-size: 19px;
+  margin-bottom: 0px;
+  line-height: 25px;
+  margin-bottom: 0;
+  text-align: justify;
+}
+@media (max-width: 1024px) {
+  .block-author_text {
+    font-size: 17px;
+  }
+}
+.block-author_image {
+  width: 100%;
+  margin-right: 10px;
 }
 
 .section-content {

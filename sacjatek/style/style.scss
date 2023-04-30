@@ -301,10 +301,10 @@ $color-black: #1a1a1a;
 
 .section-main {
   background: url(../assets/images/background-2.jpg);
-  // background-size: 100%;
+  background-size: cover;
   background-repeat: no-repeat;
-  object-fit: cover;
   background-position: center;
+  
   
   // max-width: 1200px;
   min-height: 500px;
@@ -434,6 +434,11 @@ $color-black: #1a1a1a;
 .block-description {
   width: 49%;
 
+  @media (max-width: 1024px) {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
   &_subtitle {
     font-size: 20px;
     font-weight: 600;
@@ -443,20 +448,41 @@ $color-black: #1a1a1a;
   &_text {
     font-size: 20px;
     margin-bottom: 7px;
-  }
 
-  &_image {
-    max-width: 600px;
-    width: 100%;
-    margin-bottom: 30px;
+    @media (max-width: 1024px) {
+      text-align: justify;
+    }
   }
 
   &_container {
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
-    row-gap: 20px;
-    column-gap: 10px;
+
+    @media (max-width: 1024px) {
+      flex-direction: column;
+    }
+
+  }
+
+  &_container-image {
+    // display: flex;
+    // justify-content: space-between;
+    width: 49%;
+    @media (max-width: 1024px) {
+      width: 95%;
+      margin: auto;
+    }
+  }
+
+  &_image {
+    // max-width: 30%;
+    max-width: 600px;
+    width: 100%;
+    margin-bottom: 30px;
+
+    @media (max-width: 1024px) {
+      max-width: 100%;
+    }
   }
 }
 
@@ -783,6 +809,55 @@ $color-black: #1a1a1a;
 .section-author {
   max-width: 1200px;
 }
+
+.block-author {
+  width: 40%;
+  @media (max-width: 1024px) {
+    width: 95%;
+    margin: auto;
+    margin-bottom: 20px;
+  }
+  // margin: auto;
+
+  &_content {
+    width: 57%;
+    @media (max-width: 1024px) {
+      width: 95%;
+      margin: auto;
+    }
+  }
+
+  &_container {
+    display: flex;
+    justify-content: space-between;
+
+    @media (max-width: 1024px) {
+      flex-direction: column;
+    }
+  }
+
+
+  &_text {
+    // font-size: 20px;
+    // margin-bottom: 7px;
+    // line-height: 25px;
+    font-size: 19px;
+    margin-bottom: 0px;
+    line-height: 25px;
+    margin-bottom: 0;
+    text-align: justify;
+
+    @media (max-width: 1024px) {
+      font-size: 17px;
+    }
+  }
+
+  &_image {
+    width: 100%;
+    margin-right: 10px;
+  }
+}
+
 
 // section content
 
