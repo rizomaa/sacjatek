@@ -814,6 +814,11 @@ $color-black: #1a1a1a;
   // margin-left: 15px;
   margin-bottom: 0;
   font-size: 18px;
+
+  @media (max-width: 700px) {
+    line-height: 17px;
+    font-size: 15px;
+  }
 }
 
 .frame {
