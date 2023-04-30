@@ -1024,7 +1024,7 @@ html {
 @media (max-width: 700px) {
   .footer_container-link {
     margin: 25px 0 35px;
-    max-width: 300px;
+    max-width: 280px;
   }
 }
 .footer-link {
