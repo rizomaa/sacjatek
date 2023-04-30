@@ -251,6 +251,11 @@ html {
   display: flex;
   justify-content: center;
 }
+@media (max-width: 768px) {
+  .button-container {
+    margin: 25px;
+  }
+}
 
 .video {
   margin-bottom: 25px;
@@ -278,7 +283,7 @@ html {
   display: block;
   position: absolute;
 }
-@media (max-width: 600px) {
+@media (max-width: 768px) {
   .section-main {
     flex-direction: column;
     min-height: 300px;
@@ -294,9 +299,10 @@ html {
   height: 100%;
   margin: auto;
 }
-@media (max-width: 600px) {
+@media (max-width: 768px) {
   .section-main_container {
     min-height: 250px;
+    flex-direction: column;
   }
 }
 
@@ -311,14 +317,15 @@ html {
   width: 40%;
   z-index: 3;
 }
-@media (max-width: 600px) {
+@media (max-width: 768px) {
   .block-main {
     width: 100%;
   }
 }
-@media (max-width: 600px) {
+@media (max-width: 768px) {
   .block-main_schedule {
-    display: none;
+    background-color: #ffffff;
+    padding-bottom: 30px;
   }
 }
 
@@ -326,22 +333,54 @@ html {
   font-size: 40px;
   text-align: center;
   color: #ffdd55;
-  margin-top: 20px;
+  margin: 150px 0 30px;
+}
+@media (max-width: 768px) {
+  .block-main_subtitle {
+    margin: 30px 0 20px;
+    font-size: 25px;
+    color: #7137c8;
+  }
 }
 @media (max-width: 320px) {
   .block-main_subtitle {
-    font-size: 16px;
     color: #7137c8;
   }
 }
 
+.block-main_text,
+.block-main_data {
+  font-size: 22px;
+  font-family: Open Sans Condensed;
+  margin-bottom: 15px;
+  text-align: center;
+  color: #ffffff;
+}
+@media (max-width: 768px) {
+  .block-main_text,
+  .block-main_data {
+    font-size: 18px;
+    color: #00aa88;
+  }
+}
+
+.block-main_data {
+  max-width: 250px;
+  background-color: #ffe680;
+  color: #7137c8;
+  margin: auto;
+}
+
 .title-main {
   font-size: 70px;
+  line-height: 80px;
   color: #ffdd55;
+  margin-top: 30px;
 }
-@media (max-width: 600px) {
+@media (max-width: 768px) {
   .title-main {
     font-size: 40px;
+    line-height: 50px;
   }
 }
 @media (max-width: 320px) {
@@ -355,7 +394,7 @@ html {
   margin-bottom: 100px;
   color: #ffffff;
 }
-@media (max-width: 600px) {
+@media (max-width: 768px) {
   .subtitle-main {
     font-size: 20px;
     margin-bottom: 50px;
