@@ -30,9 +30,12 @@ html {
   display: flex;
   align-items: center;
   min-height: 100px;
+  width: 100%;
   padding: 0 10px;
   background-color: #00d4aa;
   margin: auto;
+  position: fixed;
+  z-index: 5;
 }
 .header-container {
   display: flex;
@@ -248,7 +251,7 @@ html {
   color: #ffdd55;
   cursor: pointer;
 }
-@media (max-width: 320px) {
+@media (max-width: 768px) {
   .button {
     width: 170px;
     height: 40px;
@@ -308,6 +311,7 @@ html {
   min-height: 500px;
   height: 100%;
   margin: auto;
+  margin-top: 100px;
 }
 @media (max-width: 768px) {
   .section-main_container {
@@ -486,6 +490,14 @@ html {
 @media (max-width: 1024px) {
   .block-description_image {
     max-width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .block-description_text,
+  .block-description_subtitle {
+    font-size: 17px;
+    line-height: 23px;
   }
 }
 
