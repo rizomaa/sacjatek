@@ -1024,6 +1024,7 @@ html {
 @media (max-width: 700px) {
   .footer_container-link {
     margin: 25px 0 35px;
+    max-width: 300px;
   }
 }
 .footer-link {
@@ -1049,7 +1050,19 @@ html {
   background-color: #7137c8;
   transition: all 1s;
 }
+@media (max-width: 700px) {
+  .footer-container_image {
+    width: 45px;
+    height: 45px;
+  }
+}
 .footer-image {
   width: 20px;
   height: 20px;
+}
+@media (max-width: 700px) {
+  .footer-image {
+    width: 25px;
+    height: 25px;
+  }
 }/*# sourceMappingURL=style.css.map */
