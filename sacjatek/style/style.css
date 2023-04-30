@@ -300,6 +300,12 @@ html {
     min-height: 250px;
   }
 }
+.section-main_link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Open Sans Condensed;
+}
 
 .block-main {
   width: 40%;
@@ -383,7 +389,29 @@ html {
 }
 
 .block-description {
+  width: 49%;
+}
+.block-description_subtitle {
+  font-size: 20px;
+  font-weight: 600;
+  margin-top: 20px;
+}
+.block-description_text {
+  font-size: 20px;
+  margin-bottom: 7px;
+}
+.block-description_image {
+  max-width: 600px;
+  width: 100%;
   margin-bottom: 30px;
+}
+.block-description_container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  row-gap: 20px;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
 }
 
 .button-violet {

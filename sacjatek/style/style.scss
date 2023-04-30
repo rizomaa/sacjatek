@@ -343,6 +343,13 @@ $color-black: #1a1a1a;
       min-height: 250px;
     }
   }
+
+  &_link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Open Sans Condensed;
+  }
 }
 
 
@@ -425,7 +432,32 @@ $color-black: #1a1a1a;
 }
 
 .block-description {
-  margin-bottom: 30px;
+  width: 49%;
+
+  &_subtitle {
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 20px;
+  }
+
+  &_text {
+    font-size: 20px;
+    margin-bottom: 7px;
+  }
+
+  &_image {
+    max-width: 600px;
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  &_container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    row-gap: 20px;
+    column-gap: 10px;
+  }
 }
 
 .button-violet {
