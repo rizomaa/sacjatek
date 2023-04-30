@@ -343,15 +343,15 @@ $color-black: #1a1a1a;
       min-height: 250px;
     }
   }
-
-  &_link {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-family: Open Sans Condensed;
-  }
 }
 
+
+.main-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Open Sans Condensed;
+}
 
 .block-main {
   width: 40%;

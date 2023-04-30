@@ -299,7 +299,8 @@ html {
     min-height: 250px;
   }
 }
-.section-main_link {
+
+.main-link {
   display: flex;
   align-items: center;
   justify-content: center;
