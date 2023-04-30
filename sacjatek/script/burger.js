@@ -19,7 +19,7 @@ buttonMenu.addEventListener("click", function() {
 });
 
 modalWrap.addEventListener("click", () => {
-  burgerMenu.classList.remove("nav-active");
+  burgerMenu.classList.remove("burger_menu-active");
   buttonMenu.classList.remove("button-active");
   modalWrap.style.display = "none";
   body.classList.remove("modal_wrap-active");
