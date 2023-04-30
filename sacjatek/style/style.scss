@@ -45,11 +45,12 @@ $color-black: #1a1a1a;
   display: flex;
   align-items: center;
   min-height: 100px;
-  // max-width: 1200px;
+  width: 100%;
   padding: 0 10px;
   background-color: $color-green-light;
   margin: auto;
-  // margin-bottom: 30px;
+  position: fixed;
+  z-index: 5;
 
   &-container {
     display: flex;
@@ -286,7 +287,7 @@ $color-black: #1a1a1a;
     cursor: pointer;
   }
 
-  @media (max-width: 320px) {
+  @media (max-width: 768px) {
     width: 170px;
     height: 40px;
     border: none;
@@ -350,6 +351,7 @@ $color-black: #1a1a1a;
     min-height: 500px;
     height: 100%;
     margin: auto;
+    margin-top: 100px;
 
     @media (max-width: 768px) {
       min-height: 250px;
@@ -529,6 +531,14 @@ $color-black: #1a1a1a;
     @media (max-width: 1024px) {
       max-width: 100%;
     }
+  }
+}
+
+.block-description_text,
+.block-description_subtitle {
+  @media (max-width: 768px) {
+    font-size: 17px;
+    line-height: 23px;
   }
 }
 
