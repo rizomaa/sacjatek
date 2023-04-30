@@ -1111,10 +1111,6 @@ $color-black: #1a1a1a;
     width: 100%;
     display: flex;
     justify-content: center;
-    // background-color: $color-yellow-light;
-    // @media (max-width: 700px) {
-    //   background: none;
-    // }
   }
 
   &_container-link {
@@ -1126,6 +1122,7 @@ $color-black: #1a1a1a;
 
     @media (max-width: 700px) {
       margin: 25px 0 35px;
+      max-width: 280px;
     }
   }
 
@@ -1154,10 +1151,20 @@ $color-black: #1a1a1a;
       background-color: $color-violet;
       transition: all 1s;
     }
+
+    @media (max-width: 700px) {
+      width: 45px;
+      height: 45px;
+    }
   }
 
   &-image {
     width: 20px;
     height: 20px;
+
+    @media (max-width: 700px) {
+      width: 25px;
+      height: 25px;
+    }
   }
 }
