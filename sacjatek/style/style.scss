@@ -65,7 +65,6 @@ $color-black: #1a1a1a;
   }
 
   &-list {
-    max-width: 650px;
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -78,6 +77,9 @@ $color-black: #1a1a1a;
     }
 
     &_item {
+      @media (max-width: 870px) {
+        margin-bottom: 20px;
+      }
     }
 
     &_link {
@@ -85,7 +87,7 @@ $color-black: #1a1a1a;
       color: $color-white;
       font-weight: 500;
       font-size: 17px;
-      letter-spacing: 0.06em;
+      
       transition: 0.5s;
 
       &:hover {
@@ -94,6 +96,11 @@ $color-black: #1a1a1a;
 
       &:active {
         color: $color-violet;
+      }
+
+      @media (max-width: 870px) {
+        font-size: 20px;
+        letter-spacing: 0.08em;
       }
     }
   }
@@ -110,7 +117,6 @@ $color-black: #1a1a1a;
   }
 
   &-burger_menu {
-    max-width: 650px;
     width: 100%;
     display: flex;
     justify-content: space-between;
