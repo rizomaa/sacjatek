@@ -73,8 +73,7 @@ $color-black: #1a1a1a;
 
     @media (max-width: 870px) {
       flex-direction: column;
-      margin-top: 100px;
-      margin-left: 36px;
+      margin-top: 50px;
       align-items: center;
     }
 
@@ -86,9 +85,14 @@ $color-black: #1a1a1a;
       color: $color-white;
       font-weight: 500;
       font-size: 17px;
-      transition: 1s;
+      letter-spacing: 0.06em;
+      transition: 0.5s;
 
       &:hover {
+        color: $color-violet;
+      }
+
+      &:active {
         color: $color-violet;
       }
     }
@@ -111,20 +115,19 @@ $color-black: #1a1a1a;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    transition: 1s;
 
     @media (max-width: 870px) {
       display: flex;
       align-items: stretch;
-      width: 320px;
-      height: 100vh;
+      width: 100%;
       padding: 30px 20px;
       background: $color-green-light;
       position: fixed;
       right: 0;
-      top: 0;
+      top: -100%;
       z-index: 5;
-      right: -100%;
-      transition: right 1s ease 0s;
+      transition: all 1s ease 0s;
     }
   }
 
@@ -148,7 +151,7 @@ $color-black: #1a1a1a;
 }
 
 .burger_menu-active {
-  right: 0;
+  top: 0;
 }
 
 .button-active {
@@ -298,7 +301,7 @@ $color-black: #1a1a1a;
 
 .section-main {
   background: url(../assets/images/background-2.jpg);
-  background-size: 100%;
+  // background-size: 100%;
   background-repeat: no-repeat;
   object-fit: cover;
   background-position: center;
@@ -335,6 +338,10 @@ $color-black: #1a1a1a;
     min-height: 500px;
     height: 100%;
     margin: auto;
+
+    @media (max-width: 600px) {
+      min-height: 250px;
+    }
   }
 }
 
