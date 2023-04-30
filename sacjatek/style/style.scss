@@ -118,12 +118,14 @@ $color-black: #1a1a1a;
 
   &-burger_menu {
     width: 100%;
+    max-width: 600px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     transition: 1s;
 
     @media (max-width: 870px) {
+      max-width: 100%;
       display: flex;
       align-items: stretch;
       width: 100%;
