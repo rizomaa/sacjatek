@@ -1088,6 +1088,11 @@ $color-black: #1a1a1a;
     color: $color-violet;
     margin: 0 2px;
     font-family: 'Open Sans Condensed';
+
+    &:hover {
+      color: $color-yellow-light;
+      transition: all 1s;
+    }
   }
 
   &-container_image {
@@ -1098,6 +1103,11 @@ $color-black: #1a1a1a;
     height: 35px;
     background-color: $color-yellow-light;
     border-radius: 30px;
+
+    &:hover {
+      background-color: $color-violet;
+      transition: all 1s;
+    }
   }
 
   &-image {

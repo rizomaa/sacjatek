@@ -983,6 +983,10 @@ html {
   margin: 0 2px;
   font-family: "Open Sans Condensed";
 }
+.footer-link:hover {
+  color: #ffe680;
+  transition: all 1s;
+}
 .footer-container_image {
   display: flex;
   justify-content: center;
@@ -991,6 +995,10 @@ html {
   height: 35px;
   background-color: #ffe680;
   border-radius: 30px;
+}
+.footer-container_image:hover {
+  background-color: #7137c8;
+  transition: all 1s;
 }
 .footer-image {
   width: 20px;
