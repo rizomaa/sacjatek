@@ -442,7 +442,13 @@ html {
 }
 
 .block-description {
-  width: 49%;
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  width: 100%;
+  row-gap: 55px;
+  -moz-column-gap: 40px;
+       column-gap: 40px;
 }
 @media (max-width: 1024px) {
   .block-description {
@@ -454,8 +460,11 @@ html {
   font-size: 20px;
   font-weight: 600;
   margin-top: 20px;
+  color: #00aa88;
 }
 .block-description_text {
+  max-width: 580px;
+  width: 100%;
   font-size: 20px;
   margin-bottom: 7px;
 }
@@ -483,7 +492,9 @@ html {
   }
 }
 .block-description_image {
-  max-width: 600px;
+  border: solid #00d4aa 4px;
+  border-radius: 10px;
+  max-width: 580px;
   width: 100%;
   margin-bottom: 30px;
 }
