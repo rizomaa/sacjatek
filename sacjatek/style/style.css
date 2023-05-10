@@ -459,7 +459,6 @@ html {
 .block-description_subtitle {
   font-size: 20px;
   font-weight: 600;
-  margin-top: 20px;
   color: #00aa88;
 }
 .block-description_text {
@@ -473,6 +472,9 @@ html {
     text-align: justify;
   }
 }
+.block-description_text-container {
+  margin: auto;
+}
 .block-description_container {
   display: flex;
   justify-content: space-between;
@@ -483,7 +485,7 @@ html {
   }
 }
 .block-description_container-image {
-  width: 49%;
+  margin: auto;
 }
 @media (max-width: 1024px) {
   .block-description_container-image {
@@ -496,7 +498,6 @@ html {
   border-radius: 10px;
   max-width: 580px;
   width: 100%;
-  margin-bottom: 30px;
 }
 @media (max-width: 1024px) {
   .block-description_image {

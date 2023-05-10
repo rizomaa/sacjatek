@@ -492,7 +492,6 @@ $color-black: #1a1a1a;
   &_subtitle {
     font-size: 20px;
     font-weight: 600;
-    margin-top: 20px;
     color: $color-green-dark;
   }
 
@@ -509,6 +508,10 @@ $color-black: #1a1a1a;
     @media (max-width: 1024px) {
       text-align: justify;
     }
+
+    &-container {
+      margin: auto;
+    }
   }
 
   &_container {
@@ -521,9 +524,7 @@ $color-black: #1a1a1a;
   }
 
   &_container-image {
-    // display: flex;
-    // justify-content: space-between;
-    width: 49%;
+    margin: auto;
     @media (max-width: 1024px) {
       width: 95%;
       margin: auto;
@@ -538,7 +539,6 @@ $color-black: #1a1a1a;
     // max-width: 30%;
     max-width: 580px;
     width: 100%;
-    margin-bottom: 30px;
 
     @media (max-width: 1024px) {
       max-width: 100%;
