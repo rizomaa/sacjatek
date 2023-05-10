@@ -1,5 +1,24 @@
-import images from "./images.js";
 import video from "./video.js";
+
+// tabs
+
+const tabsBlocks = document.querySelectorAll(".tabs__block");
+const tabsItems = document.querySelector(".tabs__items");
+
+tabsItems.addEventListener("click", (event) => {
+  const tabItemsTarget = event.target.closest(".tabs__item");
+  const tabItemsTargetID = tabItemsTarget.id;
+  for (let i = 0; i < tabsBlocks.length; i++) {
+    if (tabsBlocks[i] === tabsBlocks[tabItemsTargetID]) {
+      tabsBlocks[tabItemsTargetID].classList.add("tabs__block-active");
+    } else {
+      tabsBlocks[i].classList.remove("tabs__block-active");
+    }
+
+    if (tabsBlocks[tabItemsTargetID].classList.contains("tabs__block-active")) {
+    }
+  }
+});
 
 // section content
 const listContent = document.querySelectorAll(".list-content");
@@ -20,7 +39,7 @@ function addList() {
 
       const buttonContent = document.createElement("button");
       buttonContent.classList.add("list-content_button");
-      buttonContent.id = `${[i]}`;
+      buttonContent.id = `${element[i].id}`;
       containerContent.append(buttonContent);
 
       const buttonContentImage = document.createElement("img");
@@ -33,65 +52,71 @@ function addList() {
       textContent.classList.add("text");
       textContent.classList.add("text-content");
       textContent.innerHTML = element[i].name;
+
+      const videoContent = document.createElement("div");
+      videoContent.classList.add("list-content_video");
+      itemContent.append(videoContent);
+      videoContent.id = `${element[i].id}`;
+
+      // const frame = document.createElement("iframe");
+      // frame.classList.add("frame");
+      // videoContent.append(frame);
+      // frame.src = `${element[i].src}`;
+      // frame.setAttribute("allow", "fullscreen");
     }
   }
 }
 
 addList();
 
-// tabs
-
-const tabsBlocks = document.querySelectorAll(".tabs__block");
-const tabsItems = document.querySelector(".tabs__items");
-
-tabsItems.addEventListener("click", (event) => {
-  const tabItemsTarget = event.target.closest(".tabs__item");
-  const tabItemsTargetID = tabItemsTarget.id;
-  for (let i = 0; i < tabsBlocks.length; i++) {
-    if(tabsBlocks[i] === tabsBlocks[tabItemsTargetID]) {
-      tabsBlocks[tabItemsTargetID].classList.add("tabs__block-active")
-    } else {
-      tabsBlocks[i].classList.remove("tabs__block-active");
-    }
-    
-    if(tabsBlocks[tabItemsTargetID].classList.contains("tabs__block-active")) {
-      
-    }
-  }
-  
-});
-
-
-
 const itemContent = document.querySelector(".list-content_item");
 const playButton = document.querySelector(".list-content_button");
 
 const videoContent = document.createElement("div");
 videoContent.classList.add("list-content_video");
-// itemContent.append(videoContent);
+itemContent.append(videoContent);
 
 const frame = document.createElement("iframe");
 frame.classList.add("frame");
-videoContent.append(frame);
-frame.src = "https://www.youtube.com/embed/0EwXNXLLn98";
+
 frame.setAttribute("allow", "fullscreen");
 
-// function videoOpen () {
-//   videoContent.style.display = "flex";
-//   console.log("click");
-// }
+const tabsBody = document.querySelector(".tabs__body");
 
-// playButton.addEventListener("click", function () {
-//   videoOpen();
+// console.log("click");
+
+// tabsBody.addEventListener("click", (event) => {
+//   console.log("click");
+
 // });
 
- // listContent[i].addEventListener("click", (event) => {
-    //   console.log("click");
-    //   const closestButtonContent = event.target.closest(".list-content_button");
-    //   const closestButtonContentId = closestButtonContent.id;
-    //   console.log(closestButtonContentId);
-    //   const currentVideoData = video.find((el) => {});
-    // });
+const modalWrap = document.querySelector(".modal_wrap");
+
+for (let i = 0; i < listContent.length; i++) {
+  listContent[i].addEventListener("click", (event) => {
+    const closestButtonContent = event.target.closest(".list-content_button");
+    const closestButtonContentId = closestButtonContent.id;
+    console.log(closestButtonContentId);
+    const currentVideoData = video[i].find((el) => {
+      console.log(el.id);
+      frame.src = el.src;
+      videoContent.style.display = "flex";
+      videoContent.append(frame);
+      return el.id === closestButtonContentId;
+    });
+
+    modalWrap.style.display = "block";
+    body.classList.add("modal_wrap-active");
+
+    return currentVideoData;
+  });
+}
+
+modalWrap.addEventListener("click", () => {
+  modalWrap.style.display = "none";
+  body.classList.remove("modal_wrap-active");
+  videoContent.style.display = "none";
+});
 
 // section uniqueness
 
@@ -137,49 +162,4 @@ buttonObtaining.addEventListener("click", function () {
       // buttonObtaining.innerHTML = "Што яшчэ засвоіце";
     }
   }
-});
-
-// slider
-
-const sliderButtonPrev = document.querySelector(".slider-button-prev");
-const sliderButtonNext = document.querySelector(".slider-button-next");
-const sliderImage = document.querySelector(".slider-image");
-const sliderTitle = document.querySelector(".slider-title");
-const sliderText = document.querySelector(".slider-text");
-let num = 0;
-
-function getImageSlider() {
-  sliderImage.src = images[num].img;
-  sliderImage.alt = images[num].name;
-  sliderTitle.innerHTML = `${images[num].name}, ${images[num].years}`;
-  sliderText.innerHTML = images[num].description;
-}
-
-getImageSlider();
-
-function getSlideNext() {
-  num = num + 1;
-  if (num > images.length - 1) {
-    num = 0;
-  }
-
-  getImageSlider(num);
-}
-
-function getSlidePrev() {
-  num = num - 1;
-  if (num < 0) {
-    num = images.length - 1;
-  }
-  getImageSlider(num);
-}
-
-sliderButtonPrev.addEventListener("click", function () {
-  getSlidePrev();
-  console.log("click");
-});
-
-sliderButtonNext.addEventListener("click", function () {
-  getSlideNext();
-  console.log("click");
 });

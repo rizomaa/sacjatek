@@ -88,7 +88,7 @@ $color-black: #1a1a1a;
       color: $color-white;
       font-weight: 500;
       font-size: 17px;
-      
+
       transition: 0.5s;
 
       &:hover {
@@ -317,8 +317,7 @@ $color-black: #1a1a1a;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  
-  
+
   // max-width: 1200px;
   min-height: 500px;
   height: 100%;
@@ -360,7 +359,6 @@ $color-black: #1a1a1a;
   }
 }
 
-
 .main-link {
   display: flex;
   align-items: center;
@@ -396,7 +394,6 @@ $color-black: #1a1a1a;
     color: $color-violet;
   }
 
-
   @media (max-width: 320px) {
     // font-size: 16px;
     color: $color-violet;
@@ -404,7 +401,7 @@ $color-black: #1a1a1a;
 }
 
 .block-main_text,
-.block-main_data  {
+.block-main_data {
   font-size: 22px;
   font-family: Open Sans Condensed;
   margin-bottom: 15px;
@@ -423,7 +420,6 @@ $color-black: #1a1a1a;
   color: $color-violet;
   margin: auto;
 }
-
 
 .title-main {
   font-size: 70px;
@@ -480,7 +476,13 @@ $color-black: #1a1a1a;
 }
 
 .block-description {
-  width: 49%;
+  // width: 49%;
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  width: 100%;
+  row-gap: 55px;
+  column-gap: 40px;
 
   @media (max-width: 1024px) {
     width: 100%;
@@ -490,15 +492,25 @@ $color-black: #1a1a1a;
   &_subtitle {
     font-size: 20px;
     font-weight: 600;
-    margin-top: 20px;
+    color: $color-green-dark;
   }
 
   &_text {
+    max-width: 580px;
+    width: 100%;
     font-size: 20px;
     margin-bottom: 7px;
+    // background-color: $color-white;
+    // border: solid $color-green-light 4px;
+    // border-radius: 10px;
+    // padding: 10px;
 
     @media (max-width: 1024px) {
       text-align: justify;
+    }
+
+    &-container {
+      margin: auto;
     }
   }
 
@@ -509,13 +521,10 @@ $color-black: #1a1a1a;
     @media (max-width: 1024px) {
       flex-direction: column;
     }
-
   }
 
   &_container-image {
-    // display: flex;
-    // justify-content: space-between;
-    width: 49%;
+    margin: auto;
     @media (max-width: 1024px) {
       width: 95%;
       margin: auto;
@@ -523,10 +532,13 @@ $color-black: #1a1a1a;
   }
 
   &_image {
+    // background-color: $color-white;
+    border: solid $color-green-light 4px;
+    border-radius: 10px;
+    // padding: 10px;
     // max-width: 30%;
-    max-width: 600px;
+    max-width: 580px;
     width: 100%;
-    margin-bottom: 30px;
 
     @media (max-width: 1024px) {
       max-width: 100%;
@@ -892,7 +904,6 @@ $color-black: #1a1a1a;
     }
   }
 
-
   &_text {
     // font-size: 20px;
     // margin-bottom: 7px;
@@ -913,7 +924,6 @@ $color-black: #1a1a1a;
     margin-right: 10px;
   }
 }
-
 
 // section content
 
@@ -947,9 +957,46 @@ $color-black: #1a1a1a;
   }
 
   &_video {
-    // display: none;
-    display: flex;
+    // display: flex;
     justify-content: center;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    width: 952px;
+    height: 552px;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    // position: relative;
+    position: fixed;
+    z-index: 8;
+
+    @media (max-width: 995px) {
+      width: 682px;
+      min-height: 402px;
+    }
+
+    @media (max-width: 750px) {
+      width: 400px;
+      margin: 10px;
+      max-height: 400px;
+      left: 15%;
+      top: 30%;
+    }
+
+    @media (max-width: 505px) {
+      left: 23%;
+    }
+
+    @media (max-width: 410px) {
+      left: 10%;
+    }
+    
+    @media (max-width: 340px) {
+      left: 5%;
+    }
   }
 
   &_button {
@@ -1005,7 +1052,7 @@ $color-black: #1a1a1a;
   text-align: center;
   // border: solid $color-black 1px;
   border: none;
-  border-bottom: solid $color-yellow-dark 1px;;
+  border-bottom: solid $color-yellow-dark 1px;
   transition: 1s;
   min-height: 50px;
   font-size: 20px;
@@ -1113,7 +1160,7 @@ $color-black: #1a1a1a;
     margin-right: 5px;
     font-size: 20px;
     color: $color-violet;
-    font-family: 'Open Sans Condensed';
+    font-family: "Open Sans Condensed";
   }
 
   &-content {
@@ -1140,7 +1187,7 @@ $color-black: #1a1a1a;
     font-size: 20px;
     color: $color-violet;
     margin: 0 2px;
-    font-family: 'Open Sans Condensed';
+    font-family: "Open Sans Condensed";
 
     &:hover {
       color: $color-yellow-light;
