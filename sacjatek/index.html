@@ -98,7 +98,6 @@
             <a class="button main-link"
               href="https://docs.google.com/forms/d/e/1FAIpQLSecHhuWE3frAdRdQ9m9wZdMLMoAOT4NpJwyO7CSukcslHjT1g/viewform">Запісацца
               на курс</a>
-            <!-- <button class="button">Запісацца на курс</button> -->
           </div>
         </div>
         <div class="block-main block-main_schedule">
@@ -121,22 +120,22 @@
                 сістэматызаваныя веды, як ствараць сваю ці эфектыўна ўдзельнічаць у розных супольнасцях і нефармальных
                 групах.</p>
             </div>
-            
+
             <img class="block-description_image" src="assets/images/description_1.jpg" alt="">
             <img class="block-description_image" src="assets/images/description_2.jpg" alt="">
             <div>
               <p class="text block-description_subtitle">Курс</p>
-            <p class="text block-description_text">Для атрымання патрэбнага выніку, я падрыхтаваў відэа лекцыі, а
-              таксама практычныя пытанні і жывыя анлайн семінары. </p>
-            <p class="text block-description_text">У курсе я кранаюся невялікіх суполак (да 15-25 чалавек у ядры), але
-              часам буду аналізаваць і большыя прыклады.</p>
-            <p class="text block-description_text">Усе матэрыялы, пытанні і семінары засноўваюцца на маёй 15-гадовай
-              грамадскай дзейнасці. Падчас якой мне давялося паўдзельнічаць у шэрагу фармальных і нефармальных
-              калектывах, а таксама стварыць свой.
-            </p>
-            <p class="text block-description_text">Таксама буду прапаноўваць не толькі ўласныя тэарэтычныя напрацоўкі,
-              але і даследванні антраполагаў і сацыёлагаў, этнолагаў, якія сваімі працамі натхнілі мяне зрабіць гэты
-              курс.</p>
+              <p class="text block-description_text">Для атрымання патрэбнага выніку, я падрыхтаваў відэа лекцыі, а
+                таксама практычныя пытанні і жывыя анлайн семінары. </p>
+              <p class="text block-description_text">У курсе я кранаюся невялікіх суполак (да 15-25 чалавек у ядры), але
+                часам буду аналізаваць і большыя прыклады.</p>
+              <p class="text block-description_text">Усе матэрыялы, пытанні і семінары засноўваюцца на маёй 15-гадовай
+                грамадскай дзейнасці. Падчас якой мне давялося паўдзельнічаць у шэрагу фармальных і нефармальных
+                калектывах, а таксама стварыць свой.
+              </p>
+              <p class="text block-description_text">Таксама буду прапаноўваць не толькі ўласныя тэарэтычныя напрацоўкі,
+                але і даследванні антраполагаў і сацыёлагаў, этнолагаў, якія сваімі працамі натхнілі мяне зрабіць гэты
+                курс.</p>
             </div>
             <div>
               <p class="text block-description_subtitle">Навошта</p>
@@ -148,13 +147,14 @@
                 на ваша будучае грамадства, ў якім вы жывеце. І калі мы хочам грамадства нашай мары, варта пачаць з
                 невялікай цаглінкі, а менавіта малой нефармальнай групы.
               </p>
-              <p class="text block-description_text">Дадам, што падчас рэалізацыі курса я пішу кнігу, таму, ўдзельнічаючы
+              <p class="text block-description_text">Дадам, што падчас рэалізацыі курса я пішу кнігу, таму,
+                ўдзельнічаючы
                 ў курсе, вы таксама дапаможаце мне адшліфаваць думкі і паскорыць выданне кнігі.
               </p>
             </div>
-            
-          <!-- </div> -->
-          <!-- <div class="block-description_container-image"> -->
+
+            <!-- </div> -->
+            <!-- <div class="block-description_container-image"> -->
             <!-- <img class="block-description_image" src="assets/images/description_1.jpg" alt="">
             <img class="block-description_image" src="assets/images/description_2.jpg" alt=""> -->
             <img class="block-description_image" src="assets/images/description_3.jpg" alt="">
@@ -490,10 +490,10 @@
     <section class="section section-contact" id="contact">
       <h3 class="title title-green">Звязацца</h3>
       <form class="form" action="">
-        <input class="input" type="text" placeholder="Імэйл">
-        <textarea class="textarea" placeholder="Паведамленне" name="" id=""></textarea>
+        <input class="input" type="email" name="email" placeholder="Імэйл">
+        <textarea class="textarea" name="message" placeholder="Паведамленне"></textarea>
         <div class="button-container">
-          <button class="button button-violet">Адправіць</button>
+          <button class="button button-violet" type="submit" name="send">Адправіць</button>
         </div>
       </form>
     </section>
@@ -542,6 +542,7 @@
     data-position="Right" data-x_margin="18" data-y_margin="18"></script>
   <script type="module" src="script/index.js"></script>
   <script src="script/burger.js"></script>
+  <script type="module" src="script/slider.js"></script>
 </body>
 
 </html>

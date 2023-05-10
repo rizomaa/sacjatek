@@ -882,8 +882,49 @@ html {
   gap: 30px;
 }
 .list-content_video {
-  display: flex;
   justify-content: center;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  width: 952px;
+  height: 552px;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  position: fixed;
+  z-index: 8;
+}
+@media (max-width: 995px) {
+  .list-content_video {
+    width: 682px;
+    min-height: 402px;
+  }
+}
+@media (max-width: 750px) {
+  .list-content_video {
+    width: 400px;
+    margin: 10px;
+    max-height: 400px;
+    left: 15%;
+    top: 30%;
+  }
+}
+@media (max-width: 505px) {
+  .list-content_video {
+    left: 23%;
+  }
+}
+@media (max-width: 410px) {
+  .list-content_video {
+    left: 10%;
+  }
+}
+@media (max-width: 340px) {
+  .list-content_video {
+    left: 5%;
+  }
 }
 .list-content_button {
   display: flex;
