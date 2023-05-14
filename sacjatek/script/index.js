@@ -125,7 +125,7 @@ for (let i = 0; i < listContent.length; i++) {
 modalWrap.addEventListener("click", () => {
   modalWrap.style.display = "none";
   body.classList.remove("modal_wrap-active");
-  frame.style.display = "none";
+  frameContainer.style.display = "none";
 });
 
 // section uniqueness
