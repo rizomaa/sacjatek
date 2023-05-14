@@ -22,6 +22,7 @@ tabsItems.addEventListener("click", (event) => {
 
 // section content
 const listContent = document.querySelectorAll(".list-content");
+console.log(listContent)
 
 function addList() {
   for (let i = 0; i < video.length; i++) {
@@ -76,7 +77,7 @@ const videoContent = document.createElement("div");
 videoContent.classList.add("list-content_video");
 itemContent.append(videoContent);
 
-const frame = document.createElement("iframe");
+const frame = document.querySelector("iframe");
 frame.classList.add("frame");
 
 frame.setAttribute("allow", "fullscreen");
@@ -91,6 +92,10 @@ const tabsBody = document.querySelector(".tabs__body");
 // });
 
 const modalWrap = document.querySelector(".modal_wrap");
+const frameContainer = document.querySelector(".frame_container");
+
+
+console.log(listContent.length)
 
 for (let i = 0; i < listContent.length; i++) {
   listContent[i].addEventListener("click", (event) => {
@@ -100,8 +105,13 @@ for (let i = 0; i < listContent.length; i++) {
     const currentVideoData = video[i].find((el) => {
       console.log(el.id);
       frame.src = el.src;
-      videoContent.style.display = "flex";
-      videoContent.append(frame);
+      // console.log(frame.src);
+      // const videoContent = document.createElement("div");
+      // videoContent.classList.add("list-content_video");
+      // console.log(itemContent);
+      // itemContent.append(videoContent);
+      frameContainer.style.display = "flex";
+      // videoContent.append(frame);
       return el.id === closestButtonContentId;
     });
 
@@ -115,7 +125,7 @@ for (let i = 0; i < listContent.length; i++) {
 modalWrap.addEventListener("click", () => {
   modalWrap.style.display = "none";
   body.classList.remove("modal_wrap-active");
-  videoContent.style.display = "none";
+  frame.style.display = "none";
 });
 
 // section uniqueness
