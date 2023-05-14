@@ -504,7 +504,6 @@ html {
 .block-description_subtitle {
   font-size: 20px;
   font-weight: 600;
-  margin-top: 20px;
   color: #00aa88;
 }
 .block-description_text {
@@ -517,6 +516,9 @@ html {
   .block-description_text {
     text-align: justify;
   }
+}
+.block-description_text-container {
+  margin: auto;
 }
 .block-description_container {
   display: flex;

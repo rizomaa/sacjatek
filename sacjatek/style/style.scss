@@ -537,7 +537,6 @@ $color-black: #1a1a1a;
   &_subtitle {
     font-size: 20px;
     font-weight: 600;
-    margin-top: 20px;
     color: $color-green-dark;
   }
 
@@ -549,6 +548,10 @@ $color-black: #1a1a1a;
 
     @media (max-width: 1024px) {
       text-align: justify;
+    }
+
+    &-container {
+      margin: auto;
     }
   }
 
