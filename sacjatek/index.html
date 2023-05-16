@@ -481,13 +481,20 @@
     </section>
     <section class="section section-contact" id="contact">
       <h3 class="title title-green">Звязацца</h3>
-      <form class="form " name="feedback" action="feedback.php" method="post">
-        <input class="input form__email" type="email" name="email" placeholder="Імэйл" required>
-        <textarea class="textarea" name="message" placeholder="Паведамленне" required></textarea>
-        <div class="button-container">
-          <input class="button button-violet form__submit" type="submit" name="send" value="Адправiць">
-        </div>
-      </form>
+      <div class="block-contact">
+        <p class="block-contact_text">
+          Засталіся пытанні?
+          Буду рады на іх адказаць.
+          Задай сваё пытанне ў форме зваротнай сувязі.
+        </p>
+        <form class="form " name="feedback" action="feedback.php" method="post">
+          <input class="input form__email" type="email" name="email" placeholder="Імэйл" required>
+          <textarea class="textarea" name="message" placeholder="Паведамленне" required></textarea>
+          <div class="button-container">
+            <input class="button button-violet form__submit" type="submit" name="send" value="Адправiць">
+          </div>
+        </form>
+      </div>
     </section>
   </main>
   <footer class="footer">

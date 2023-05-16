@@ -1070,6 +1070,23 @@ html {
   margin-bottom: 0;
 }
 
+.block-contact_text {
+  margin: auto;
+  margin-bottom: 25px;
+  max-width: 600px;
+  text-align: center;
+  color: #7137c8;
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 800;
+  font-family: Open Sans Condensed;
+}
+
+.textarea, .input {
+  box-shadow: rgba(80, 34, 34, 0.2) 0px 5px 10px 2px;
+  background-color: #ffe680;
+}
+
 .form {
   display: flex;
   flex-direction: column;
@@ -1081,7 +1098,6 @@ html {
   height: 40px;
   margin-bottom: 15px;
   padding: 0 10px;
-  background-color: #ffffff;
   border: #7137c8 solid 3px;
   font-size: 20px;
 }
@@ -1099,10 +1115,8 @@ html {
   height: 300px;
   margin-bottom: 15px;
   padding: 10px;
-  background-color: #ffffff;
   border: #7137c8 solid 3px;
   font-size: 20px;
-  resize: none;
 }
 @media (max-width: 768px) {
   .textarea {
