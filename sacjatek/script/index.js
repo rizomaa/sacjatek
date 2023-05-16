@@ -22,7 +22,7 @@ tabsItems.addEventListener("click", (event) => {
 
 // section content
 const listContent = document.querySelectorAll(".list-content");
-console.log(listContent)
+console.log(listContent);
 
 function addList() {
   for (let i = 0; i < video.length; i++) {
@@ -94,8 +94,7 @@ const tabsBody = document.querySelector(".tabs__body");
 const modalWrap = document.querySelector(".modal_wrap");
 const frameContainer = document.querySelector(".frame_container");
 
-
-console.log(listContent.length)
+console.log(listContent.length);
 
 for (let i = 0; i < listContent.length; i++) {
   listContent[i].addEventListener("click", (event) => {
@@ -165,11 +164,43 @@ buttonObtaining.addEventListener("click", function () {
     ) {
       ItemObtainingInactive[i].classList.remove("item-obtaining_inactive");
       buttonObtaining.classList.add("button-obtaining-active");
-      // buttonObtaining.innerHTML = "Паказаць меньш";
+      buttonObtaining.innerHTML = "Згарнуць спiс";
     } else {
       ItemObtainingInactive[i].classList.add("item-obtaining_inactive");
       buttonObtaining.classList.remove("button-obtaining-active");
-      // buttonObtaining.innerHTML = "Што яшчэ засвоіце";
+      buttonObtaining.innerHTML = "Што яшчэ засвоіце";
     }
   }
+});
+
+//form validation
+
+let form = document.querySelector(".form");
+let email = form.querySelector(".form__email");
+let submit = form.querySelector(".form__submit");
+
+let emailPattern =
+  /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+
+email.addEventListener("input", () => {
+  const invalidEmail = [];
+  email.setCustomValidity("");
+  if (email.value === 0) {
+    return;
+  }
+
+  const isNotPattern = emailPattern.test(email.value) === false;
+  if (isNotPattern) {
+    invalidEmail.push("E-mail уведзены няправільна / E-mail введен неверно");
+    email.style.borderColor = "red";
+  }
+
+  if (invalidEmail.length > 0) {
+    email.setCustomValidity(invalidEmail.join(". \n"));
+    email.style.borderColor = "red";
+  } else {
+    email.style.borderColor = "#28a745";
+  }
+
+  email.reportValidity();
 });

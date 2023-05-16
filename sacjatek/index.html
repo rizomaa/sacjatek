@@ -35,6 +35,8 @@
       font-family: Open Sans Condensed;
     }
 
+
+
     @font-face {
       font-family: Deja Vu Serif;
       src: url(assets/fonts/DejaVuSerif.ttf);
@@ -47,7 +49,18 @@
       font-family: Deja Vu Serif;
     }
   </style>
+  <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet"> -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;800&display=swap" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif&display=swap" rel="stylesheet">
 </head>
+
 <body class="body">
   <div class="modal_wrap"></div>
   <div class="frame_container">
@@ -56,7 +69,7 @@
   <header class="header">
     <div class="header-container">
       <div class="logo-container">
-        <img class="logo-image" src="assets/logo_header.png" alt="Sacjatek">
+        <img class="logo-image" src="assets/logo_header-min.png" alt="Sacjatek">
       </div>
       <div class="header-burger_menu">
         <ul class="header-list">
@@ -79,7 +92,10 @@
             <a class="header-list_link" href="#contact">Звязацца</a>
           </li>
         </ul>
-        <!-- <div class="header-lang"></div> -->
+        <div class="header-lang">
+          <a class="header-lang_link" href="index.html">БЕЛ</a>
+          <a class="header-lang_link" href="">ENG</a>
+        </div>
       </div>
     </div>
     <button class="header-button">
@@ -128,7 +144,7 @@
             <div class="block-description_container-image">
               <img class="block-description_image" src="assets/images/description_2.webp" alt="">
             </div>
-            <div>
+            <div class="block-description_text-container">
               <p class="text block-description_subtitle">Курс</p>
               <p class="text block-description_text">Для атрымання патрэбнага выніку, я падрыхтаваў відэа лекцыі, а
                 таксама практычныя пытанні і жывыя анлайн семінары. </p>
@@ -142,7 +158,7 @@
                 але і даследванні антраполагаў і сацыёлагаў, этнолагаў, якія сваімі працамі натхнілі мяне зрабіць гэты
                 курс.</p>
             </div>
-            <div>
+            <div class="block-description_text-container">
               <p class="text block-description_subtitle">Навошта</p>
               <p class="text block-description_text">Існуе думка, што грамадства - гэта сума грамадзян, я прытрымліваюся
                 пазіцыі: грамаства - гэта ўзаемасувяць шматлікіх супольнасцяў, якія стварылі самавызначаныя індывіды -
@@ -465,13 +481,20 @@
     </section>
     <section class="section section-contact" id="contact">
       <h3 class="title title-green">Звязацца</h3>
-      <form class="form" action="">
-        <input class="input" type="email" name="email" placeholder="Імэйл">
-        <textarea class="textarea" name="message" placeholder="Паведамленне"></textarea>
-        <div class="button-container">
-          <button class="button button-violet" type="submit" name="send">Адправіць</button>
-        </div>
-      </form>
+      <div class="block-contact">
+        <p class="block-contact_text">
+          Засталіся пытанні?
+          Буду рады на іх адказаць.
+          Задай сваё пытанне ў форме зваротнай сувязі.
+        </p>
+        <form class="form " name="feedback" action="feedback.php" method="post">
+          <input class="input form__email" type="email" name="email" placeholder="Імэйл" required>
+          <textarea class="textarea" name="message" placeholder="Паведамленне" required></textarea>
+          <div class="button-container">
+            <input class="button button-violet form__submit" type="submit" name="send" value="Адправiць">
+          </div>
+        </form>
+      </div>
     </section>
   </main>
   <footer class="footer">
@@ -512,12 +535,13 @@
       </div>
     </div>
   </footer>
-  <script data-name="BMC-Widget" data-cfasync="false" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js"
-    data-id="sacyjatechnika" data-description="Support me on Buy me a coffee!" data-message="" data-color="#7137c8"
-    data-position="Right" data-x_margin="18" data-y_margin="18"></script>
+  <script type="module" src="script/slider.js"></script>
   <script type="module" src="script/index.js"></script>
   <script src="script/burger.js"></script>
-  <script type="module" src="script/slider.js"></script>
+  <script data-name="BMC-Widget" data-cfasync="false" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js"
+    data-id="sacyjatechnika" data-description="Support me on Buy me a coffee!" data-message="" data-color="#7137c8"
+    data-position="Right" data-x_margin="18" data-y_margin="18">
+    </script>
 </body>
 
 </html>

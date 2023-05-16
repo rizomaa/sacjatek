@@ -99,7 +99,7 @@ html {
 @media (max-width: 870px) {
   .header-list {
     flex-direction: column;
-    margin-top: 50px;
+    margin: 50px 0 20px;
     align-items: center;
   }
 }
@@ -148,6 +148,7 @@ html {
   .header-burger_menu {
     max-width: 100%;
     display: flex;
+    flex-direction: column;
     align-items: stretch;
     width: 100%;
     padding: 30px 20px;
@@ -174,8 +175,28 @@ html {
   }
 }
 .header-lang {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   width: 50px;
   height: 50px;
+  margin: 0 0 0 50px;
+  border: solid 1px #ffe680;
+  border-radius: 5px;
+}
+@media (max-width: 870px) {
+  .header-lang {
+    margin: auto;
+  }
+}
+.header-lang_link {
+  font-family: Open Sans Condensed;
+  color: #ffffff;
+  text-align: center;
+  transition: all 0.5s;
+}
+.header-lang_link:hover {
+  color: #ffe680;
 }
 
 .burger_menu-active {
@@ -188,6 +209,7 @@ html {
 
 .logo-container {
   width: 200px;
+  z-index: 6;
 }
 .logo-image {
   width: 200px;
@@ -345,6 +367,10 @@ html {
   .section-main {
     flex-direction: column;
     min-height: 300px;
+    background: url(../assets/images/bg768.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
   }
 }
 .section-main_container {
@@ -375,6 +401,7 @@ html {
 .block-main {
   width: 40%;
   z-index: 3;
+  padding: 10px;
 }
 @media (max-width: 768px) {
   .block-main {
@@ -561,11 +588,11 @@ html {
 .button-violet {
   background-color: #7137c8;
   color: #ffdd55;
+  border: #7137c8 solid 2px;
   transition: 1s;
 }
 .button-violet:hover {
   background-color: #ffe680;
-  border: #7137c8 solid 2px;
   color: #7137c8;
 }
 
@@ -1044,6 +1071,23 @@ html {
   margin-bottom: 0;
 }
 
+.block-contact_text {
+  margin: auto;
+  margin-bottom: 25px;
+  max-width: 600px;
+  text-align: center;
+  color: #7137c8;
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 800;
+  font-family: Open Sans Condensed;
+}
+
+.textarea, .input {
+  box-shadow: rgba(80, 34, 34, 0.2) 0px 5px 10px 2px;
+  background-color: #ffe680;
+}
+
 .form {
   display: flex;
   flex-direction: column;
@@ -1055,7 +1099,6 @@ html {
   height: 40px;
   margin-bottom: 15px;
   padding: 0 10px;
-  background-color: #ffffff;
   border: #7137c8 solid 3px;
   font-size: 20px;
 }
@@ -1073,10 +1116,8 @@ html {
   height: 300px;
   margin-bottom: 15px;
   padding: 10px;
-  background-color: #ffffff;
   border: #7137c8 solid 3px;
   font-size: 20px;
-  resize: none;
 }
 @media (max-width: 768px) {
   .textarea {

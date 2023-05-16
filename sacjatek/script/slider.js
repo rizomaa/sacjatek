@@ -7,7 +7,7 @@ const sliderButtonNext = document.querySelector(".slider-button-next");
 const sliderImage = document.querySelector(".slider-image");
 const sliderTitle = document.querySelector(".slider-title");
 const sliderText = document.querySelector(".slider-text");
-let num = 0;
+let num = 11;
 
 function getImageSlider() {
   sliderImage.src = images[num].img;
