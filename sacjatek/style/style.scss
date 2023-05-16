@@ -309,7 +309,7 @@ $color-black: #1a1a1a;
   line-height: 30px;
   text-indent: 30px;
   margin-bottom: 10px;
-  // font-family: 'Merriweather', serif;
+  font-family: 'IBM Plex Sans', sans-serif;
 
   @media (max-width: 768px) {
     text-align: justify;
@@ -983,12 +983,9 @@ $color-black: #1a1a1a;
   }
 
   &_text {
-    // font-size: 20px;
-    // margin-bottom: 7px;
-    // line-height: 25px;
-    font-size: 19px;
+    font-size: 21px;
     margin-bottom: 0px;
-    line-height: 25px;
+    line-height: 29px;
     margin-bottom: 0;
     text-align: justify;
 
