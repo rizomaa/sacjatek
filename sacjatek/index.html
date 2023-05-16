@@ -48,6 +48,7 @@
     }
   </style>
 </head>
+
 <body class="body">
   <div class="modal_wrap"></div>
   <div class="frame_container">
@@ -465,11 +466,11 @@
     </section>
     <section class="section section-contact" id="contact">
       <h3 class="title title-green">Звязацца</h3>
-      <form class="form" action="">
-        <input class="input" type="email" name="email" placeholder="Імэйл">
-        <textarea class="textarea" name="message" placeholder="Паведамленне"></textarea>
+      <form class="form " name="feedback" action="feedback.php" method="post" >
+        <input class="input form__email" type="email" name="email" placeholder="Імэйл" required>
+        <textarea class="textarea" name="message" placeholder="Паведамленне" required></textarea>
         <div class="button-container">
-          <button class="button button-violet" type="submit" name="send">Адправіць</button>
+          <input class="button button-violet form__submit" type="submit" name="send" value="Адправiць" >
         </div>
       </form>
     </section>
@@ -512,12 +513,13 @@
       </div>
     </div>
   </footer>
-  <script data-name="BMC-Widget" data-cfasync="false" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js"
-    data-id="sacyjatechnika" data-description="Support me on Buy me a coffee!" data-message="" data-color="#7137c8"
-    data-position="Right" data-x_margin="18" data-y_margin="18"></script>
+  <script type="module" src="script/slider.js"></script>
   <script type="module" src="script/index.js"></script>
   <script src="script/burger.js"></script>
-  <script type="module" src="script/slider.js"></script>
+  <script data-name="BMC-Widget" data-cfasync="false" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js"
+    data-id="sacyjatechnika" data-description="Support me on Buy me a coffee!" data-message="" data-color="#7137c8"
+    data-position="Right" data-x_margin="18" data-y_margin="18">
+  </script>
 </body>
 
 </html>
