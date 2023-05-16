@@ -587,11 +587,11 @@ html {
 .button-violet {
   background-color: #7137c8;
   color: #ffdd55;
+  border: #7137c8 solid 2px;
   transition: 1s;
 }
 .button-violet:hover {
   background-color: #ffe680;
-  border: #7137c8 solid 2px;
   color: #7137c8;
 }
 

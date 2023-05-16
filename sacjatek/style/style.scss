@@ -625,11 +625,11 @@ $color-black: #1a1a1a;
 .button-violet {
   background-color: $color-violet;
   color: $color-yellow-dark;
+  border: $color-violet solid 2px;
   transition: 1s;
 
   &:hover {
     background-color: $color-yellow-light;
-    border: $color-violet solid 2px;
     color: $color-violet;
   }
 }
