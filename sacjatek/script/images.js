@@ -80,7 +80,7 @@ const images = [
     number: 11,
     name: "Навукова папулярны зін “Памылка”",
     years: "2023 - цяпер",
-    img: "",
+    img: "assets/images/community-12-pamylka.webp",
     description: "Чаму 1.5 на разагрэў гэта нармальна.",
   }
 ]
