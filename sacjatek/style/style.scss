@@ -270,7 +270,7 @@ $color-black: #1a1a1a;
   font-size: 60px;
   text-align: center;
   margin: auto;
-  margin-bottom: 60px;
+  margin-bottom: 50px;
   color: $color-violet;
 
   @media (max-width: 768px) {
@@ -288,12 +288,20 @@ $color-black: #1a1a1a;
   }
 }
 
-.subtitle {
-  font-size: 20px;
-  font-weight: 400;
-  margin-bottom: 15px;
-  color: $color-yellow-dark;
+.subtitle, .subtitle-violet {
+  font-family: Open Sans Condensed;
   text-align: center;
+  margin: 0 auto 50px;
+  font-size: 24px;
+}
+
+.subtitle {
+  color: #1a1a1a;
+  background-color: #ffe680;
+
+  &-violet {
+    color: #7137c8;
+  }
 }
 
 .text {
@@ -518,6 +526,7 @@ $color-black: #1a1a1a;
   font-size: 30px;
   margin-bottom: 100px;
   color: $color-white;
+  background: none;
 
   @media (max-width: 768px) {
     font-size: 20px;

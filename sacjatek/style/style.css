@@ -235,7 +235,7 @@ html {
   font-size: 60px;
   text-align: center;
   margin: auto;
-  margin-bottom: 60px;
+  margin-bottom: 50px;
   color: #7137c8;
 }
 @media (max-width: 768px) {
@@ -254,12 +254,19 @@ html {
   color: #00aa88;
 }
 
-.subtitle {
-  font-size: 20px;
-  font-weight: 400;
-  margin-bottom: 15px;
-  color: #ffdd55;
+.subtitle, .subtitle-violet {
+  font-family: Open Sans Condensed;
   text-align: center;
+  margin: 0 auto 50px;
+  font-size: 24px;
+}
+
+.subtitle {
+  color: #1a1a1a;
+  background-color: #ffe680;
+}
+.subtitle-violet {
+  color: #7137c8;
 }
 
 .text {
@@ -479,6 +486,7 @@ html {
   font-size: 30px;
   margin-bottom: 100px;
   color: #ffffff;
+  background: none;
 }
 @media (max-width: 768px) {
   .subtitle-main {
