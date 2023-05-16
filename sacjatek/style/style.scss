@@ -445,6 +445,7 @@ $color-black: #1a1a1a;
 .block-main {
   width: 40%;
   z-index: 3;
+  padding: 10px;
 
   @media (max-width: 768px) {
     width: 100%;

@@ -401,6 +401,7 @@ html {
 .block-main {
   width: 40%;
   z-index: 3;
+  padding: 10px;
 }
 @media (max-width: 768px) {
   .block-main {
