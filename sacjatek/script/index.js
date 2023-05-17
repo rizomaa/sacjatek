@@ -45,6 +45,7 @@ function addList() {
 
       const buttonContentImage = document.createElement("img");
       buttonContentImage.src = "assets/icons/play-alt.svg";
+      buttonContentImage.alt = "play";
       buttonContentImage.classList.add("list-content_button-image");
       buttonContent.append(buttonContentImage);
 

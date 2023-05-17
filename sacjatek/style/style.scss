@@ -270,7 +270,7 @@ $color-black: #1a1a1a;
   font-size: 60px;
   text-align: center;
   margin: auto;
-  margin-bottom: 60px;
+  margin-bottom: 50px;
   color: $color-violet;
 
   @media (max-width: 768px) {
@@ -288,12 +288,20 @@ $color-black: #1a1a1a;
   }
 }
 
-.subtitle {
-  font-size: 20px;
-  font-weight: 400;
-  margin-bottom: 15px;
-  color: $color-yellow-dark;
+.subtitle, .subtitle-violet {
+  font-family: Open Sans Condensed;
   text-align: center;
+  margin: 0 auto 50px;
+  font-size: 24px;
+}
+
+.subtitle {
+  color: #1a1a1a;
+  background-color: #ffe680;
+
+  &-violet {
+    color: #7137c8;
+  }
 }
 
 .text {
@@ -301,7 +309,7 @@ $color-black: #1a1a1a;
   line-height: 30px;
   text-indent: 30px;
   margin-bottom: 10px;
-  // font-family: 'Merriweather', serif;
+  // font-family: 'IBM Plex Sans', sans-serif;
 
   @media (max-width: 768px) {
     text-align: justify;
@@ -518,6 +526,7 @@ $color-black: #1a1a1a;
   font-size: 30px;
   margin-bottom: 100px;
   color: $color-white;
+  background: none;
 
   @media (max-width: 768px) {
     font-size: 20px;
@@ -909,6 +918,12 @@ $color-black: #1a1a1a;
   color: $color-green-dark;
 }
 
+.block-project-text {
+  background-color: #00d4aa;
+  color: white;
+  text-align: center;
+}
+
 // section joining
 
 .item-joining {
@@ -917,6 +932,7 @@ $color-black: #1a1a1a;
   border-radius: 10px;
   padding: 10px;
 }
+
 
 // who
 
@@ -974,12 +990,9 @@ $color-black: #1a1a1a;
   }
 
   &_text {
-    // font-size: 20px;
-    // margin-bottom: 7px;
-    // line-height: 25px;
-    font-size: 19px;
+    font-size: 21px;
     margin-bottom: 0px;
-    line-height: 25px;
+    line-height: 29px;
     margin-bottom: 0;
     text-align: justify;
 
