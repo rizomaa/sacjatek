@@ -274,7 +274,6 @@ html {
   line-height: 30px;
   text-indent: 30px;
   margin-bottom: 10px;
-  font-family: "IBM Plex Sans", sans-serif;
 }
 @media (max-width: 768px) {
   .text {
@@ -859,6 +858,12 @@ html {
 
 .title-project {
   color: #00aa88;
+}
+
+.block-project-text {
+  background-color: #00d4aa;
+  color: white;
+  text-align: center;
 }
 
 .item-joining {
