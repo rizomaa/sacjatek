@@ -252,7 +252,7 @@ $color-black: #1a1a1a;
   flex-direction: column;
   margin: auto;
   // margin-bottom: 35px;
-  padding: 70px 20px 35px;
+  padding: 70px 20px;
 
   &-container {
     display: flex;
@@ -289,7 +289,8 @@ $color-black: #1a1a1a;
   }
 }
 
-.subtitle, .subtitle-violet {
+.subtitle,
+.subtitle-violet {
   font-family: Open Sans Condensed;
   text-align: center;
   margin: 0 auto 50px;
@@ -380,7 +381,7 @@ $color-black: #1a1a1a;
   }
 
   &-container {
-    margin: 50px 0;
+    margin: 50px 0 0;
     display: flex;
     justify-content: center;
 
@@ -429,7 +430,6 @@ $color-black: #1a1a1a;
   }
 
   @media (max-width: 320px) {
-    
   }
 
   &_container {
@@ -667,7 +667,6 @@ $color-black: #1a1a1a;
     row-gap: 40px;
   }
 
-
   &-item {
     max-width: 280px;
     width: 100%;
@@ -826,7 +825,6 @@ $color-black: #1a1a1a;
       max-width: 700px;
       min-height: 200px;
       order: 1;
-      
     }
   }
 
@@ -964,7 +962,6 @@ $color-black: #1a1a1a;
   padding: 10px;
 }
 
-
 // who
 
 .section-who {
@@ -998,13 +995,12 @@ $color-black: #1a1a1a;
 }
 
 .block-author {
-  max-width: 580px;
+  max-width: 550px;
   margin: auto;
-  
+
   @media (max-width: 768px) {
-    margin-bottom: 20px;
+    margin: 0 auto 20px;
   }
-  // margin: auto;
 
   &_content {
     max-width: 580px;
@@ -1014,6 +1010,9 @@ $color-black: #1a1a1a;
   &_container {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
+    row-gap: 25px;
+    column-gap: 20px;
 
     @media (max-width: 1024px) {
       flex-direction: column;
@@ -1035,12 +1034,10 @@ $color-black: #1a1a1a;
 
   &_image {
     width: 100%;
-    margin-right: 10px;
     border: solid 4px #00d4aa;
     border-radius: 5px;
 
     @media (max-width: 768px) {
-      
     }
   }
 }
@@ -1197,7 +1194,6 @@ $color-black: #1a1a1a;
     min-height: 40px;
     font-size: 15px;
   }
-
 }
 
 .tabs__body {
@@ -1242,7 +1238,8 @@ $color-black: #1a1a1a;
   }
 }
 
-.textarea, .input {
+.textarea,
+.input {
   box-shadow: rgba(80, 34, 34, 0.2) 0px 5px 10px 2px;
   background-color: $color-yellow-light;
 }
@@ -1258,7 +1255,7 @@ $color-black: #1a1a1a;
   height: 40px;
   margin-bottom: 15px;
   padding: 0 10px;
- 
+
   border: $color-violet solid 3px;
   font-size: 20px;
 
