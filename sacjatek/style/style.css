@@ -369,7 +369,7 @@ html {
   height: 100%;
   margin: auto;
   position: relative;
-  padding: 70px 0 0;
+  padding: 70px 0;
   z-index: 2;
 }
 .section-main::before {
@@ -385,6 +385,7 @@ html {
   .section-main {
     flex-direction: column;
     min-height: 300px;
+    padding: 70px 0 0;
   }
 }
 .section-main_container {
