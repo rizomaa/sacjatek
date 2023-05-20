@@ -369,7 +369,7 @@ html {
   height: 100%;
   margin: auto;
   position: relative;
-  padding: 70px 0;
+  padding: 70px 0 0;
   z-index: 2;
 }
 .section-main::before {
@@ -385,10 +385,6 @@ html {
   .section-main {
     flex-direction: column;
     min-height: 300px;
-    background: url(../assets/images/bg768.webp);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
   }
 }
 .section-main_container {
