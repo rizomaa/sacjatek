@@ -356,8 +356,27 @@ html {
 }
 
 .video {
-  margin-bottom: 25px;
   margin: auto;
+  max-width: 700px;
+  width: 100%;
+  min-height: 365px;
+}
+@media (max-width: 450px) {
+  .video {
+    min-height: 250px;
+  }
+}
+.video-description {
+  max-width: 700px;
+  width: 100%;
+  min-height: 365px;
+  border: solid 4px #00aa88;
+  border-radius: 10px;
+}
+@media (max-width: 450px) {
+  .video-description {
+    min-height: 250px;
+  }
 }
 
 .section-main {
@@ -543,7 +562,6 @@ html {
   color: #00aa88;
 }
 .block-description_text {
-  max-width: 580px;
   width: 100%;
   font-size: 20px;
   margin-bottom: 7px;
@@ -961,7 +979,7 @@ html {
 .block-author_image {
   width: 100%;
   border: solid 4px #00d4aa;
-  border-radius: 5px;
+  border-radius: 10px;
 }
 .section-content {
   max-width: 1200px;

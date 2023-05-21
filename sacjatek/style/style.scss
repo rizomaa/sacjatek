@@ -392,8 +392,26 @@ $color-black: #1a1a1a;
 }
 
 .video {
-  margin-bottom: 25px;
   margin: auto;
+  max-width: 700px;
+  width: 100%;
+  min-height: 365px;
+
+  @media (max-width: 450px) {
+    min-height: 250px;
+  }
+
+  &-description {
+    max-width: 700px;
+    width: 100%;
+    min-height: 365px;
+    border: solid 4px #00aa88;
+    border-radius: 10px;
+
+    @media (max-width: 450px) {
+      min-height: 250px;
+    }
+  }
 }
 
 //  section main
@@ -583,7 +601,7 @@ $color-black: #1a1a1a;
   }
 
   &_text {
-    max-width: 580px;
+    // max-width: 580px;
     width: 100%;
     font-size: 20px;
     margin-bottom: 7px;
@@ -1032,7 +1050,7 @@ $color-black: #1a1a1a;
   &_image {
     width: 100%;
     border: solid 4px #00d4aa;
-    border-radius: 5px;
+    border-radius: 10px;
 
     @media (max-width: 768px) {
     }
