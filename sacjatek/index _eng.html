@@ -82,7 +82,7 @@
         </ul>
         <div class="header-lang">
           <a class="header-lang_link" href="index.html">БЕЛ</a>
-          <a class="header-lang_link" href="index _eng.html">ENG</a>
+          <a class="header-lang_link header-lang_link-active">ENG</a>
         </div>
       </div>
     </div>
@@ -305,7 +305,7 @@
           </li>
         </ul>
         <div class="button-container">
-          <button id="button-obtaining" class="button block-obtaining-button">Што яшчэ засвоіце</button>
+          <button id="button-obtaining" class="button block-obtaining-button">More</button>
         </div>
       </div>
     </section>
@@ -449,18 +449,18 @@
       </div>
     </section>
     <section class="section section-contact" id="contact">
-      <h3 class="title title-green">Звязацца</h3>
+      <h3 class="title title-green">Contact</h3>
       <div class="block-contact">
-        <p class="block-contact_text">
+        <!-- <p class="block-contact_text">
           Засталіся пытанні?
           Буду рады на іх адказаць.
           Задай сваё пытанне ў форме зваротнай сувязі.
-        </p>
+        </p> -->
         <form class="form " name="feedback" action="feedback.php" method="post">
-          <input class="input form__email" type="email" name="email" placeholder="Імэйл" required>
-          <textarea class="textarea" name="message" placeholder="Паведамленне" required></textarea>
+          <input class="input form__email" type="email" name="email" placeholder="Email" required>
+          <textarea class="textarea" name="message" placeholder="Message" required></textarea>
           <div class="button-container">
-            <input class="button button-violet form__submit" type="submit" name="send" value="Адправiць">
+            <input class="button button-violet form__submit" type="submit" name="send" value="Send">
           </div>
         </form>
       </div>
@@ -504,9 +504,11 @@
       </div>
     </div>
   </footer>
-  <script type="module" src="script/slider.js"></script>
-  <script type="module" src="script/index.js"></script>
+  <script type="module" src="script/slider_eng.js"></script>
+  <script type="module" src="script/tabs_eng.js"></script>
+  <script src="script/index.js"></script>
   <script src="script/burger.js"></script>
+  <script src="script/buttons_eng.js"></script>
   <script data-name="BMC-Widget" data-cfasync="false" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js"
     data-id="sacyjatechnika" data-description="Support me on Buy me a coffee!" data-message="" data-color="#7137c8"
     data-position="Right" data-x_margin="18" data-y_margin="18">

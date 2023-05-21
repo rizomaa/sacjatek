@@ -221,7 +221,16 @@ $color-black: #1a1a1a;
       transition: all 0.5s;
 
       &:hover {
+        color: $color-violet;
+      }
+
+      &-active {
         color: $color-yellow-light;
+
+        &:hover {
+          color: $color-yellow-light;
+          cursor: default;
+        }
       }
     }
   }

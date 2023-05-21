@@ -198,7 +198,14 @@ html {
   transition: all 0.5s;
 }
 .header-lang_link:hover {
+  color: #7137c8;
+}
+.header-lang_link-active {
   color: #ffe680;
+}
+.header-lang_link-active:hover {
+  color: #ffe680;
+  cursor: default;
 }
 
 .burger_menu-active {
