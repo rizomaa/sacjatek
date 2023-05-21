@@ -11,9 +11,9 @@ let num = 11;
 
 function getImageSlider() {
   sliderImage.src = images[num].img;
-  sliderImage.alt = images[num].name;
-  sliderTitle.innerHTML = `${images[num].name}, ${images[num].years}`;
-  sliderText.innerHTML = images[num].description;
+  sliderImage.alt = images[num].name_eng;
+  sliderTitle.innerHTML = `${images[num].name_eng}, ${images[num].years_eng}`;
+  sliderText.innerHTML = images[num].description_eng;
 }
 
 getImageSlider();

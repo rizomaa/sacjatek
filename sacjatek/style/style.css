@@ -31,8 +31,10 @@ html {
   height: 100%;
 }
 .frame_container {
-  width: 90%;
-  height: 78%;
+  max-width: 800px;
+  max-height: 500px;
+  height: 100%;
+  padding: 15px;
   position: fixed;
   z-index: 8;
   justify-content: center;
@@ -138,7 +140,7 @@ html {
 }
 .header-burger_menu {
   width: 100%;
-  max-width: 600px;
+  max-width: 700px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -181,7 +183,7 @@ html {
   width: 50px;
   height: 50px;
   margin: 0 0 0 50px;
-  border: solid 1px #ffe680;
+  border: solid 2px #ffe680;
   border-radius: 5px;
 }
 @media (max-width: 870px) {
@@ -196,7 +198,14 @@ html {
   transition: all 0.5s;
 }
 .header-lang_link:hover {
+  color: #7137c8;
+}
+.header-lang_link-active {
   color: #ffe680;
+}
+.header-lang_link-active:hover {
+  color: #ffe680;
+  cursor: default;
 }
 
 .burger_menu-active {
@@ -356,8 +365,27 @@ html {
 }
 
 .video {
-  margin-bottom: 25px;
   margin: auto;
+  max-width: 700px;
+  width: 100%;
+  min-height: 365px;
+}
+@media (max-width: 450px) {
+  .video {
+    min-height: 250px;
+  }
+}
+.video-description {
+  max-width: 700px;
+  width: 100%;
+  min-height: 365px;
+  border: solid 4px #00aa88;
+  border-radius: 10px;
+}
+@media (max-width: 450px) {
+  .video-description {
+    min-height: 250px;
+  }
 }
 
 .section-main {
@@ -543,7 +571,6 @@ html {
   color: #00aa88;
 }
 .block-description_text {
-  max-width: 580px;
   width: 100%;
   font-size: 20px;
   margin-bottom: 7px;
@@ -961,7 +988,7 @@ html {
 .block-author_image {
   width: 100%;
   border: solid 4px #00d4aa;
-  border-radius: 5px;
+  border-radius: 10px;
 }
 .section-content {
   max-width: 1200px;
