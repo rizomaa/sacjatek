@@ -183,7 +183,7 @@ html {
   width: 50px;
   height: 50px;
   margin: 0 0 0 50px;
-  border: solid 1px #ffe680;
+  border: solid 2px #ffe680;
   border-radius: 5px;
 }
 @media (max-width: 870px) {
