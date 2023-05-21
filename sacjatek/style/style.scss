@@ -44,9 +44,10 @@ $color-black: #1a1a1a;
   height: 100%;
 
   &_container {
-    width: 90%;
-    height: 78%;
-    // padding: 20px;
+    max-width: 800px;
+    max-height: 500px;
+    height: 100%;
+    padding: 15px;
     position: fixed;
     z-index: 8;
     justify-content: center;

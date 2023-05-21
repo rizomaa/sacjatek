@@ -31,8 +31,10 @@ html {
   height: 100%;
 }
 .frame_container {
-  width: 90%;
-  height: 78%;
+  max-width: 800px;
+  max-height: 500px;
+  height: 100%;
+  padding: 15px;
   position: fixed;
   z-index: 8;
   justify-content: center;
