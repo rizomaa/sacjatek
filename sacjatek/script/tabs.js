@@ -22,7 +22,6 @@ tabsItems.addEventListener("click", (event) => {
 
 // section content
 const listContent = document.querySelectorAll(".list-content");
-console.log(listContent);
 
 function addList() {
   for (let i = 0; i < video.length; i++) {
@@ -81,8 +80,6 @@ const tabsBody = document.querySelector(".tabs__body");
 
 const modalWrap = document.querySelector(".modal_wrap");
 const frameContainer = document.querySelector(".frame_container");
-
-console.log(listContent.length);
 
 for (let i = 0; i < listContent.length; i++) {
   listContent[i].addEventListener("click", (event) => {

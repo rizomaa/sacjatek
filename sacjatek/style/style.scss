@@ -451,7 +451,6 @@ $color-black: #1a1a1a;
   @media (max-width: 768px) {
     flex-direction: column;
     min-height: 300px;
-    padding: 70px 0 0;
   }
 
   @media (max-width: 320px) {
@@ -1251,6 +1250,15 @@ $color-black: #1a1a1a;
   margin-bottom: 0;
 }
 
+// .block-contact_image {
+//     width: 25px;
+//     height: 25px;
+//   &-container {
+    
+//     border-radius: 25px;
+//   }
+// }
+
 .block-contact_text {
   margin: auto;
   margin-bottom: 25px;
@@ -1266,6 +1274,21 @@ $color-black: #1a1a1a;
     max-width: 280px;
     font-size: 14px;
     line-height: 23px;
+  }
+
+  &-inactive {
+    display: none;
+    font-size: 21px;
+    border-radius: 5px;
+    border: solid 2px $color-violet;
+    margin: 25px auto 0;
+    max-width: 280px;
+    // width: 100%;
+
+    @media (max-width: 768px) {
+      font-size: 15px;
+      max-width: 200px;
+    }
   }
 }
 
