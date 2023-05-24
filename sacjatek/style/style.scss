@@ -435,15 +435,15 @@ $color-black: #1a1a1a;
   height: 100%;
   margin: auto;
   position: relative;
-  padding: 70px 0;
+  padding: 0;
   z-index: 2;
 
   &::before {
     content: "";
     width: 100%;
     height: 100%;
-    background-color: $color-yellow-light;
-    opacity: 0.1;
+    background-color: $color-black;
+    opacity: 0.3;
     display: block;
     position: absolute;
   }
@@ -480,6 +480,12 @@ $color-black: #1a1a1a;
   align-items: center;
   justify-content: center;
   font-family: Open Sans Condensed;
+
+  &_container {
+    display: flex;
+    justify-content: center;
+    margin: 50px 0 70px;
+  }
 }
 
 .block-main {
