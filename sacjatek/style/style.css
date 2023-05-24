@@ -413,7 +413,6 @@ html {
   .section-main {
     flex-direction: column;
     min-height: 300px;
-    padding: 70px 0 0;
   }
 }
 .section-main_container {
