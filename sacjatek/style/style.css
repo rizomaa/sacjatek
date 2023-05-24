@@ -1184,6 +1184,20 @@ html {
     line-height: 23px;
   }
 }
+.block-contact_text-inactive {
+  display: none;
+  font-size: 21px;
+  border-radius: 5px;
+  border: solid 2px #7137c8;
+  margin: 25px auto 0;
+  max-width: 280px;
+}
+@media (max-width: 768px) {
+  .block-contact_text-inactive {
+    font-size: 15px;
+    max-width: 200px;
+  }
+}
 
 .textarea,
 .input {

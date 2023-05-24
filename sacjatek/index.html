@@ -47,6 +47,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif&display=swap" rel="stylesheet">
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 </head>
 
 <body class="body">
@@ -480,12 +481,15 @@
     <section class="section section-contact" id="contact">
       <h3 class="title title-green">Звязацца</h3>
       <div class="block-contact">
-        <p class="block-contact_text">
-          Засталіся пытанні?
-          Буду рады на іх адказаць.
-          Задай сваё пытанне ў форме зваротнай сувязі.
+        <p class="block-contact_text block-contact_text-inactive">
+         Паведамленне адпраўлена
         </p>
-        <!-- <form class="form" id="contact-form">
+        <form class="form" id="contact-form">
+          <p class="block-contact_text">
+            Засталіся пытанні?
+            Буду рады на іх адказаць.
+            Задай сваё пытанне ў форме зваротнай сувязі.
+          </p>
           <input type="hidden" name="contact_number">
           <input class="input" type="text" name="user_name" placeholder="Імя">
           <input class="input form__email" type="email" name="user_email" placeholder="Імэйл" required>
@@ -493,14 +497,14 @@
           <div class="button-container">
             <input class="button button-violet form__submit" type="submit" name="Send" value="Адправiць">
           </div>
-        </form> -->
-        <form class="form " name="feedback" action="feedback.php" method="post">
+        </form>
+        <!-- <form class="form " name="feedback" action="feedback.php" method="post">
           <input class="input form__email" type="email" name="email" placeholder="Імэйл" required>
           <textarea class="textarea" name="message" placeholder="Паведамленне" required></textarea>
           <div class="button-container">
             <input class="button button-violet form__submit" type="submit" name="send" value="Адправiць">
           </div>
-        </form>
+        </form> -->
       </div>
     </section>
   </main>
@@ -542,8 +546,8 @@
       </div>
     </div>
   </footer>
-  <!-- <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-    <script type="text/javascript">
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <!-- <script type="text/javascript">
         (function() {
             // https://dashboard.emailjs.com/admin/account
             emailjs.init('WZMtjgbMJm5xQePDF');
@@ -556,7 +560,7 @@
                 // generate a five digit number for the contact_number variable
                 this.contact_number.value = Math.random() * 100000 | 0;
                 // these IDs from the previous steps
-                emailjs.sendForm('contact_service', 'contact_form', this)
+                emailjs.sendForm('service_hxf7r8i', 'template_wx0dm2g', this)
                     .then(function() {
                         console.log('SUCCESS!');
                     }, function(error) {
@@ -570,8 +574,8 @@
   <script src="script/index.js"></script>
   <script src="script/burger.js"></script>
   <script src="script/buttons.js"></script>
-  <!-- <script src="script/form.js"></script> -->
-  <!-- <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script> -->
+  <script src="script/form.js"></script>
+  
   <script data-name="BMC-Widget" data-cfasync="false" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js"
     data-id="sacyjatechnika" data-description="Support me on Buy me a coffee!" data-message="" data-color="#7137c8"
     data-position="Right" data-x_margin="18" data-y_margin="18">
