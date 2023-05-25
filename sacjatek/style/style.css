@@ -365,10 +365,10 @@ html {
 }
 
 .video {
-  margin: auto;
-  max-width: 700px;
+  max-width: 900px;
   width: 100%;
-  min-height: 365px;
+  min-height: 470px;
+  margin: auto;
 }
 @media (max-width: 450px) {
   .video {
@@ -376,11 +376,16 @@ html {
   }
 }
 .video-description {
-  max-width: 700px;
+  max-width: 900px;
   width: 100%;
-  min-height: 365px;
+  min-height: 470px;
   border: solid 4px #00aa88;
   border-radius: 10px;
+}
+@media (max-width: 768px) {
+  .video-description {
+    min-height: 385px;
+  }
 }
 @media (max-width: 450px) {
   .video-description {
@@ -1113,7 +1118,7 @@ html {
 }
 @media (max-width: 768px) {
   .text-content {
-    font-size: 15px;
+    font-size: 14px;
     line-height: 17px;
   }
 }
@@ -1248,7 +1253,7 @@ html {
 .footer {
   background-color: #00d4aa;
   display: flex;
-  min-height: 100px;
+  min-height: 85px;
 }
 .footer-container {
   display: flex;

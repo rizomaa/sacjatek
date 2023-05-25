@@ -402,21 +402,25 @@ $color-black: #1a1a1a;
 }
 
 .video {
-  margin: auto;
-  max-width: 700px;
+  max-width: 900px;
   width: 100%;
-  min-height: 365px;
+  min-height: 470px;
+  margin: auto;
 
   @media (max-width: 450px) {
     min-height: 250px;
   }
 
   &-description {
-    max-width: 700px;
+    max-width: 900px;
     width: 100%;
-    min-height: 365px;
+    min-height: 470px;
     border: solid 4px #00aa88;
     border-radius: 10px;
+
+    @media (max-width: 768px) {
+      min-height: 385px;
+    }
 
     @media (max-width: 450px) {
       min-height: 250px;
@@ -1192,7 +1196,7 @@ $color-black: #1a1a1a;
   font-size: 18px;
 
   @media (max-width: 768px) {
-    font-size: 15px;
+    font-size: 14px;
     line-height: 17px;
   }
 }
@@ -1344,7 +1348,7 @@ $color-black: #1a1a1a;
   background-color: $color-green-light;
   display: flex;
   // max-width: 1200px;
-  min-height: 100px;
+  min-height: 85px;
 
   &-container {
     display: flex;
