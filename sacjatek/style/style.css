@@ -402,7 +402,7 @@ html {
 }
 @media (max-width: 450px) {
   .video-description {
-    min-height: 250px;
+    min-height: 210px;
   }
 }
 
