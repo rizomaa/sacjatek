@@ -54,7 +54,7 @@ html {
 }
 @media (max-width: 750px) {
   .frame_container {
-    height: 45%;
+    height: 42%;
   }
 }
 @media (max-width: 505px) {
