@@ -909,6 +909,7 @@ html {
   background-color: #00d4aa;
   color: white;
   text-align: center;
+  text-indent: 0;
 }
 @media (max-width: 768px) {
   .block-project-text {
