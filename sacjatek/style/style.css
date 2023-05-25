@@ -49,7 +49,7 @@ html {
 }
 @media (max-width: 995px) {
   .frame_container {
-    height: 65%;
+    height: 48%;
   }
 }
 @media (max-width: 750px) {
@@ -372,10 +372,10 @@ html {
 }
 
 .video {
+  margin: auto;
   max-width: 900px;
   width: 100%;
   min-height: 470px;
-  margin: auto;
 }
 @media (max-width: 450px) {
   .video {

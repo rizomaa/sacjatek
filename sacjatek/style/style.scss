@@ -61,7 +61,7 @@ $color-black: #1a1a1a;
     margin: auto;
 
     @media (max-width: 995px) {
-      height: 65%;
+      height: 48%;
     }
 
     @media (max-width: 750px) {
@@ -410,14 +410,15 @@ $color-black: #1a1a1a;
 }
 
 .video {
+  margin: auto;
   max-width: 900px;
   width: 100%;
   min-height: 470px;
-  margin: auto;
 
   @media (max-width: 450px) {
     min-height: 250px;
   }
+
 
   &-description {
     max-width: 900px;
