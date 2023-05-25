@@ -292,6 +292,7 @@ html {
 }
 .subtitle-violet {
   color: #7137c8;
+  max-width: 490px;
 }
 
 .text {
