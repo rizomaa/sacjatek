@@ -804,13 +804,15 @@ html {
   }
 }
 .slider-button-img {
-  width: 30px;
-  height: 30px;
+  width: 70px;
+  height: 70px;
+  padding: 20px;
 }
 @media (max-width: 700px) {
   .slider-button-img {
-    width: 25px;
-    height: 25px;
+    width: 50px;
+    height: 50px;
+    padding: 15px;
   }
 }
 .slider-btn {
