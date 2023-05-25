@@ -189,6 +189,8 @@ html {
 @media (max-width: 870px) {
   .header-lang {
     margin: auto;
+    width: 60px;
+    height: 60px;
   }
 }
 .header-lang_link {
@@ -199,6 +201,11 @@ html {
 }
 .header-lang_link:hover {
   color: #7137c8;
+}
+@media (max-width: 870px) {
+  .header-lang_link {
+    font-size: 20px;
+  }
 }
 .header-lang_link-active {
   color: #ffe680;

@@ -212,6 +212,8 @@ $color-black: #1a1a1a;
 
     @media (max-width: 870px) {
       margin: auto;
+      width: 60px;
+      height: 60px;
     }
 
     &_link {
@@ -224,6 +226,10 @@ $color-black: #1a1a1a;
         color: $color-violet;
       }
 
+      @media (max-width: 870px) {
+        font-size: 20px;
+      }
+
       &-active {
         color: $color-yellow-light;
 
@@ -231,6 +237,8 @@ $color-black: #1a1a1a;
           color: $color-yellow-light;
           cursor: default;
         }
+
+        
       }
     }
   }
