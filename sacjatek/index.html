@@ -9,6 +9,7 @@
     content="Адукацыйны курс як ствараць супольнасці, калектывы, нефармальныя групы, якія развіваюць грамадзян, закладаюць фундамент для мясцовага самакіравання, тэматычных грамадзянскіх арганізацый і клубаў.">
   <meta name="keywords"
     content="супольнасць, супольнасці, нефармальны калектыў, нефармальная група, каштоўнасці, гуманітарныя тэхналогіі, сацыятэхніка, аўтаномія, самакіраванне">
+  <link rel="stylesheet" href="style/loader.css">
   <link rel="stylesheet" href="style/style.css">
   <link rel="icon" href="assets/logo_1.ico">
   <title>Курс "Практычная сацыятэхніка. Ствараем супольнасці"</title>
@@ -51,6 +52,12 @@
 </head>
 
 <body class="body">
+  <div class="preloader">
+    <div class="preloader__row">
+      <div class="preloader__item"></div>
+      <div class="preloader__item"></div>
+    </div>
+  </div>
   <div class="modal_wrap"></div>
   <div class="frame_container">
     <iframe class="frame"></iframe>
@@ -103,7 +110,7 @@
           </h2>
           <div class="main-link_container">
             <a class="button main-link"
-              href="https://docs.google.com/forms/d/e/1FAIpQLSecHhuWE3frAdRdQ9m9wZdMLMoAOT4NpJwyO7CSukcslHjT1g/viewform" 
+              href="https://docs.google.com/forms/d/e/1FAIpQLSecHhuWE3frAdRdQ9m9wZdMLMoAOT4NpJwyO7CSukcslHjT1g/viewform"
               target="_blank">Запісацца
               на курс</a>
           </div>
@@ -169,9 +176,6 @@
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 allowfullscreen></iframe>
             </div>
-            <!-- <div class="block-description_container-image">
-              <img class="block-description_image" src="assets/images/description_3.webp" alt="community-3">
-            </div> -->
           </div>
         </div>
         <div class="button-container">
@@ -473,7 +477,7 @@
       </div>
       <div class="button-container">
         <a class="button main-link"
-          href="https://docs.google.com/forms/d/e/1FAIpQLSecHhuWE3frAdRdQ9m9wZdMLMoAOT4NpJwyO7CSukcslHjT1g/viewform" 
+          href="https://docs.google.com/forms/d/e/1FAIpQLSecHhuWE3frAdRdQ9m9wZdMLMoAOT4NpJwyO7CSukcslHjT1g/viewform"
           target="_blank">Далучыцца
           да курса</a>
       </div>
@@ -482,7 +486,7 @@
       <h3 class="title title-green">Звязацца</h3>
       <div class="block-contact">
         <p class="block-contact_text block-contact_text-inactive">
-         Паведамленне адпраўлена
+          Паведамленне адпраўлена
         </p>
         <form class="form" id="contact-form">
           <p class="block-contact_text">
@@ -498,13 +502,6 @@
             <input class="button button-violet form__submit" type="submit" name="Send" value="Адправiць">
           </div>
         </form>
-        <!-- <form class="form " name="feedback" action="feedback.php" method="post">
-          <input class="input form__email" type="email" name="email" placeholder="Імэйл" required>
-          <textarea class="textarea" name="message" placeholder="Паведамленне" required></textarea>
-          <div class="button-container">
-            <input class="button button-violet form__submit" type="submit" name="send" value="Адправiць">
-          </div>
-        </form> -->
       </div>
     </section>
   </main>
@@ -547,39 +544,25 @@
     </div>
   </footer>
   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-    <!-- <script type="text/javascript">
-        (function() {
-            // https://dashboard.emailjs.com/admin/account
-            emailjs.init('WZMtjgbMJm5xQePDF');
-        })();
-    </script>
-    <script type="text/javascript">
-        window.onload = function() {
-            document.getElementById('contact-form').addEventListener('submit', function(event) {
-                event.preventDefault();
-                // generate a five digit number for the contact_number variable
-                this.contact_number.value = Math.random() * 100000 | 0;
-                // these IDs from the previous steps
-                emailjs.sendForm('service_hxf7r8i', 'template_wx0dm2g', this)
-                    .then(function() {
-                        console.log('SUCCESS!');
-                    }, function(error) {
-                        console.log('FAILED...', error);
-                    });
-            });
-        }
-    </script> -->
   <script type="module" src="script/slider.js"></script>
   <script type="module" src="script/tabs.js"></script>
   <script src="script/index.js"></script>
   <script src="script/burger.js"></script>
   <script src="script/buttons.js"></script>
   <script src="script/form.js"></script>
-  
   <script data-name="BMC-Widget" data-cfasync="false" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js"
     data-id="sacyjatechnika" data-description="Support me on Buy me a coffee!" data-message="" data-color="#7137c8"
     data-position="Right" data-x_margin="18" data-y_margin="18">
     </script>
+  <script>
+    window.onload = function () {
+      document.body.classList.add('loaded_hiding');
+      window.setTimeout(function () {
+        document.body.classList.add('loaded');
+        document.body.classList.remove('loaded_hiding');
+      }, 500);
+    }
+  </script>
 </body>
 
 </html>
