@@ -1135,6 +1135,9 @@ html {
 .tabs__items {
   display: flex;
 }
+.tabs__items-active {
+  background-color: #ffe680;
+}
 
 .tabs__item {
   width: 33.33%;
@@ -1159,6 +1162,9 @@ html {
     min-height: 40px;
     font-size: 15px;
   }
+}
+.tabs__item-active {
+  background-color: #ffe680;
 }
 
 .tabs__body {

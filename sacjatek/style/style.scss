@@ -1214,6 +1214,10 @@ $color-black: #1a1a1a;
 
 .tabs__items {
   display: flex;
+
+  &-active {
+    background-color: $color-yellow-light;
+  }
 }
 
 .tabs__item {
@@ -1239,6 +1243,10 @@ $color-black: #1a1a1a;
   @media (max-width: 768px) {
     min-height: 40px;
     font-size: 15px;
+  }
+
+  &-active {
+    background-color: $color-yellow-light;
   }
 }
 
