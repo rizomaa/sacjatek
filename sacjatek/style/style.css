@@ -376,6 +376,7 @@ html {
   max-width: 900px;
   width: 100%;
   min-height: 470px;
+  text-align: center;
 }
 @media (max-width: 450px) {
   .video {
@@ -389,9 +390,14 @@ html {
   border: solid 4px #00aa88;
   border-radius: 10px;
 }
-@media (max-width: 768px) {
+@media (max-width: 850px) {
   .video-description {
     min-height: 385px;
+  }
+}
+@media (max-width: 768px) {
+  .video-description {
+    min-height: 300px;
   }
 }
 @media (max-width: 450px) {
