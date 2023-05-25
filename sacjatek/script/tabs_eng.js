@@ -4,6 +4,7 @@ import video from "./video.js";
 
 const tabsBlocks = document.querySelectorAll(".tabs__block");
 const tabsItems = document.querySelector(".tabs__items");
+const tabsItem = document.querySelectorAll(".tabs__item");
 
 tabsItems.addEventListener("click", (event) => {
   const tabItemsTarget = event.target.closest(".tabs__item");
@@ -11,11 +12,10 @@ tabsItems.addEventListener("click", (event) => {
   for (let i = 0; i < tabsBlocks.length; i++) {
     if (tabsBlocks[i] === tabsBlocks[tabItemsTargetID]) {
       tabsBlocks[tabItemsTargetID].classList.add("tabs__block-active");
+      tabsItem[tabItemsTargetID].classList.add("tabs__item-active");
     } else {
       tabsBlocks[i].classList.remove("tabs__block-active");
-    }
-
-    if (tabsBlocks[tabItemsTargetID].classList.contains("tabs__block-active")) {
+      tabsItem[i].classList.remove("tabs__item-active");
     }
   }
 });

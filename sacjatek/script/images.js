@@ -114,7 +114,7 @@ const images = [
     name: "Навукова папулярны зін “Памылка”",
     years: "2023 - цяпер",
     img: "assets/images/community-12-pamylka.webp",
-    description: "Чаму 1.5 на разагрэў гэта нармальна.",
+    description: "Чаму 1.5 гады на разагрэў гэта нармальна.",
     name_eng: "Science DIY zine “Pamylka”",
     years_eng: "2023 - present",
     description_eng: "Why a year and a half for warming up is normal."

@@ -49,12 +49,12 @@ html {
 }
 @media (max-width: 995px) {
   .frame_container {
-    height: 65%;
+    height: 48%;
   }
 }
 @media (max-width: 750px) {
   .frame_container {
-    height: 45%;
+    height: 42%;
   }
 }
 @media (max-width: 505px) {
@@ -189,6 +189,8 @@ html {
 @media (max-width: 870px) {
   .header-lang {
     margin: auto;
+    width: 60px;
+    height: 60px;
   }
 }
 .header-lang_link {
@@ -199,6 +201,11 @@ html {
 }
 .header-lang_link:hover {
   color: #7137c8;
+}
+@media (max-width: 870px) {
+  .header-lang_link {
+    font-size: 20px;
+  }
 }
 .header-lang_link-active {
   color: #ffe680;
@@ -366,9 +373,10 @@ html {
 
 .video {
   margin: auto;
-  max-width: 700px;
+  max-width: 900px;
   width: 100%;
-  min-height: 365px;
+  min-height: 470px;
+  text-align: center;
 }
 @media (max-width: 450px) {
   .video {
@@ -376,11 +384,21 @@ html {
   }
 }
 .video-description {
-  max-width: 700px;
+  max-width: 900px;
   width: 100%;
-  min-height: 365px;
+  min-height: 470px;
   border: solid 4px #00aa88;
   border-radius: 10px;
+}
+@media (max-width: 850px) {
+  .video-description {
+    min-height: 385px;
+  }
+}
+@media (max-width: 768px) {
+  .video-description {
+    min-height: 300px;
+  }
 }
 @media (max-width: 450px) {
   .video-description {
@@ -792,13 +810,15 @@ html {
   }
 }
 .slider-button-img {
-  width: 30px;
-  height: 30px;
+  width: 70px;
+  height: 70px;
+  padding: 20px;
 }
 @media (max-width: 700px) {
   .slider-button-img {
-    width: 25px;
-    height: 25px;
+    width: 50px;
+    height: 50px;
+    padding: 15px;
   }
 }
 .slider-btn {
@@ -909,6 +929,7 @@ html {
   background-color: #00d4aa;
   color: white;
   text-align: center;
+  text-indent: 0;
 }
 @media (max-width: 768px) {
   .block-project-text {
@@ -1112,13 +1133,16 @@ html {
 }
 @media (max-width: 768px) {
   .text-content {
-    font-size: 15px;
+    font-size: 14px;
     line-height: 17px;
   }
 }
 
 .tabs__items {
   display: flex;
+}
+.tabs__items-active {
+  background-color: #ffe680;
 }
 
 .tabs__item {
@@ -1144,6 +1168,9 @@ html {
     min-height: 40px;
     font-size: 15px;
   }
+}
+.tabs__item-active {
+  background-color: #ffe680;
 }
 
 .tabs__body {
@@ -1247,7 +1274,7 @@ html {
 .footer {
   background-color: #00d4aa;
   display: flex;
-  min-height: 100px;
+  min-height: 85px;
 }
 .footer-container {
   display: flex;

@@ -61,11 +61,11 @@ $color-black: #1a1a1a;
     margin: auto;
 
     @media (max-width: 995px) {
-      height: 65%;
+      height: 48%;
     }
 
     @media (max-width: 750px) {
-      height: 45%;
+      height: 42%;
       // left: 15%;
       // top: 30%;
     }
@@ -212,6 +212,8 @@ $color-black: #1a1a1a;
 
     @media (max-width: 870px) {
       margin: auto;
+      width: 60px;
+      height: 60px;
     }
 
     &_link {
@@ -224,6 +226,10 @@ $color-black: #1a1a1a;
         color: $color-violet;
       }
 
+      @media (max-width: 870px) {
+        font-size: 20px;
+      }
+
       &-active {
         color: $color-yellow-light;
 
@@ -231,6 +237,8 @@ $color-black: #1a1a1a;
           color: $color-yellow-light;
           cursor: default;
         }
+
+        
       }
     }
   }
@@ -403,20 +411,30 @@ $color-black: #1a1a1a;
 
 .video {
   margin: auto;
-  max-width: 700px;
+  max-width: 900px;
   width: 100%;
-  min-height: 365px;
+  min-height: 470px;
+  text-align: center;
 
   @media (max-width: 450px) {
     min-height: 250px;
   }
 
+
   &-description {
-    max-width: 700px;
+    max-width: 900px;
     width: 100%;
-    min-height: 365px;
+    min-height: 470px;
     border: solid 4px #00aa88;
     border-radius: 10px;
+
+    @media (max-width: 850px) {
+      min-height: 385px;
+    }
+
+    @media (max-width: 768px) {
+      min-height: 300px;
+    }
 
     @media (max-width: 450px) {
       min-height: 250px;
@@ -859,12 +877,14 @@ $color-black: #1a1a1a;
   }
 
   &-button-img {
-    width: 30px;
-    height: 30px;
+    width: 70px;
+    height: 70px;
+    padding: 20px;
 
     @media (max-width: 700px) {
-      width: 25px;
-      height: 25px;
+      width: 50px;
+      height: 50px;
+      padding: 15px;
     }
   }
 
@@ -977,6 +997,7 @@ $color-black: #1a1a1a;
   background-color: #00d4aa;
   color: white;
   text-align: center;
+  text-indent: 0;
 
   @media (max-width: 768px) {
     line-height: 22px;
@@ -1191,13 +1212,17 @@ $color-black: #1a1a1a;
   font-size: 18px;
 
   @media (max-width: 768px) {
-    font-size: 15px;
+    font-size: 14px;
     line-height: 17px;
   }
 }
 
 .tabs__items {
   display: flex;
+
+  &-active {
+    background-color: $color-yellow-light;
+  }
 }
 
 .tabs__item {
@@ -1223,6 +1248,10 @@ $color-black: #1a1a1a;
   @media (max-width: 768px) {
     min-height: 40px;
     font-size: 15px;
+  }
+
+  &-active {
+    background-color: $color-yellow-light;
   }
 }
 
@@ -1343,7 +1372,7 @@ $color-black: #1a1a1a;
   background-color: $color-green-light;
   display: flex;
   // max-width: 1200px;
-  min-height: 100px;
+  min-height: 85px;
 
   &-container {
     display: flex;
