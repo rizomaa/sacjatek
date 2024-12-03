@@ -933,6 +933,7 @@ html {
   color: white;
   text-align: center;
   text-indent: 0;
+  margin-bottom: 35px;
 }
 @media (max-width: 768px) {
   .block-project-text {
