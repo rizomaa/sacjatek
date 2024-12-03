@@ -185,6 +185,75 @@ const video = [
       src: "https://www.youtube.com/embed/twHnvehrfi8",
     },
   ],
+  [
+    {
+      id: "30",
+      name: "Тэма 31. Як фарміруюцца межы супольнасці. Матэрыяльная і разумовая кампаненты. Мысленне.",
+      name_eng: "",
+      src: "https://www.youtube.com/embed/8xOlK7nb2EY?si=TdbIHEMO3U1JS73R",
+    },
+    {
+      id: "31",
+      name: "Тэма 32. Віды сувязяў у супольнасцях. Прычым тут энергія і этапы жыцця",
+      name_eng: "",
+      src: "https://www.youtube.com/embed/JDmLkIVKaTg?si=wUMlBHtTXYPf1o70",
+    },
+    {
+      id: "32",
+      name: "Тэма 33. Як хутка зразумець супольнасць або яе накіраванасці.",
+      name_eng: "",
+      src: "https://www.youtube.com/embed/N92sRdNUP2s?si=mShjtyaJCfsEE6Nh",
+    },
+    {
+      id: "33",
+      name: "Тэма 34. Слоўнік супольнaсці. Чаму варта адрозніваць ад бізнес слоўніка і культываваць свой.",
+      name_eng: "",
+      src: "https://www.youtube.com/embed/T313ojuUF1I?si=e06hJgP_OpivJDn5",
+    },
+    {
+      id: "34",
+      name: "Тэма 35. Як сінхранізаваць удзельнікаў з розным лёсам і розным досведам",
+      name_eng: "",
+      src: "https://www.youtube.com/embed/EsAS_4DK4qM?si=N7TWsKVzlmy0Oipp",
+    },
+    {
+      id: "35",
+      name: "Тэма 36. Як уплываюць асабістыя адносіны на жыццё супольнасці",
+      name_eng: "",
+      src: "https://www.youtube.com/embed/z_9WqeCeeTQ?si=JGgyRoJNGhMV42NN",
+    },
+    {
+      id: "36",
+      name: "Тэма 37. Тэхнакратычны і арганічны падыходы да развіцця супольнасцяў",
+      name_eng: "",
+      src: "https://www.youtube.com/embed/DbWc4afY50E?si=XvBAdwSlbFVSWj68",
+    },
+    {
+      id: "37",
+      name: "Тэма 38. Удзел людзей з рознай матывацыяй. У чым выклік і як яго пераадоліць.",
+      name_eng: "",
+      src: "https://www.youtube.com/embed/EXCEbl-x5t0?si=6WBGLlk5iwjc5Ggo",
+    },
+    {
+      id: "38",
+      name: "Тэма 39. Чаму адбываецца супраціўленне ў перадачы ведаў да розных пакаленняў супольнасці.",
+      name_eng: "",
+      src: "https://www.youtube.com/embed/koOmjF-GHmU?si=VDl8jsP8BLhqfvV_",
+    },
+    {
+      id: "39",
+      name: "Тэма 40. Як адрозніць супольнасць ад “несупольнасці",
+      name_eng: "",
+      src: "https://www.youtube.com/embed/Pirb3azrvYU?si=sSip6CGp1qXhMqwj",
+    },
+  ],
+  [{
+    id: "40",
+    name: "Тэма 41. Даследванне супольнасцяў. З чаго пачаць і навошта.",
+    name_eng: "",
+    src: "https://www.youtube.com/embed/16ezMFvRTgQ?si=LoRTEMRoaxmfzKOp",
+  },
+],
 ];
 
 export default video;
