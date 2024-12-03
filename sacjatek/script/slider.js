@@ -23,9 +23,13 @@ function getSlideNext() {
   if (num > images.length - 1) {
     num = 0;
   }
-
   getImageSlider(num);
 }
+
+sliderButtonNext.addEventListener("click", function () {
+  getSlideNext();
+});
+
 
 function getSlidePrev() {
   num = num - 1;
@@ -39,6 +43,3 @@ sliderButtonPrev.addEventListener("click", function () {
   getSlidePrev();
 });
 
-sliderButtonNext.addEventListener("click", function () {
-  getSlideNext();
-});
