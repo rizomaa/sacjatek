@@ -246,13 +246,12 @@ const video = [
       name_eng: "Topic 40. How to distinguish community and non-community.",
       src: "https://www.youtube.com/embed/Pirb3azrvYU?si=sSip6CGp1qXhMqwj",
     },
-  ],
-  [{
-    id: "40",
-    name: "Тэма 41. Даследванне супольнасцяў. З чаго пачаць і навошта.",
-    name_eng: "Topic 41. Community research. What begin from and why begin for",
-    src: "https://www.youtube.com/embed/16ezMFvRTgQ?si=LoRTEMRoaxmfzKOp",
-  },
+    {
+      id: "40",
+      name: "Тэма 41. Даследванне супольнасцяў. З чаго пачаць і навошта.",
+      name_eng: "Topic 41. Community research. What begin from and why begin for",
+      src: "https://www.youtube.com/embed/16ezMFvRTgQ?si=LoRTEMRoaxmfzKOp",
+    },
 ],
 ];
 
