@@ -294,6 +294,9 @@ html {
   color: #7137c8;
   max-width: 490px;
 }
+.subtitle-project {
+  color: #7137c8;
+}
 
 .text {
   font-size: 23px;
@@ -658,6 +661,7 @@ html {
   row-gap: 50px;
   -moz-column-gap: 60px;
        column-gap: 60px;
+  margin-bottom: 40px;
 }
 @media (max-width: 768px) {
   .block-list {
@@ -1358,4 +1362,8 @@ html {
     width: 25px;
     height: 25px;
   }
+}
+
+.green {
+  border: #00aa88 solid 4px;
 }/*# sourceMappingURL=style.css.map */

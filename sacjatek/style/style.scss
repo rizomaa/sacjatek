@@ -321,6 +321,11 @@ $color-black: #1a1a1a;
     color: #7137c8;
     max-width: 490px;
   }
+
+  &-project {
+    color:#7137c8
+  }
+
 }
 
 .text {
@@ -689,6 +694,7 @@ $color-black: #1a1a1a;
   flex-wrap: wrap;
   row-gap: 50px;
   column-gap: 60px;
+  margin-bottom: 40px;
 
   @media (max-width: 768px) {
     row-gap: 40px;
@@ -1413,4 +1419,8 @@ $color-black: #1a1a1a;
       height: 25px;
     }
   }
+}
+
+.green {
+  border: $color-green-dark solid 4px;
 }
