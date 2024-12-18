@@ -296,6 +296,8 @@ html {
 }
 .subtitle-project {
   color: #7137c8;
+  text-align: justify;
+  margin-bottom: 30px;
 }
 
 .text {
